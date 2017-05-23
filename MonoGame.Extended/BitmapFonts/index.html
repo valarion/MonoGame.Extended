@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>BitmapFonts - MonoGame.Extended</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">MonoGame.Extended</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li >
+                        <a href="../..">Home</a>
+                    </li>
+                    <li >
+                        <a href="../../installation/">Installation</a>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Core <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li class="active">
+    <a href="./">BitmapFonts</a>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../../installation/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li class="disabled">
+                        <a rel="prev" >
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/craftworkgames/MonoGame.Extended">
+                                <i class="fa fa-github"></i>GitHub
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#bitmap-fonts">Bitmap Fonts</a></li>
+            <li><a href="#generating-the-font-file-with-bmfont">Generating the font file with BMFont</a></li>
+            <li><a href="#building-the-font-file-with-the-monogame-pipeline">Building the font file with the MonoGame Pipeline</a></li>
+            <li><a href="#rendering-text-in-your-game">Rendering text in your game</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="bitmap-fonts">Bitmap Fonts</h1>
+<p>Bitmaps fonts generated with the <a href="http://www.angelcode.com/products/bmfont/">BMFont</a> tool are a great alternative to using the built in <code>SpriteFont</code> in MonoGame. There are a couple of reasons you might want to do this, either <code>SpriteFont</code>'s are not working out for you or you want to have more control over the fonts in your game.</p>
+<p>The <code>BitmapFont</code> class in <a href="https://github.com/craftworkgames/MonoGame.Extended">MonoGame.Extended</a> is designed to be a drop in replacement for the <code>SpriteFont</code> class as much as possible. The goal is to take a <code>.fnt</code> file and texture generated with the BMFont tool and load it into our game just like any other content. </p>
+<pre><code>_bitmapFont = Content.Load&lt;BitmapFont&gt;("my-font");
+</code></pre>
+<p>Then render some text just like any other string.</p>
+<pre><code>_spriteBatch.Begin();
+_spriteBatch.DrawString(_bitmapFont, "Hello World", new Vector2(100, 200), Color.Red);
+_spriteBatch.End();
+</code></pre>
+<p>But before we can do that, we'll need to generate our bitmap font file.</p>
+<h2 id="generating-the-font-file-with-bmfont">Generating the font file with BMFont</h2>
+<p>If you haven’t already done so, download and install the <a href="http://www.angelcode.com/products/bmfont/">BMFont</a> tool. </p>
+<p><img alt="BMFont tool" src="../bmfont-tool.jpg" /></p>
+<p>The main window of BMFont displays all of the characters of the font. You'll need to click and drag over the characters to highlight them in white, these are the characters that will be saved to the exported texture. Typically you will take all of the top half and ignore the bottom half, although, you may only want to take a smaller subset to reduce texture size requirements.</p>
+<p>To choose a font click <strong>Options</strong> =&gt; <strong>Font Settings</strong> or hit the <strong>F</strong> key. You can pretty much choose whatever settings you like here.</p>
+<p><img alt="BMFont tool" src="../bmfont-font-settings.jpg" /></p>
+<p>Close that dialog and make sure all your desired characters are highlighted in white. </p>
+<p>Next click <strong>Options</strong> =&gt; <strong>Export Options</strong> or hit the <strong>T</strong> key. The important thing here is setting the file format to <strong>XML</strong> and getting the texture width and height right. It's preferable to fit the entire font on a single texture (although not required) and it can sometimes take a little tweaking.</p>
+<p>I also recommend using <strong>PNG</strong> textures, <strong>32 bit depth</strong> and the <strong>White text with alpha</strong> preset, but it's up to you. Play around with the settings for different effects.</p>
+<p><img alt="BMFont tool" src="../bmfont-export-options.jpg" /></p>
+<p>Once you're done with the settings you can click <strong>Options</strong> =&gt; <strong>Visualize</strong> or hit the <strong>V</strong> key to see a preview of how the texture will be packed.</p>
+<p>Finally, click <strong>Options</strong> -&gt; <strong>Save bitmap font as</strong> or hit <strong>Ctrl+S</strong> to export the font file. The textures will also be saved at this location, you'll need to add both of these to your game's content.  </p>
+<h2 id="building-the-font-file-with-the-monogame-pipeline">Building the font file with the MonoGame Pipeline</h2>
+<p>We need to load the font file into the game, but first we need to add a reference to the <code>MonoGame.Extended.Content.Pipleine.dll</code> that comes with an importer and processor for BMFont files.  </p>
+<p><img alt="Reference MonoGame.Extended Pipeline DLL" src="../pipeline-add-references.png" /></p>
+<p>Once the reference is added, you can add the font file and texture to the content. If all goes well, the importer and processor should be selected automatically.</p>
+<p><img alt="MonoGame.Extended BMFont importer" src="../monogame-extended-bmfont-importer-processor.png" /></p>
+<p>Don't forget to <strong>Rebuild</strong> your content.</p>
+<h2 id="rendering-text-in-your-game">Rendering text in your game</h2>
+<p>If you've referenced the <code>MonoGame.Extended.dll</code> from your game project the code is pretty straightforward.</p>
+<p>First load the font into an instance of a <code>BitmapFont</code> variable.</p>
+<pre><code>_bitmapFont = Content.Load&lt;BitmapFont&gt;("my-font");
+</code></pre>
+<p>Then in your <code>Draw</code> method use the <code>DrawString</code> extension method to render some text much like you would with a traditional <code>SpriteFont</code>.</p>
+<pre><code>_spriteBatch.Begin();
+_spriteBatch.DrawString(_bitmapFont, "Hello World", new Vector2(50, 50), Color.Red);
+_spriteBatch.DrawString(_bitmapFont, 
+    "Contrary to popular belief, Lorem Ipsum is not simply random text.\n\n" + 
+    "It has roots in a piece of classical Latin literature from 45 BC, " + 
+    "making it over 2000 years old. Richard McClintock, a Latin professor" + 
+    " at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin " + 
+    "words, consectetur, from a Lorem Ipsum passage, and going through the cites of " + 
+    "the word in classical literature, discovered the undoubtable source.", 
+    new Vector2(50, 100), new Color(Color.White, 0.5f), _viewportAdapter.VirtualWidth - 50);
+_spriteBatch.End();
+</code></pre>
+<p>And observe the result! :)</p>
+<p><img alt="MonoGame.Extended Bitmap Fonts" src="../monogame-extended-bitmap-fonts.png" /></p>
+<p>Happy coding! :)</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script><div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/",
-            "text": "Welcome\n\n\nWelcome to the documentation for \nMonoGame.Extended\n, a collection of NuGet packages that make \nMonoGame\n more awesome.\n\n\nWe're only just getting started building this documentation. If you're not finding what you're looking for we've got a number of other places to get help.\n\n\n\n\nWe've got a live chatroom on \ngitter\n\n\nWe've got our own section on the \nMonoGame Community Forums\n\n\nDevelopment is usually discussed in \ngithub issues\n\n\nWe've even got a \ntag on stackoverflow\n ;)\n\n\n\n\nInitially the plan is to port over the relevant pages from the wiki. Over time, this should become the place to be for those with the need to read.\n\n\nGetting Started\n\n\n\n\nInstallation",
+            "text": "Welcome\n\n\nWelcome to the documentation for \nMonoGame.Extended\n, a collection of NuGet packages that make \nMonoGame\n more awesome.\n\n\nWe're only just getting started building this documentation. If you're not finding what you're looking for we've got a number of other places to get help.\n\n\n\n\nWe've got a live chatroom on \ngitter\n\n\nWe've got our own section on the \nMonoGame Community Forums\n\n\nDevelopment is usually discussed in \ngithub issues\n\n\nWe've even got a \ntag on stackoverflow\n ;)\n\n\n\n\nInitially the plan is to port over the relevant pages from the wiki. Over time, this should become the place to be for those with the need to read.\n\n\nGetting Started\n\n\n\n\nInstallation\n\n\n\n\nPackages\n\n\nCore\n\n\nThe \nMonoGame.Extended\n core library contains common classes and interfaces the other MonoGame.Extended libraries reference.\n\n\nBy itself, it creates a solid foundation with sprites, \nbitmap fonts\n, collections, serialization, shapes, texture atlases, viewport adapters, cameras, timers, math and diagnostics.\n\n\nAnimations\n\n\nThe \nMonoGame.Extended.Animations\n library contains classes useful for 2D sprite sheet animations.\n\n\nCollisions\n\n\nThe \nMonoGame.Extended.Collisions\n library contains a 2D grid based collision system.\n\n\nContent.Pipeline\n\n\nThe \nMonoGame.Extended.Content.Pipeline\n library extends the \nMonoGame Content Pipeline tool\n. This adds Animations, BitmapFonts, TextureAtlases, and Tiled maps to the Content Pipeline tool.\n\n\nEntities\n\n\nThe \nMonoGame.Extended.Entities\n library adds an \nEntity Component System\n (ECS) to MonoGame.\n\n\nGraphics\n\n\nThe \nMonoGame.Extended.Graphics\n library contains extensions useful for generating dynamic geometry and batching draw calls.\n\n\nGui\n\n\nThe \nMonoGame.Extended.Gui\n library contains a complete GUI system.  It includes Buttons, Text Boxes, Dialogs and many other controls, and is skinnable.\n\n\nInput\n\n\nThe \nMonoGame.Extended.Input\n library contains input listener classes that have events you can use to subscribe to input events, instead of having to poll for input changes.\n\n\nNuclexGui\n\n\nThe \nMonoGame.Extended.NuclexGui\n library contains an implementation of the \nNuclex GUI Framework\n for XNA, ported to MonoGame.\n\n\nParticles\n\n\nThe \nMonoGame.Extended.Particles\n library contains a high performance Particle System ported from the \nMercury Particle Engine\n.\n\n\nSceneGraphs\n\n\nThe \nMonoGame.Extended.SceneGraphs\n library contains a scene graph (tree) system.\n\n\nTiled\n\n\nThe \nMonoGame.Extended.Tiled\n library loads and renders maps created with the popular \nTiled Map Editor\n.\n\n\nTweening\n\n\nThe \nMonoGame.Extended.Tweening\n library contains class extensions for tween based animations.",
             "title": "Home"
         },
         {
@@ -14,6 +14,76 @@
             "location": "/#getting-started",
             "text": "Installation",
             "title": "Getting Started"
+        },
+        {
+            "location": "/#packages",
+            "text": "",
+            "title": "Packages"
+        },
+        {
+            "location": "/#core",
+            "text": "The  MonoGame.Extended  core library contains common classes and interfaces the other MonoGame.Extended libraries reference.  By itself, it creates a solid foundation with sprites,  bitmap fonts , collections, serialization, shapes, texture atlases, viewport adapters, cameras, timers, math and diagnostics.",
+            "title": "Core"
+        },
+        {
+            "location": "/#animations",
+            "text": "The  MonoGame.Extended.Animations  library contains classes useful for 2D sprite sheet animations.",
+            "title": "Animations"
+        },
+        {
+            "location": "/#collisions",
+            "text": "The  MonoGame.Extended.Collisions  library contains a 2D grid based collision system.",
+            "title": "Collisions"
+        },
+        {
+            "location": "/#contentpipeline",
+            "text": "The  MonoGame.Extended.Content.Pipeline  library extends the  MonoGame Content Pipeline tool . This adds Animations, BitmapFonts, TextureAtlases, and Tiled maps to the Content Pipeline tool.",
+            "title": "Content.Pipeline"
+        },
+        {
+            "location": "/#entities",
+            "text": "The  MonoGame.Extended.Entities  library adds an  Entity Component System  (ECS) to MonoGame.",
+            "title": "Entities"
+        },
+        {
+            "location": "/#graphics",
+            "text": "The  MonoGame.Extended.Graphics  library contains extensions useful for generating dynamic geometry and batching draw calls.",
+            "title": "Graphics"
+        },
+        {
+            "location": "/#gui",
+            "text": "The  MonoGame.Extended.Gui  library contains a complete GUI system.  It includes Buttons, Text Boxes, Dialogs and many other controls, and is skinnable.",
+            "title": "Gui"
+        },
+        {
+            "location": "/#input",
+            "text": "The  MonoGame.Extended.Input  library contains input listener classes that have events you can use to subscribe to input events, instead of having to poll for input changes.",
+            "title": "Input"
+        },
+        {
+            "location": "/#nuclexgui",
+            "text": "The  MonoGame.Extended.NuclexGui  library contains an implementation of the  Nuclex GUI Framework  for XNA, ported to MonoGame.",
+            "title": "NuclexGui"
+        },
+        {
+            "location": "/#particles",
+            "text": "The  MonoGame.Extended.Particles  library contains a high performance Particle System ported from the  Mercury Particle Engine .",
+            "title": "Particles"
+        },
+        {
+            "location": "/#scenegraphs",
+            "text": "The  MonoGame.Extended.SceneGraphs  library contains a scene graph (tree) system.",
+            "title": "SceneGraphs"
+        },
+        {
+            "location": "/#tiled",
+            "text": "The  MonoGame.Extended.Tiled  library loads and renders maps created with the popular  Tiled Map Editor .",
+            "title": "Tiled"
+        },
+        {
+            "location": "/#tweening",
+            "text": "The  MonoGame.Extended.Tweening  library contains class extensions for tween based animations.",
+            "title": "Tweening"
         },
         {
             "location": "/installation/",
@@ -39,6 +109,31 @@
             "location": "/installation/#using-a-text-editor",
             "text": "An alternative way to add the reference is by manually editing the  Content.mgcb  file in a text editor or Visual Studio. Look for the references section and update it like this:  #-------------------------------- References --------------------------------#\n\n/reference:..\\..\\packages\\MonoGame.Extended.Content.Pipeline.0.6.372\\tools\\MonoGame.Extended.Content.Pipeline.dll  Remember:  The  MonoGame.Extended.dll  and the  MonoGame.Extended.Content.Pipeline.dll  come as a pair. Always make sure the version referenced by your game matches the version referenced by the Pipeline tool.  That's it! Once you've referenced the library you can start using it to make your games even more awesome.",
             "title": "Using a text editor"
+        },
+        {
+            "location": "/MonoGame.Extended/BitmapFonts/",
+            "text": "Bitmap Fonts\n\n\nBitmaps fonts generated with the \nBMFont\n tool are a great alternative to using the built in \nSpriteFont\n in MonoGame. There are a couple of reasons you might want to do this, either \nSpriteFont\n's are not working out for you or you want to have more control over the fonts in your game.\n\n\nThe \nBitmapFont\n class in \nMonoGame.Extended\n is designed to be a drop in replacement for the \nSpriteFont\n class as much as possible. The goal is to take a \n.fnt\n file and texture generated with the BMFont tool and load it into our game just like any other content. \n\n\n_bitmapFont = Content.Load<BitmapFont>(\"my-font\");\n\n\n\nThen render some text just like any other string.\n\n\n_spriteBatch.Begin();\n_spriteBatch.DrawString(_bitmapFont, \"Hello World\", new Vector2(100, 200), Color.Red);\n_spriteBatch.End();\n\n\n\nBut before we can do that, we'll need to generate our bitmap font file.\n\n\nGenerating the font file with BMFont\n\n\nIf you haven\u2019t already done so, download and install the \nBMFont\n tool. \n\n\n\n\nThe main window of BMFont displays all of the characters of the font. You'll need to click and drag over the characters to highlight them in white, these are the characters that will be saved to the exported texture. Typically you will take all of the top half and ignore the bottom half, although, you may only want to take a smaller subset to reduce texture size requirements.\n\n\nTo choose a font click \nOptions\n => \nFont Settings\n or hit the \nF\n key. You can pretty much choose whatever settings you like here.\n\n\n\n\nClose that dialog and make sure all your desired characters are highlighted in white. \n\n\nNext click \nOptions\n => \nExport Options\n or hit the \nT\n key. The important thing here is setting the file format to \nXML\n and getting the texture width and height right. It's preferable to fit the entire font on a single texture (although not required) and it can sometimes take a little tweaking.\n\n\nI also recommend using \nPNG\n textures, \n32 bit depth\n and the \nWhite text with alpha\n preset, but it's up to you. Play around with the settings for different effects.\n\n\n\n\nOnce you're done with the settings you can click \nOptions\n => \nVisualize\n or hit the \nV\n key to see a preview of how the texture will be packed.\n\n\nFinally, click \nOptions\n -> \nSave bitmap font as\n or hit \nCtrl+S\n to export the font file. The textures will also be saved at this location, you'll need to add both of these to your game's content.  \n\n\nBuilding the font file with the MonoGame Pipeline\n\n\nWe need to load the font file into the game, but first we need to add a reference to the \nMonoGame.Extended.Content.Pipleine.dll\n that comes with an importer and processor for BMFont files.  \n\n\n\n\nOnce the reference is added, you can add the font file and texture to the content. If all goes well, the importer and processor should be selected automatically.\n\n\n\n\nDon't forget to \nRebuild\n your content.\n\n\nRendering text in your game\n\n\nIf you've referenced the \nMonoGame.Extended.dll\n from your game project the code is pretty straightforward.\n\n\nFirst load the font into an instance of a \nBitmapFont\n variable.\n\n\n_bitmapFont = Content.Load<BitmapFont>(\"my-font\");\n\n\n\nThen in your \nDraw\n method use the \nDrawString\n extension method to render some text much like you would with a traditional \nSpriteFont\n.\n\n\n_spriteBatch.Begin();\n_spriteBatch.DrawString(_bitmapFont, \"Hello World\", new Vector2(50, 50), Color.Red);\n_spriteBatch.DrawString(_bitmapFont, \n    \"Contrary to popular belief, Lorem Ipsum is not simply random text.\\n\\n\" + \n    \"It has roots in a piece of classical Latin literature from 45 BC, \" + \n    \"making it over 2000 years old. Richard McClintock, a Latin professor\" + \n    \" at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin \" + \n    \"words, consectetur, from a Lorem Ipsum passage, and going through the cites of \" + \n    \"the word in classical literature, discovered the undoubtable source.\", \n    new Vector2(50, 100), new Color(Color.White, 0.5f), _viewportAdapter.VirtualWidth - 50);\n_spriteBatch.End();\n\n\n\nAnd observe the result! :)\n\n\n\n\nHappy coding! :)",
+            "title": "BitmapFonts"
+        },
+        {
+            "location": "/MonoGame.Extended/BitmapFonts/#bitmap-fonts",
+            "text": "Bitmaps fonts generated with the  BMFont  tool are a great alternative to using the built in  SpriteFont  in MonoGame. There are a couple of reasons you might want to do this, either  SpriteFont 's are not working out for you or you want to have more control over the fonts in your game.  The  BitmapFont  class in  MonoGame.Extended  is designed to be a drop in replacement for the  SpriteFont  class as much as possible. The goal is to take a  .fnt  file and texture generated with the BMFont tool and load it into our game just like any other content.   _bitmapFont = Content.Load<BitmapFont>(\"my-font\");  Then render some text just like any other string.  _spriteBatch.Begin();\n_spriteBatch.DrawString(_bitmapFont, \"Hello World\", new Vector2(100, 200), Color.Red);\n_spriteBatch.End();  But before we can do that, we'll need to generate our bitmap font file.",
+            "title": "Bitmap Fonts"
+        },
+        {
+            "location": "/MonoGame.Extended/BitmapFonts/#generating-the-font-file-with-bmfont",
+            "text": "If you haven\u2019t already done so, download and install the  BMFont  tool.    The main window of BMFont displays all of the characters of the font. You'll need to click and drag over the characters to highlight them in white, these are the characters that will be saved to the exported texture. Typically you will take all of the top half and ignore the bottom half, although, you may only want to take a smaller subset to reduce texture size requirements.  To choose a font click  Options  =>  Font Settings  or hit the  F  key. You can pretty much choose whatever settings you like here.   Close that dialog and make sure all your desired characters are highlighted in white.   Next click  Options  =>  Export Options  or hit the  T  key. The important thing here is setting the file format to  XML  and getting the texture width and height right. It's preferable to fit the entire font on a single texture (although not required) and it can sometimes take a little tweaking.  I also recommend using  PNG  textures,  32 bit depth  and the  White text with alpha  preset, but it's up to you. Play around with the settings for different effects.   Once you're done with the settings you can click  Options  =>  Visualize  or hit the  V  key to see a preview of how the texture will be packed.  Finally, click  Options  ->  Save bitmap font as  or hit  Ctrl+S  to export the font file. The textures will also be saved at this location, you'll need to add both of these to your game's content.",
+            "title": "Generating the font file with BMFont"
+        },
+        {
+            "location": "/MonoGame.Extended/BitmapFonts/#building-the-font-file-with-the-monogame-pipeline",
+            "text": "We need to load the font file into the game, but first we need to add a reference to the  MonoGame.Extended.Content.Pipleine.dll  that comes with an importer and processor for BMFont files.     Once the reference is added, you can add the font file and texture to the content. If all goes well, the importer and processor should be selected automatically.   Don't forget to  Rebuild  your content.",
+            "title": "Building the font file with the MonoGame Pipeline"
+        },
+        {
+            "location": "/MonoGame.Extended/BitmapFonts/#rendering-text-in-your-game",
+            "text": "If you've referenced the  MonoGame.Extended.dll  from your game project the code is pretty straightforward.  First load the font into an instance of a  BitmapFont  variable.  _bitmapFont = Content.Load<BitmapFont>(\"my-font\");  Then in your  Draw  method use the  DrawString  extension method to render some text much like you would with a traditional  SpriteFont .  _spriteBatch.Begin();\n_spriteBatch.DrawString(_bitmapFont, \"Hello World\", new Vector2(50, 50), Color.Red);\n_spriteBatch.DrawString(_bitmapFont, \n    \"Contrary to popular belief, Lorem Ipsum is not simply random text.\\n\\n\" + \n    \"It has roots in a piece of classical Latin literature from 45 BC, \" + \n    \"making it over 2000 years old. Richard McClintock, a Latin professor\" + \n    \" at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin \" + \n    \"words, consectetur, from a Lorem Ipsum passage, and going through the cites of \" + \n    \"the word in classical literature, discovered the undoubtable source.\", \n    new Vector2(50, 100), new Color(Color.White, 0.5f), _viewportAdapter.VirtualWidth - 50);\n_spriteBatch.End();  And observe the result! :)   Happy coding! :)",
+            "title": "Rendering text in your game"
         }
     ]
 }

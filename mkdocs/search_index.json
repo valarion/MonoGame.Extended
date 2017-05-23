@@ -134,6 +134,56 @@
             "location": "/MonoGame.Extended/BitmapFonts/#rendering-text-in-your-game",
             "text": "If you've referenced the  MonoGame.Extended.dll  from your game project the code is pretty straightforward.  First load the font into an instance of a  BitmapFont  variable.  _bitmapFont = Content.Load<BitmapFont>(\"my-font\");  Then in your  Draw  method use the  DrawString  extension method to render some text much like you would with a traditional  SpriteFont .  _spriteBatch.Begin();\n_spriteBatch.DrawString(_bitmapFont, \"Hello World\", new Vector2(50, 50), Color.Red);\n_spriteBatch.DrawString(_bitmapFont, \n    \"Contrary to popular belief, Lorem Ipsum is not simply random text.\\n\\n\" + \n    \"It has roots in a piece of classical Latin literature from 45 BC, \" + \n    \"making it over 2000 years old. Richard McClintock, a Latin professor\" + \n    \" at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin \" + \n    \"words, consectetur, from a Lorem Ipsum passage, and going through the cites of \" + \n    \"the word in classical literature, discovered the undoubtable source.\", \n    new Vector2(50, 100), new Color(Color.White, 0.5f), _viewportAdapter.VirtualWidth - 50);\n_spriteBatch.End();  And observe the result! :)   Happy coding! :)",
             "title": "Rendering text in your game"
+        },
+        {
+            "location": "/MonoGame.Extended/Collections/",
+            "text": "Collections\n\n\nCollections are extensions to the C# collections that are useful for game programming.\n\n\nBag\n\n\nA \nBag\n is an un-ordered array of items with fast Add and Remove properties.\n\n\nIt is much faster than an array when removing items, and takes less space than a linked list.\n\n\nBag will resize itself only when it needs to.\n\n\nvar bag = new Bag<int>(3);\nbag.Add(4);\nbag.Add(8);\nbag.Add(15);\n// bag is now [4, 8, 15]\n\nbag.Add(16); // array is extended here, capacity is now 4 instead of 3\n\nbag.Remove(1);\n// bag is now [4, 16, 15] with a capacity of 4\n\n\n\n\nBitVector32\n\n\nThe \nBitVector32\n class provides easy access to 32 individual bit flags.\n\n\nDeque\n\n\nRepresents a collection of objects which elements can added to or removed either from the front or back; a\n\ndouble ended queue\n.\n\n\nDictionaryExtensions\n\n\nExtends all \nDictionary<>\n classes with \nGetValueOrDefault(key, default)\n.\n\n\nKeyedCollection\n\n\nA KeyedCollection is used like a \nDictionary<>\n, except you provide a function that takes a value and return's it's key.\n\n\nListExtensions\n\n\nAdds \nShuffle(Random)\n to all \nIList<>\n classes.\n\n\nObjectPool\n\n\nAn \nObjectPool<T>\n allows reuse of memory for a group of items to avoid Garbage Collection.\n\n\nObservableCollection\n\n\nAn \nObservableCollection<T>\n manages an \nIList<T>\n of items firing \nItemAdded\n, \nItemRemoved\n, \nClearing\n and \nCleared\n events when the collection is changed.",
+            "title": "Collections"
+        },
+        {
+            "location": "/MonoGame.Extended/Collections/#collections",
+            "text": "Collections are extensions to the C# collections that are useful for game programming.",
+            "title": "Collections"
+        },
+        {
+            "location": "/MonoGame.Extended/Collections/#bag",
+            "text": "A  Bag  is an un-ordered array of items with fast Add and Remove properties.  It is much faster than an array when removing items, and takes less space than a linked list.  Bag will resize itself only when it needs to.  var bag = new Bag<int>(3);\nbag.Add(4);\nbag.Add(8);\nbag.Add(15);\n// bag is now [4, 8, 15]\n\nbag.Add(16); // array is extended here, capacity is now 4 instead of 3\n\nbag.Remove(1);\n// bag is now [4, 16, 15] with a capacity of 4",
+            "title": "Bag"
+        },
+        {
+            "location": "/MonoGame.Extended/Collections/#bitvector32",
+            "text": "The  BitVector32  class provides easy access to 32 individual bit flags.",
+            "title": "BitVector32"
+        },
+        {
+            "location": "/MonoGame.Extended/Collections/#deque",
+            "text": "Represents a collection of objects which elements can added to or removed either from the front or back; a double ended queue .",
+            "title": "Deque"
+        },
+        {
+            "location": "/MonoGame.Extended/Collections/#dictionaryextensions",
+            "text": "Extends all  Dictionary<>  classes with  GetValueOrDefault(key, default) .",
+            "title": "DictionaryExtensions"
+        },
+        {
+            "location": "/MonoGame.Extended/Collections/#keyedcollection",
+            "text": "A KeyedCollection is used like a  Dictionary<> , except you provide a function that takes a value and return's it's key.",
+            "title": "KeyedCollection"
+        },
+        {
+            "location": "/MonoGame.Extended/Collections/#listextensions",
+            "text": "Adds  Shuffle(Random)  to all  IList<>  classes.",
+            "title": "ListExtensions"
+        },
+        {
+            "location": "/MonoGame.Extended/Collections/#objectpool",
+            "text": "An  ObjectPool<T>  allows reuse of memory for a group of items to avoid Garbage Collection.",
+            "title": "ObjectPool"
+        },
+        {
+            "location": "/MonoGame.Extended/Collections/#observablecollection",
+            "text": "An  ObservableCollection<T>  manages an  IList<T>  of items firing  ItemAdded ,  ItemRemoved ,  Clearing  and  Cleared  events when the collection is changed.",
+            "title": "ObservableCollection"
         }
     ]
 }

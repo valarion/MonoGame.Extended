@@ -25,6 +25,12 @@
      <changefreq>daily</changefreq>
     </url>
         
+    <url>
+     <loc>/MonoGame.Extended/Collections/</loc>
+     <lastmod>2017-05-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
     
 
 </urlset>

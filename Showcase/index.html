@@ -7,21 +7,21 @@
         
         
         
-        <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Collections - MonoGame.Extended</title>
-        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
-        <link href="../../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="../../css/highlight.css">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Showcase - MonoGame.Extended</title>
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
             <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
         <![endif]-->
 	
-	<script src="../../js/jquery-1.10.2.min.js"></script>
-        <script src="../../js/bootstrap-3.0.3.min.js"></script>
-        <script src="../../js/highlight.pack.js"></script> 
+	<script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/highlight.pack.js"></script> 
     </head>
 
     <body>
@@ -38,7 +38,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="../..">MonoGame.Extended</a>
+            <a class="navbar-brand" href="..">MonoGame.Extended</a>
         </div>
 
         <!-- Expanded navigation -->
@@ -46,30 +46,30 @@
                 <!-- Main navigation -->
                 <ul class="nav navbar-nav">
                     <li >
-                        <a href="../..">Home</a>
+                        <a href="..">Home</a>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Installation <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             
 <li >
-    <a href="../../installation/">NuGet</a>
+    <a href="../installation/">NuGet</a>
 </li>
                             
 <li >
-    <a href="../../NuGet-Pre-Release/">NuGet Pre-Release</a>
+    <a href="../NuGet-Pre-Release/">NuGet Pre-Release</a>
 </li>
                             
 <li >
-    <a href="../../Building-from-Source/">Building from Source</a>
+    <a href="../Building-from-Source/">Building from Source</a>
 </li>
                             
 <li >
-    <a href="../../Build-MonoGame-PCL/">Building the MonoGame PCL</a>
+    <a href="../Build-MonoGame-PCL/">Building the MonoGame PCL</a>
 </li>
                         </ul>
                     </li>
-                    <li class="dropdown active">
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Docs <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             
@@ -78,23 +78,23 @@
     <ul class="dropdown-menu">
             
 <li >
-    <a href="../BitmapFonts/">BitmapFonts</a>
+    <a href="../MonoGame.Extended/BitmapFonts/">BitmapFonts</a>
 </li>
             
 <li >
-    <a href="../Camera2D/">Camera2D</a>
-</li>
-            
-<li class="active">
-    <a href="./">Collections</a>
+    <a href="../MonoGame.Extended/Camera2D/">Camera2D</a>
 </li>
             
 <li >
-    <a href="../Object-Pooling/">Object Pooling</a>
+    <a href="../MonoGame.Extended/Collections/">Collections</a>
 </li>
             
 <li >
-    <a href="../Screens/">Screens</a>
+    <a href="../MonoGame.Extended/Object-Pooling/">Object Pooling</a>
+</li>
+            
+<li >
+    <a href="../MonoGame.Extended/Screens/">Screens</a>
 </li>
     </ul>
   </li>
@@ -104,17 +104,17 @@
     <ul class="dropdown-menu">
             
 <li >
-    <a href="../../MonoGame.Extended.Animation/Animated-Sprites/">Animated Sprites</a>
+    <a href="../MonoGame.Extended.Animation/Animated-Sprites/">Animated Sprites</a>
 </li>
     </ul>
   </li>
                         </ul>
                     </li>
                     <li >
-                        <a href="../../Community-and-Support/">Support</a>
+                        <a href="../Community-and-Support/">Support</a>
                     </li>
-                    <li >
-                        <a href="../../Showcase/">Showcase</a>
+                    <li class="active">
+                        <a href="./">Showcase</a>
                     </li>
                 </ul>
 
@@ -125,12 +125,12 @@
                     </a>
                 </li>
                     <li >
-                        <a rel="next" href="../Camera2D/">
+                        <a rel="next" href="../Community-and-Support/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
-                    <li >
-                        <a rel="prev" href="../Object-Pooling/">
+                    <li class="disabled">
+                        <a rel="prev" >
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -147,62 +147,38 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#collections">Collections</a></li>
-            <li><a href="#bag">Bag</a></li>
-            <li><a href="#bitvector32">BitVector32</a></li>
-            <li><a href="#deque">Deque</a></li>
-            <li><a href="#dictionaryextensions">DictionaryExtensions</a></li>
-            <li><a href="#keyedcollection">KeyedCollection</a></li>
-            <li><a href="#listextensions">ListExtensions</a></li>
-            <li><a href="#object-pooling">Object Pooling</a></li>
-            <li><a href="#observablecollection">ObservableCollection</a></li>
+        <li class="main active"><a href="#showcase">Showcase</a></li>
+            <li><a href="#super-pete-the-pirate">Super Pete the Pirate</a></li>
+            <li><a href="#winter-defense">Winter Defense</a></li>
+            <li><a href="#the-attack-of-goop">The Attack of Goop</a></li>
+            <li><a href="#tiles">Tiles</a></li>
+            <li><a href="#monogame-engines-frameworks-more">MonoGame - Engines, Frameworks &amp; More</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="collections">Collections</h1>
-<p>Collections are extensions to the C# collections that are useful for game programming.</p>
-<h2 id="bag">Bag</h2>
-<p>A <code>Bag</code> is an un-ordered array of items with fast Add and Remove properties.</p>
-<p>It is much faster than an array when removing items, and takes less space than a linked list.</p>
-<p>Bag will resize itself only when it needs to.</p>
-<pre><code class="C#">var bag = new Bag&lt;int&gt;(3);
-bag.Add(4);
-bag.Add(8);
-bag.Add(15);
-// bag is now [4, 8, 15]
-
-bag.Add(16); // array is extended here, capacity is now 4 instead of 3
-
-bag.Remove(1);
-// bag is now [4, 16, 15] with a capacity of 4
-</code></pre>
-
-<h2 id="bitvector32">BitVector32</h2>
-<p>The <code>BitVector32</code> class provides easy access to 32 individual bit flags.</p>
-<h2 id="deque">Deque</h2>
-<p>Represents a collection of objects which elements can added to or removed either from the front or back; a
-<a href="https://en.wikipedia.org/wiki/Double-ended_queue">double ended queue</a>.</p>
-<h2 id="dictionaryextensions">DictionaryExtensions</h2>
-<p>Extends all <code>Dictionary&lt;&gt;</code> classes with <code>GetValueOrDefault(key, default)</code>.</p>
-<h2 id="keyedcollection">KeyedCollection</h2>
-<p>A KeyedCollection is used like a <code>Dictionary&lt;&gt;</code>, except you provide a function that takes a value and return's it's key.</p>
-<h2 id="listextensions">ListExtensions</h2>
-<p>Adds <code>Shuffle(Random)</code> to all <code>IList&lt;&gt;</code> classes.</p>
-<h2 id="object-pooling"><a href="../Object-Pooling/">Object Pooling</a></h2>
-<p>An <code>ObjectPool&lt;T&gt;</code> allows reuse of memory for a group of items to avoid Garbage Collection.
-More information is in the <a href="../Object-Pooling/">Object Pooling</a> documentation.</p>
-<h2 id="observablecollection">ObservableCollection</h2>
-<p>An <code>ObservableCollection&lt;T&gt;</code> manages an <code>IList&lt;T&gt;</code> of items firing <code>ItemAdded</code>, <code>ItemRemoved</code>, <code>Clearing</code> and <code>Cleared</code> events when the collection is changed.</p></div>
+<h1 id="showcase">Showcase</h1>
+<h2 id="super-pete-the-pirate"><a href="http://community.monogame.net/t/super-pete-the-pirate/8537">Super Pete the Pirate</a></h2>
+<p><a href="https://www.youtube.com/watch?v=bf1jcjTle6A"><img alt="Super Pete the Pirate" src="http://community.monogame.net/uploads/default/optimized/2X/b/be722c768e02881aa36c9f01f8225771aec19c3c_1_690x460.png" /></a></p>
+<p>In the game you control Pete, a captain that is in your adventure at the sea. In the middle of the travel, his ship is looted by other pirates inside a dense mist. They take a very important thing to Pete: his hat. Pete is put on the board and is expelled from his ship. After the mist, Pete reaches a coast and decides to explore it, but something happens: he found the pirates that are with his hat! Now Pete want to recover his hat no matter what happens.</p>
+<p>Watch the <a href="https://www.youtube.com/watch?v=bf1jcjTle6A">gameplay video</a>.</p>
+<h2 id="winter-defense"><a href="https://www.youtube.com/watch?v=13CJ6jiPTQs&amp;feature=youtu.be">Winter Defense</a></h2>
+<p>In this game you control a penguin that must save the winter crystal, which is being attacked by creatures that want to destroy it. The game was built in C# using MonoGame to a game jam.</p>
+<h2 id="the-attack-of-goop"><a href="https://www.youtube.com/watch?v=n5-0MEDyu7k">The Attack of Goop</a></h2>
+<p>Game created to the Kolks Game Jam, made with MonoGame.</p>
+<h2 id="tiles"><a href="http://store.steampowered.com/app/594750/">Tiles</a></h2>
+<p>Tiles is a unique action-puzzle game that will both convolute your mind and burn your finger tips!</p>
+<h2 id="monogame-engines-frameworks-more"><a href="https://www.youtube.com/watch?v=TFriP9z9qKQ">MonoGame - Engines, Frameworks &amp; More</a></h2>
+<p>DDReaper talks about the framework in his youtube video around the 10 minute mark.</p></div>
         </div>
 
         <footer class="col-md-12">
             <hr>
             <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
-        <script>var base_url = '../..';</script>
-        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
-        <script src="../../js/base.js"></script><div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+        <script>var base_url = '..';</script>
+        <script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script>
+        <script src="../js/base.js"></script><div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">

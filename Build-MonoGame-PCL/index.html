@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>NuGet - MonoGame.Extended</title>
+        <title>Building the MonoGame PCL - MonoGame.Extended</title>
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -52,8 +52,8 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Installation <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             
-<li class="active">
-    <a href="./">NuGet</a>
+<li >
+    <a href="../installation/">NuGet</a>
 </li>
                             
 <li >
@@ -64,8 +64,8 @@
     <a href="../Building-from-Source/">Building from Source</a>
 </li>
                             
-<li >
-    <a href="../Build-MonoGame-PCL/">Building the MonoGame PCL</a>
+<li class="active">
+    <a href="./">Building the MonoGame PCL</a>
 </li>
                         </ul>
                     </li>
@@ -125,12 +125,12 @@
                     </a>
                 </li>
                     <li >
-                        <a rel="next" href="..">
+                        <a rel="next" href="../Building-from-Source/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../NuGet-Pre-Release/">
+                        <a rel="prev" href="../MonoGame.Extended/BitmapFonts/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -147,41 +147,34 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#installation">Installation</a></li>
-            <li><a href="#referencing-the-content-pipeline-extension">Referencing the Content Pipeline extension</a></li>
+        <li class="main active"><a href="#building-the-monogame-pcl">Building the MonoGame PCL</a></li>
+            <li><a href="#install-tools">Install Tools</a></li>
+            <li><a href="#get-monogame-source">Get MonoGame Source</a></li>
+            <li><a href="#build-monogame">Build MonoGame</a></li>
+            <li><a href="#piranha-binary-into-pcl">"Piranha" Binary into PCL</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="installation">Installation</h1>
-<p>MonoGame.Extended is a collection of <a href="https://msdn.microsoft.com/en-us/library/gg597391">portable class libraries</a> (PCL) designed to be referenced from any MonoGame project to add common extensions and classes for making your games more awesome.</p>
-<p>The libraries are distributed as <a href="https://www.nuget.org/packages?q=MonoGame.Extended">NuGet packages</a> and can be installed using the NuGet Package Manager in <a href="https://www.visualstudio.com">Visual Studio</a>, <a href="https://xamarin.com/studio">Xamarin Studio</a>, or <a href="http://www.monodevelop.com">MonoDevelop</a>. They can also be installed by running the following command (or the equivilant command for the package you want to install) in the <a href="http://docs.nuget.org/consume/package-manager-console">Package Manager Console</a>.</p>
-<pre><code>Install-Package MonoGame.Extended
-</code></pre>
-<p>Note that <a href="http://www.monogame.net/downloads/">MonoGame 3.6 will need to be installed</a> to properly use MonoGame.Extended in your game project.</p>
-<h2 id="referencing-the-content-pipeline-extension">Referencing the Content Pipeline extension</h2>
-<p>To get the full experience you'll also want to install the Content Pipeline extension:</p>
-<pre><code>Install-Package MonoGame.Extended.Content.Pipeline
-</code></pre>
-<p>This package won't add any references to your project. Instead it will download a DLL that's intended to be referenced from the <a href="http://www.monogame.net/documentation/?page=Pipeline">MonoGame Content Pipeline tool</a>.</p>
-<p>You'll need to manually add the reference to your content file (usually <code>Content.mgcb</code>) using one of the following methods.</p>
-<h3 id="using-the-monogame-pipeline-gui">Using the MonoGame Pipeline GUI</h3>
-<p>To add the reference using the Pipeline GUI tool follow these steps:</p>
-<ol>
-<li>Click on the <strong>Content</strong> node in the root of the tree.</li>
-<li>In the properties window, modify the <strong>References</strong> property.</li>
-<li>Find and add the <code>MonoGame.Extended.Content.Pipeline.dll</code>. It's usually located in the <strong>packages</strong> folder of your solution.</li>
-</ol>
-<p><img alt="MonoGame Pipeline Add References" src="https://dl.dropboxusercontent.com/u/82020056/MonoGame.Extended/how-to-add-content-pipeline-reference.png" /></p>
-<h3 id="using-a-text-editor">Using a text editor</h3>
-<p>An alternative way to add the reference is by manually editing the <code>Content.mgcb</code> file in a text editor or Visual Studio. Look for the references section and update it like this:</p>
-<pre><code>#-------------------------------- References --------------------------------#
-
-/reference:..\..\packages\MonoGame.Extended.Content.Pipeline.0.6.372\tools\MonoGame.Extended.Content.Pipeline.dll
-</code></pre>
-
-<p><strong>Remember:</strong> The <code>MonoGame.Extended.dll</code> and the <code>MonoGame.Extended.Content.Pipeline.dll</code> come as a pair. Always make sure the version referenced by your game matches the version referenced by the Pipeline tool.</p>
-<p>That's it! Once you've referenced the library you can start using it to make your games even more awesome.</p></div>
+<h1 id="building-the-monogame-pcl">Building the MonoGame PCL</h1>
+<p>This guide is about building the MonoGame <a href="https://msdn.microsoft.com/en-us/library/gg597391">Portable Class Library</a> (PCL) found in the <a href="https://github.com/craftworkgames/MonoGame.Extended/tree/develop/Dependencies">Dependencies folder</a> of the project.</p>
+<p><strong>Note</strong>: This is NOT a guide about building MonoGame.Extended from source. You won't need this guide unless you're trying to update the dependencies.</p>
+<p>One of the challenges with using MonoGame is getting your project set up so that you can separate platform-specific and platform-independent code. One way, which we are using with MonoGame.Extended is to compile against a PCL (<a href="https://msdn.microsoft.com/en-us/library/gg597391">Portable Class Library</a>). Instead of creating a platform specific binary of MonoGame.Extended for each platform, a cross-platform library is used and the platform specific code is substituted in later. A PCL is created through a certain set of tools such as <a href="https://www.visualstudio.com">Visual Studio</a> on Windows, <a href="https://xamarin.com/studio">Xamarin Studio</a> on Windows and Mac, or <a href="http://www.monodevelop.com">MonoDevelop</a> on Windows, Mac and Linux. Since PCLs are designed to be cross-platform they can be created with one toolchain and used through a different toolchain.</p>
+<p>With MonoGame, making a PCL isn't so easy since a large amount of platform-specific code is mixed in with other code, so you can't (at the moment) make a PCL of MonoGame directly. There are a few other issues as well, but I won't go into those. The solution to this is to use a tool to scrape all of the platform-specific implementation details from a specific MonoGame platform library. It doesn't really matter if it's the WindowsGL platform version that is used for this, but it's recommended.</p>
+<h2 id="install-tools">Install Tools</h2>
+<p>The first step in generating the PCL is to install the required tools. If you have Visual Studio, Xamarin Studio, you already have the tools. For Linux, you have to install the tools from Mono. To install Mono on a specific Linux distribution follow <a href="http://www.mono-project.com/docs/getting-started/install/linux/">their directions on the Mono website</a>. The important packages to install are <code>mono-complete</code>, which installs the complete mono runtime and development tools (including the tools in <code>mono-devel</code> if I remember correctly), and also the <code>referenceassemblies-pcl</code> package, which installs tools and references required for PCL generation and usage.</p>
+<h2 id="get-monogame-source">Get MonoGame Source</h2>
+<p>Next, clone down the copy of <a href="https://github.com/mono/MonoGame">MonoGame from GitHub</a> that you want to generate a PCL for. Remember that a PCL that is generated will probably only be usable with binaries made from that exact same commit. </p>
+<h2 id="build-monogame">Build MonoGame</h2>
+<p>After you have cloned the repository, follow the MonoGame build instructions and use Protobuild to generate the set of <code>.sln</code> files and <code>.csproj</code> files for your platform. Open up the solution, then compile it.</p>
+<h2 id="piranha-binary-into-pcl">"Piranha" Binary into PCL</h2>
+<p>Finally, you need a copy of @Ark-kun's <a href="https://github.com/Ark-kun/Piranha">Piranha tool, which "chews" binaries to make them into PCLs</a>. Download a copy of his repository from GitHub, then build it. Navigate to where Piranha is built and open up command prompt if you are on Windows (PROTIP: shift-right-click on the Explorer background and select "Open command window here"), or Terminal if you are on Mac or Linux (MAC USERS PROTIP: type "cd" into terminal then drag and drop the folder into the terminal window and hit return). Enter the following command where <code>PATH_TO_MONOGAME_FRAMEWORK_DLL</code> is the path to the target <code>MonoGame.Framework.dll</code>:</p>
+<p>Windows Users:
+<code>Piranha.exe make-portable-skeleton -p ".NETPortable,Version=v4.5,Profile=Profile111" -i "PATH_TO_MONOGAME_FRAMEWORK_DLL" -o MonoGame.Framework.dll</code></p>
+<p>Mac and Linux Users:
+<code>mono Piranha.exe make-portable-skeleton -p ".NETPortable,Version=v4.5,Profile=Profile111" -i "PATH_TO_MONOGAME_FRAMEWORK_DLL" -o MonoGame.Framework.dll</code></p>
+<p>Note that the .NET framework portable profile might need to be changed to match your project.</p>
+<p>Piranha should of completed successfully and generated a portable <code>MonoGame.Framework.dll</code>.</p></div>
         </div>
 
         <footer class="col-md-12">

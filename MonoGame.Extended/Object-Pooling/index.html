@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Collections - MonoGame.Extended</title>
+        <title>Object Pooling - MonoGame.Extended</title>
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -85,12 +85,12 @@
     <a href="../Camera2D/">Camera2D</a>
 </li>
             
-<li class="active">
-    <a href="./">Collections</a>
+<li >
+    <a href="../Collections/">Collections</a>
 </li>
             
-<li >
-    <a href="../Object-Pooling/">Object Pooling</a>
+<li class="active">
+    <a href="./">Object Pooling</a>
 </li>
             
 <li >
@@ -125,12 +125,12 @@
                     </a>
                 </li>
                     <li >
-                        <a rel="next" href="../Camera2D/">
+                        <a rel="next" href="../Collections/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../Object-Pooling/">
+                        <a rel="prev" href="../Screens/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -147,53 +147,70 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#collections">Collections</a></li>
-            <li><a href="#bag">Bag</a></li>
-            <li><a href="#bitvector32">BitVector32</a></li>
-            <li><a href="#deque">Deque</a></li>
-            <li><a href="#dictionaryextensions">DictionaryExtensions</a></li>
-            <li><a href="#keyedcollection">KeyedCollection</a></li>
-            <li><a href="#listextensions">ListExtensions</a></li>
-            <li><a href="#object-pooling">Object Pooling</a></li>
-            <li><a href="#observablecollection">ObservableCollection</a></li>
+        <li class="main active"><a href="#object-pooling">Object Pooling</a></li>
+        <li class="main "><a href="#important">IMPORTANT</a></li>
+        <li class="main "><a href="#creating-a-pool-able-object">Creating a Pool-able Object</a></li>
+        <li class="main "><a href="#using-pooled-objects">Using Pooled Objects</a></li>
+            <li><a href="#creating-a-pool">Creating a Pool</a></li>
+            <li><a href="#getting-a-pooled-object">Getting a Pooled Object</a></li>
+            <li><a href="#returning-a-object-to-the-pool">Returning a Object to the Pool</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="collections">Collections</h1>
-<p>Collections are extensions to the C# collections that are useful for game programming.</p>
-<h2 id="bag">Bag</h2>
-<p>A <code>Bag</code> is an un-ordered array of items with fast Add and Remove properties.</p>
-<p>It is much faster than an array when removing items, and takes less space than a linked list.</p>
-<p>Bag will resize itself only when it needs to.</p>
-<pre><code class="C#">var bag = new Bag&lt;int&gt;(3);
-bag.Add(4);
-bag.Add(8);
-bag.Add(15);
-// bag is now [4, 8, 15]
+<h1 id="object-pooling">Object Pooling</h1>
+<p>Object pooling is an optimization pattern. It's used to improve performance, in certain cases, by re-using objects instead of allocating memory for them on demand. In C/C++, one the things object pooling has to offer is a solution to avoid <a href="http://stackoverflow.com/questions/3770457/what-is-memory-fragmentation">memory fragmentation</a>. In C#, we don't have to worry about memory fragmentation thanks to <a href="https://msdn.microsoft.com/en-us/library/ee787088">garbage collection</a>. However, garbage collection can be still be too expensive for certain parts of real-time applications, especially on mobile devices with slower CPUs and simpler garbage collectors. <a href="http://gameprogrammingpatterns.com/object-pool.html">More details on object pooling here</a>.</p>
+<h1 id="important">IMPORTANT</h1>
+<p>Always profile the game for performance problems!
+Using a <code>Pool&lt;T&gt;</code> without first profiling for the need of one may result in a <em>decrease</em> in performance in certain cases. If you are unsure, don't use the object pooling pattern.</p>
+<h1 id="creating-a-pool-able-object">Creating a Pool-able Object</h1>
+<p>All objects which can be pooled need to implement the <code>IPoolable</code> interface.
+The following is a code snippet with comments demonstrating how to implement the interface.</p>
+<pre><code class="c#">private class MyPoolable : IPoolable
+{
+    private ReturnToPoolDelegate _returnAction;
 
-bag.Add(16); // array is extended here, capacity is now 4 instead of 3
+    void IPoolable.Initialize(ReturnToPoolDelegate returnAction)
+    {
+        // copy the instance reference of the return function so we can call it later
+        _returnAction = returnAction;
+    }
 
-bag.Remove(1);
-// bag is now [4, 16, 15] with a capacity of 4
+    public void Return()
+    {
+        // check if this instance has already been returned
+        if (_returnAction != null)
+        {
+            // not yet returned, return it now
+            _returnAction.Invoke(this);
+            // set the delegate instance reference to null, so we don't accidentally return it again
+            _returnAction = null;
+        }
+    }
+}
 </code></pre>
 
-<h2 id="bitvector32">BitVector32</h2>
-<p>The <code>BitVector32</code> class provides easy access to 32 individual bit flags.</p>
-<h2 id="deque">Deque</h2>
-<p>Represents a collection of objects which elements can added to or removed either from the front or back; a
-<a href="https://en.wikipedia.org/wiki/Double-ended_queue">double ended queue</a>.</p>
-<h2 id="dictionaryextensions">DictionaryExtensions</h2>
-<p>Extends all <code>Dictionary&lt;&gt;</code> classes with <code>GetValueOrDefault(key, default)</code>.</p>
-<h2 id="keyedcollection">KeyedCollection</h2>
-<p>A KeyedCollection is used like a <code>Dictionary&lt;&gt;</code>, except you provide a function that takes a value and return's it's key.</p>
-<h2 id="listextensions">ListExtensions</h2>
-<p>Adds <code>Shuffle(Random)</code> to all <code>IList&lt;&gt;</code> classes.</p>
-<h2 id="object-pooling"><a href="../Object-Pooling/">Object Pooling</a></h2>
-<p>An <code>ObjectPool&lt;T&gt;</code> allows reuse of memory for a group of items to avoid Garbage Collection.
-More information is in the <a href="../Object-Pooling/">Object Pooling</a> documentation.</p>
-<h2 id="observablecollection">ObservableCollection</h2>
-<p>An <code>ObservableCollection&lt;T&gt;</code> manages an <code>IList&lt;T&gt;</code> of items firing <code>ItemAdded</code>, <code>ItemRemoved</code>, <code>Clearing</code> and <code>Cleared</code> events when the collection is changed.</p></div>
+<h1 id="using-pooled-objects">Using Pooled Objects</h1>
+<h2 id="creating-a-pool">Creating a Pool</h2>
+<p>Instantiating a <code>Pool&lt;T&gt;</code> is similar to any generic collection, i.e <code>List&lt;T&gt;</code>, but the pool does require 2 parameters for it's constructor. <code>T</code> also has to implement <code>IPoolable</code>.</p>
+<pre><code class="C#">var pool = new Pool&lt;MyPoolable&gt;(50, index =&gt; new MyPoolable());
+</code></pre>
+
+<p>The first parameter is the <em>capacity</em> of the pool; the maximum number of object instances the pool has reference to. The second parameter is the delegate responsible for creating each object instance.</p>
+<h3 id="note">NOTE</h3>
+<p>Having too large of a capacity will waste memory, but having too small of a capacity will limit the number of object instances that can be pooled.</p>
+<p>All object instances are created when the pool is instantiated.</p>
+<h2 id="getting-a-pooled-object">Getting a Pooled Object</h2>
+<p>A free pooled object instance can be requested from the pool instance.</p>
+<pre><code class="c#">var myPoolable = pool.Request();
+</code></pre>
+
+<h3 id="note_1">NOTE</h3>
+<p>If the pool is empty, the result will be <code>null</code>.</p>
+<h2 id="returning-a-object-to-the-pool">Returning a Object to the Pool</h2>
+<p>When the object instance is no longer needed it should be returned to the pool so it can be re-used.</p>
+<pre><code class="c#">myPoolable.Return();
+</code></pre></div>
         </div>
 
         <footer class="col-md-12">

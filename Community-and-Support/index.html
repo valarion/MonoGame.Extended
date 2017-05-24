@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>NuGet - MonoGame.Extended</title>
+        <title>Support - MonoGame.Extended</title>
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -48,12 +48,12 @@
                     <li >
                         <a href="..">Home</a>
                     </li>
-                    <li class="dropdown active">
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Installation <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             
-<li class="active">
-    <a href="./">NuGet</a>
+<li >
+    <a href="../installation/">NuGet</a>
 </li>
                             
 <li >
@@ -110,8 +110,8 @@
   </li>
                         </ul>
                     </li>
-                    <li >
-                        <a href="../Community-and-Support/">Support</a>
+                    <li class="active">
+                        <a href="./">Support</a>
                     </li>
                     <li >
                         <a href="../Showcase/">Showcase</a>
@@ -125,12 +125,12 @@
                     </a>
                 </li>
                     <li >
-                        <a rel="next" href="..">
+                        <a rel="next" href="../MonoGame.Extended.Animation/Animated-Sprites/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../NuGet-Pre-Release/">
+                        <a rel="prev" href="../Showcase/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -147,41 +147,43 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#installation">Installation</a></li>
-            <li><a href="#referencing-the-content-pipeline-extension">Referencing the Content Pipeline extension</a></li>
+        <li class="main active"><a href="#community-and-support">Community and Support</a></li>
+        <li class="main "><a href="#docs">Docs</a></li>
+            <li><a href="#we-need-your-help-writing-better-documentation">We need your help writing better documentation</a></li>
+            <li><a href="#how-to-contribute-to-the-documentation">How to contribute to the documentation</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="installation">Installation</h1>
-<p>MonoGame.Extended is a collection of <a href="https://msdn.microsoft.com/en-us/library/gg597391">portable class libraries</a> (PCL) designed to be referenced from any MonoGame project to add common extensions and classes for making your games more awesome.</p>
-<p>The libraries are distributed as <a href="https://www.nuget.org/packages?q=MonoGame.Extended">NuGet packages</a> and can be installed using the NuGet Package Manager in <a href="https://www.visualstudio.com">Visual Studio</a>, <a href="https://xamarin.com/studio">Xamarin Studio</a>, or <a href="http://www.monodevelop.com">MonoDevelop</a>. They can also be installed by running the following command (or the equivilant command for the package you want to install) in the <a href="http://docs.nuget.org/consume/package-manager-console">Package Manager Console</a>.</p>
-<pre><code>Install-Package MonoGame.Extended
-</code></pre>
-<p>Note that <a href="http://www.monogame.net/downloads/">MonoGame 3.6 will need to be installed</a> to properly use MonoGame.Extended in your game project.</p>
-<h2 id="referencing-the-content-pipeline-extension">Referencing the Content Pipeline extension</h2>
-<p>To get the full experience you'll also want to install the Content Pipeline extension:</p>
-<pre><code>Install-Package MonoGame.Extended.Content.Pipeline
-</code></pre>
-<p>This package won't add any references to your project. Instead it will download a DLL that's intended to be referenced from the <a href="http://www.monogame.net/documentation/?page=Pipeline">MonoGame Content Pipeline tool</a>.</p>
-<p>You'll need to manually add the reference to your content file (usually <code>Content.mgcb</code>) using one of the following methods.</p>
-<h3 id="using-the-monogame-pipeline-gui">Using the MonoGame Pipeline GUI</h3>
-<p>To add the reference using the Pipeline GUI tool follow these steps:</p>
-<ol>
-<li>Click on the <strong>Content</strong> node in the root of the tree.</li>
-<li>In the properties window, modify the <strong>References</strong> property.</li>
-<li>Find and add the <code>MonoGame.Extended.Content.Pipeline.dll</code>. It's usually located in the <strong>packages</strong> folder of your solution.</li>
-</ol>
-<p><img alt="MonoGame Pipeline Add References" src="https://dl.dropboxusercontent.com/u/82020056/MonoGame.Extended/how-to-add-content-pipeline-reference.png" /></p>
-<h3 id="using-a-text-editor">Using a text editor</h3>
-<p>An alternative way to add the reference is by manually editing the <code>Content.mgcb</code> file in a text editor or Visual Studio. Look for the references section and update it like this:</p>
-<pre><code>#-------------------------------- References --------------------------------#
-
-/reference:..\..\packages\MonoGame.Extended.Content.Pipeline.0.6.372\tools\MonoGame.Extended.Content.Pipeline.dll
-</code></pre>
-
-<p><strong>Remember:</strong> The <code>MonoGame.Extended.dll</code> and the <code>MonoGame.Extended.Content.Pipeline.dll</code> come as a pair. Always make sure the version referenced by your game matches the version referenced by the Pipeline tool.</p>
-<p>That's it! Once you've referenced the library you can start using it to make your games even more awesome.</p></div>
+<h1 id="community-and-support">Community and Support</h1>
+<p>MonoGame.Extended has a growing community of users from all around the globe. We've got lots of ways you can ask questions and get help about the library.</p>
+<ul>
+<li>Of course, there's <a href="https://github.com/craftworkgames/MonoGame.Extended/wiki">this documentation</a>. By contributing to it you're making it better for everyone.</li>
+<li>We've got our own section on the <a href="http://community.monogame.net/c/extended">MonoGame Community Forums</a></li>
+<li>We've even got a <a href="http://gamedev.stackexchange.com/questions/tagged/monogame-extended">tag on stackoverflow</a> ;)</li>
+<li>Development is usually discussed in <a href="https://github.com/craftworkgames/MonoGame.Extended/issues">github issues</a></li>
+<li>We've got a live chatroom on <a href="https://gitter.im/craftworkgames/MonoGame.Extended">gitter</a></li>
+</ul>
+<p>Note: When you ask a question, please consider how permanent the answer should be. If it's something that might benefit others choose the docs, forum or stack overflow over live chat.</p>
+<h1 id="docs">Docs</h1>
+<h2 id="we-need-your-help-writing-better-documentation">We need your help writing better documentation</h2>
+<ul>
+<li>Good documentation is what separates good open source projects from great ones. </li>
+<li>Documentation is a community effort.</li>
+<li>Even a little bit of documentation is better than none.</li>
+<li>A rough draft is better than none.</li>
+<li>If we all wrote a little documentation, it adds up to a lot.</li>
+</ul>
+<h2 id="how-to-contribute-to-the-documentation">How to contribute to the documentation</h2>
+<p>The docs are located in the source <a href="https://github.com/craftworkgames/MonoGame.Extended/tree/develop/Docs">Docs/</a> folder.  They are built with <a href="http://www.mkdocs.org/#installation">MkDocs</a>.</p>
+<ul>
+<li>If you spot an error in the documentation, fix it. This is the simplest way to contribute.</li>
+<li>If you notice some missing or out of date information, add it. This is the next simplest way to contribute.</li>
+<li>If there's something completely missing, write a stub page. It's a start.</li>
+<li>If you want to go a step further, write a tutorial or a whole new page.</li>
+<li>If you have any trouble editing the docs, please <a href="#community-and-support">tell somebody</a>.</li>
+<li>You can edit the page directly on Github, it's Markdown, so you don't necessesarily need to install MkDocs to contribute.</li>
+</ul></div>
         </div>
 
         <footer class="col-md-12">

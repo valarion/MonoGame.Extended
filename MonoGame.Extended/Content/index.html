@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Object Pooling - MonoGame.Extended</title>
+        <title>Content Extensions - MonoGame.Extended</title>
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -85,16 +85,16 @@
     <a href="../Camera2D/">Camera2D</a>
 </li>
             
-<li >
-    <a href="../Content/">Content Extensions</a>
+<li class="active">
+    <a href="./">Content Extensions</a>
 </li>
             
 <li >
     <a href="../Collections/">Collections</a>
 </li>
             
-<li class="active">
-    <a href="./">Object Pooling</a>
+<li >
+    <a href="../Object-Pooling/">Object Pooling</a>
 </li>
             
 <li >
@@ -133,12 +133,12 @@
                     </a>
                 </li>
                     <li >
-                        <a rel="next" href="../Collections/">
+                        <a rel="next" href="../Camera2D/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../Serialization/">
+                        <a rel="prev" href="../Collections/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -155,69 +155,58 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#object-pooling">Object Pooling</a></li>
-        <li class="main "><a href="#important">IMPORTANT</a></li>
-        <li class="main "><a href="#creating-a-pool-able-object">Creating a Pool-able Object</a></li>
-        <li class="main "><a href="#using-pooled-objects">Using Pooled Objects</a></li>
-            <li><a href="#creating-a-pool">Creating a Pool</a></li>
-            <li><a href="#getting-a-pooled-object">Getting a Pooled Object</a></li>
-            <li><a href="#returning-a-object-to-the-pool">Returning a Object to the Pool</a></li>
+        <li class="main active"><a href="#contentmanager-extensions">ContentManager extensions</a></li>
+            <li><a href="#contentmanageropenstream">ContentManager.OpenStream</a></li>
+            <li><a href="#contentmanagergetgraphicsdevice">ContentManager.GetGraphicsDevice</a></li>
+        <li class="main "><a href="#contentreader-extensions">ContentReader extensions</a></li>
+            <li><a href="#contentreadergetgraphicsdevice">ContentReader.GetGraphicsDevice</a></li>
+            <li><a href="#contentreadergetrelativeassetname">ContentReader.GetRelativeAssetName</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="object-pooling">Object Pooling</h1>
-<p>Object pooling is an optimization pattern. It's used to improve performance, in certain cases, by re-using objects instead of allocating memory for them on demand. In C/C++, one the things object pooling has to offer is a solution to avoid <a href="http://stackoverflow.com/questions/3770457/what-is-memory-fragmentation">memory fragmentation</a>. In C#, we don't have to worry about memory fragmentation thanks to <a href="https://msdn.microsoft.com/en-us/library/ee787088">garbage collection</a>. However, garbage collection can be still be too expensive for certain parts of real-time applications, especially on mobile devices with slower CPUs and simpler garbage collectors. <a href="http://gameprogrammingpatterns.com/object-pool.html">More details on object pooling here</a>.</p>
-<h1 id="important">IMPORTANT</h1>
-<p>Always profile the game for performance problems!
-Using a <code>Pool&lt;T&gt;</code> without first profiling for the need of one may result in a <em>decrease</em> in performance in certain cases. If you are unsure, don't use the object pooling pattern.</p>
-<h1 id="creating-a-pool-able-object">Creating a Pool-able Object</h1>
-<p>All objects which can be pooled need to implement the <code>IPoolable</code> interface.
-The following is a code snippet with comments demonstrating how to implement the interface.</p>
-<pre><code class="c#">private class MyPoolable : IPoolable
-{
-    private ReturnToPoolDelegate _returnAction;
+<h1 id="contentmanager-extensions">ContentManager extensions</h1>
+<h2 id="contentmanageropenstream">ContentManager.OpenStream</h2>
+<p><code>System.IO.Stream ContentManager.OpenStream(string filename)</code></p>
+<p><strong>OpenStream</strong> allows easy access to <code>TitleContainer.OpenStream</code> so you can use the <code>Game.Content</code> object to load compiled resources <em>and</em> included resources.</p>
+<pre><code class="csharp">// my-file.txt is in the RootDirectory
+var stream = Content.OpenStream(&quot;my-file.txt&quot;);
+// do something with file
+stream.Close();
+</code></pre>
 
-    void IPoolable.Initialize(ReturnToPoolDelegate returnAction)
-    {
-        // copy the instance reference of the return function so we can call it later
-        _returnAction = returnAction;
-    }
+<h2 id="contentmanagergetgraphicsdevice">ContentManager.GetGraphicsDevice</h2>
+<p><code>GraphicsDevice ContentManager.GetGraphicsDevice()</code></p>
+<p><strong>GetGraphicsDevice</strong> returns the current <code>GraphicsDevice</code> from the services.</p>
+<pre><code class="csharp">var graphicsDevice = Content.GetGraphicsDevice();
+var width = graphicsDevice.DisplayMode.Width;
+</code></pre>
 
-    public void Return()
+<h1 id="contentreader-extensions">ContentReader extensions</h1>
+<p>The <code>ContentReader</code> extensions help when writing your own content pipeline readers.</p>
+<h2 id="contentreadergetgraphicsdevice">ContentReader.GetGraphicsDevice</h2>
+<p><code>GraphicsDevice ContentManager.GetGraphicsDevice()</code></p>
+<p><strong>GetGraphicsDevice</strong> returns the current <code>GraphicsDevice</code> to help when loading content for the current display.</p>
+<pre><code class="csharp">public class MyTypeReader : ContentTypeReader&lt;MyType&gt; {
+    protected override MyType Read(ContentReader reader, MyType existingInstance)
     {
-        // check if this instance has already been returned
-        if (_returnAction != null)
-        {
-            // not yet returned, return it now
-            _returnAction.Invoke(this);
-            // set the delegate instance reference to null, so we don't accidentally return it again
-            _returnAction = null;
-        }
+        var graphicsDevice = reader.GetGraphicsDevice();
+        // ...
     }
 }
 </code></pre>
 
-<h1 id="using-pooled-objects">Using Pooled Objects</h1>
-<h2 id="creating-a-pool">Creating a Pool</h2>
-<p>Instantiating a <code>Pool&lt;T&gt;</code> is similar to any generic collection, i.e <code>List&lt;T&gt;</code>, but the pool does require 2 parameters for it's constructor. <code>T</code> also has to implement <code>IPoolable</code>.</p>
-<pre><code class="C#">var pool = new Pool&lt;MyPoolable&gt;(50, index =&gt; new MyPoolable());
-</code></pre>
-
-<p>The first parameter is the <em>capacity</em> of the pool; the maximum number of object instances the pool has reference to. The second parameter is the delegate responsible for creating each object instance.</p>
-<h3 id="note">NOTE</h3>
-<p>Having too large of a capacity will waste memory, but having too small of a capacity will limit the number of object instances that can be pooled.</p>
-<p>All object instances are created when the pool is instantiated.</p>
-<h2 id="getting-a-pooled-object">Getting a Pooled Object</h2>
-<p>A free pooled object instance can be requested from the pool instance.</p>
-<pre><code class="c#">var myPoolable = pool.Request();
-</code></pre>
-
-<h3 id="note_1">NOTE</h3>
-<p>If the pool is empty, the result will be <code>null</code>.</p>
-<h2 id="returning-a-object-to-the-pool">Returning a Object to the Pool</h2>
-<p>When the object instance is no longer needed it should be returned to the pool so it can be re-used.</p>
-<pre><code class="c#">myPoolable.Return();
+<h2 id="contentreadergetrelativeassetname">ContentReader.GetRelativeAssetName</h2>
+<p><code>string ContentReader.GetRelativeAssetName(string relativeName)</code></p>
+<p><strong>GetRelativeAssetName</strong> helps when your content type loads a different type, and you want to know the name to give <code>ContentManager.Load</code>.</p>
+<pre><code class="csharp">public class MyTypeReader : ContentTypeReader&lt;MyType&gt; {
+    protected override MyType Read(ContentReader reader, MyType existingInstance)
+    {
+        var assetName = reader.GetRelativeAssetName(reader.ReadString());
+        var other = reader.ContentManager.Load&lt;OtherType&gt;(assetName);
+        // ...
+    }
+}
 </code></pre></div>
         </div>
 

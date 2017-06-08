@@ -181,8 +181,7 @@
 <a href="#further-reading">Further Reading</a></p>
 </blockquote>
 <h2 id="members">Members</h2>
-<p><a href="#_viewportAdapterDetail">_viewportAdapter</a> : ViewportAdapter
-<sub>Descriptive text here</sub></p>
+<p><a href="#_viewportAdapterDetail">_viewportAdapter</a> : ViewportAdapter</p>
 <p><a href="#position">Position</a> : Vector2
 <sub>The position of the camera as a Vector2</sub></p>
 <h2 id="methods">Methods</h2>
@@ -192,21 +191,19 @@
 <sub>Moves the camera</sub></p>
 <h2 id="member-detail">Member Detail</h2>
 <h5 id="_viewportadapter">_viewportAdapter</h5>
-<pre><code class="C#">private readonly ViewportAdapter
+<pre><code class="csharp">private readonly ViewportAdapter
 </code></pre>
 
-<p><sub>Detailed details here about the member.</sub></p>
 <h5 id="position">Position</h5>
-<pre><code class="C#">public Vector2 Position { get; set; }
+<pre><code class="csharp">public Vector2 Position { get; set; }
 </code></pre>
 
 <p><sub>The position of the camera, used in matrix transformations.</sub></p>
 <h2 id="constructor-detail">Constructor Detail</h2>
 <p><a name="constructorDetail"></a>
-<strong>public Camera2D(GraphicsDevice graphicsDevice)</strong>
-Description here.</p>
+<strong>public Camera2D(GraphicsDevice graphicsDevice)</strong></p>
 <p>Parameters
-* graphicsDevice - Description here.</p>
+* graphicsDevice</p>
 <h2 id="method-detail">Method Detail</h2>
 <p><a name="moveDetail"></a>
 <strong>public void Move(Vector2 direction)</strong>
@@ -216,7 +213,7 @@ Moves the camera to a new position. (see <a href="#moveUsage">usage</a>)</p>
 <h1 id="tutorial">Tutorial</h1>
 <p>The purpose of the camera is to create a transformation matrix that changes the way a sprite batch is rendered.</p>
 <p>To create a camera initialize an instance of it using one of the constructor overloads. It's recommended that you used a viewport adapter to scale the screen but you don't have too.</p>
-<pre><code class="C#">        private Camera2D _camera;
+<pre><code class="csharp">        private Camera2D _camera;
 
         protected override void Initialize()
         {
@@ -228,7 +225,7 @@ Moves the camera to a new position. (see <a href="#moveUsage">usage</a>)</p>
 </code></pre>
 
 <p>Next you'll need to apply the camera's view matrix to one or more of the <code>SpriteBatch.Begin</code> calls in your <code>Draw</code> method.</p>
-<pre><code class="C#">        protected override void Draw(GameTime gameTime)
+<pre><code class="csharp">        protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
@@ -247,7 +244,7 @@ Moves the camera to a new position. (see <a href="#moveUsage">usage</a>)</p>
 <p>In other words, we use the camera to transform the way a batch of sprites is rendered to the screen without actually modifying their positions, rotations or scales directly. This creates the effect of having a camera looking at your scene that can move, rotate and zoom in and out.</p>
 <p>Once you've got a camera instance in your game you'll probably want to move it around in the <code>Update</code> method somehow. For example, you could move the camera's position with the arrow keys.
 <a name="moveUsage"></a></p>
-<pre><code class="C#">        protected override void Update(GameTime gameTime)
+<pre><code class="csharp">        protected override void Update(GameTime gameTime)
         {
             var keyboardState = Keyboard.GetState();
             const float movementSpeed = 200;
@@ -258,7 +255,7 @@ Moves the camera to a new position. (see <a href="#moveUsage">usage</a>)</p>
 </code></pre>
 
 <p>Last but not least, there'll be times when you want to convert from screen coordinates to world coordinates and visa-vera.  For example, if you want to know which sprite is under the mouse you'll need to convert the mouse position back into the world position that was used to position the sprite in the first place.</p>
-<pre><code class="C#">    var mouseState = Mouse.GetState();
+<pre><code class="csharp">    var mouseState = Mouse.GetState();
     _worldPosition = _camera.ScreenToWorld(new Vector2(mouseState.X, mouseState.Y));
 </code></pre>
 

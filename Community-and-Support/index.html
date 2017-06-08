@@ -191,7 +191,28 @@
 <li>If you want to go a step further, write a tutorial or a whole new page.</li>
 <li>If you have any trouble editing the docs, please <a href="#community-and-support">tell somebody</a>.</li>
 <li>You can edit the page directly on Github, it's Markdown, so you don't necessesarily need to install MkDocs to contribute.</li>
-</ul></div>
+</ul>
+<h3 id="getting-started-with-mkdocs">Getting started with MKDocs</h3>
+<p>Running your own dev docs server at http://127.0.0.1:8000 (your computer) can be done by installing python, and then installing mkdocs.</p>
+<pre><code class="bash">&gt; python -m pip install mkdocs
+</code></pre>
+
+<p>To run your local server run the mkdocs module with the <code>serve</code> command.</p>
+<pre><code class="bash">&gt; cd MonoGame.Extended
+MonoGame.Extended&gt; python -m mkdocs serve
+INFO    -  Building documentation...
+INFO    -  Cleaning site directory
+[I 170608 01:12:06 server:283] Serving on http://127.0.0.1:8000
+[I 170608 01:12:06 handlers:60] Start watching changes
+[I 170608 01:12:06 handlers:62] Start detecting changes
+[I 170608 01:12:15 handlers:133] Browser Connected: http://127.0.0.1:8000/
+</code></pre>
+
+<p>Now every time you edit a <code>*.md</code> file in the <code>Docs/</code> folder the site will refresh with the latest info.</p>
+<p>To add a new page, you must add Markdown file, and then reference it in the <code>mkdocs.yml</code> file somewhere appropriate. </p>
+<blockquote>
+<p>All pages must be somewhere in the mkdocs.yml <code>pages</code> section, otherwise links to it will not work.</p>
+</blockquote></div>
         </div>
 
         <footer class="col-md-12">

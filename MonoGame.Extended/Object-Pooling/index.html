@@ -174,7 +174,7 @@ Using a <code>Pool&lt;T&gt;</code> without first profiling for the need of one m
 <h1 id="creating-a-pool-able-object">Creating a Pool-able Object</h1>
 <p>All objects which can be pooled need to implement the <code>IPoolable</code> interface.
 The following is a code snippet with comments demonstrating how to implement the interface.</p>
-<pre><code class="c#">private class MyPoolable : IPoolable
+<pre><code class="csharp">private class MyPoolable : IPoolable
 {
     private ReturnToPoolDelegate _returnAction;
 
@@ -201,7 +201,7 @@ The following is a code snippet with comments demonstrating how to implement the
 <h1 id="using-pooled-objects">Using Pooled Objects</h1>
 <h2 id="creating-a-pool">Creating a Pool</h2>
 <p>Instantiating a <code>Pool&lt;T&gt;</code> is similar to any generic collection, i.e <code>List&lt;T&gt;</code>, but the pool does require 2 parameters for it's constructor. <code>T</code> also has to implement <code>IPoolable</code>.</p>
-<pre><code class="C#">var pool = new Pool&lt;MyPoolable&gt;(50, index =&gt; new MyPoolable());
+<pre><code class="csharp">var pool = new Pool&lt;MyPoolable&gt;(50, index =&gt; new MyPoolable());
 </code></pre>
 
 <p>The first parameter is the <em>capacity</em> of the pool; the maximum number of object instances the pool has reference to. The second parameter is the delegate responsible for creating each object instance.</p>
@@ -210,14 +210,14 @@ The following is a code snippet with comments demonstrating how to implement the
 <p>All object instances are created when the pool is instantiated.</p>
 <h2 id="getting-a-pooled-object">Getting a Pooled Object</h2>
 <p>A free pooled object instance can be requested from the pool instance.</p>
-<pre><code class="c#">var myPoolable = pool.Request();
+<pre><code class="csharp">var myPoolable = pool.Request();
 </code></pre>
 
 <h3 id="note_1">NOTE</h3>
 <p>If the pool is empty, the result will be <code>null</code>.</p>
 <h2 id="returning-a-object-to-the-pool">Returning a Object to the Pool</h2>
 <p>When the object instance is no longer needed it should be returned to the pool so it can be re-used.</p>
-<pre><code class="c#">myPoolable.Return();
+<pre><code class="csharp">myPoolable.Return();
 </code></pre></div>
         </div>
 

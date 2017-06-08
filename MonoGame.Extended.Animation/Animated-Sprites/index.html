@@ -181,7 +181,7 @@ The Image file with all the sprites combined in a Map</p>
 <p><img alt="" src="http://i.imgur.com/hEhyOKh.png" /></p>
 <h1 id="construct-the-move">Construct the move</h1>
 <p>Lets initiate our pixels using the Texture imported and then we will use the map to limit and access easily each image.</p>
-<pre><code class="c#">var characterTexture = content.Load&lt;Texture2D&gt;(&quot;Sprites/kunio&quot;);
+<pre><code class="csharp">var characterTexture = content.Load&lt;Texture2D&gt;(&quot;Sprites/kunio&quot;);
 var characterMap = content.Load&lt;Dictionary&lt;string, Rectangle&gt;&gt;(&quot;Sprites/kunioMap&quot;);
 var characterAtlas = new TextureAtlas(&quot;kunio&quot;, characterTexture, characterMap);
 var characterAnimationFactory = new SpriteSheetAnimationFactory(characterAtlas);
@@ -194,11 +194,11 @@ var characterSpriteAnimation = new AnimatedSprite(characterAnimationFactory,&quo
 <p>Using a SpriteSheetAnimationFactory we can create Animations and set index of frames included. And passing this to AnimatedSprite we can name an autoplay animation. "idle" is the only one we have for now.</p>
 <h1 id="drawing-the-final-result">Drawing the final result</h1>
 <p>On each update you will need to call the animation to make the transitions between frames.</p>
-<pre><code class="c#">characterSpriteAnimation.Update(deltaSeconds);
+<pre><code class="csharp">characterSpriteAnimation.Update(deltaSeconds);
 </code></pre>
 
 <p>And finally on Draw the SpriteBatch will do the rest</p>
-<pre><code class="c#">spriteBatch.Begin();
+<pre><code class="csharp">spriteBatch.Begin();
 spriteBatch.Draw(characterSpriteAnimation);
 spriteBatch.End();
 </code></pre>

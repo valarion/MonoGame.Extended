@@ -165,7 +165,7 @@
 <h1 id="screen-management">Screen Management</h1>
 <h2 id="example">Example</h2>
 <p>The <code>ScreenGameComponent</code> manages individual <code>Screen</code> objects.  Add a new <code>ScreenGameComponent</code> to your Game's <code>Components</code>, and the screen manager will pass <code>Initialize</code> <code>LoadContent</code> <code>UnloadContent</code> <code>Update</code> and <code>Draw</code> to every registered screen.</p>
-<pre><code class="C#">public Game1()
+<pre><code class="csharp">public Game1()
 {
     // Add the screen manager to your Components.
     ScreenGameComponent screenGameComponent = new ScreenGameComponent(this);
@@ -174,7 +174,7 @@
 </code></pre>
 
 <p>To register your class (MyScreen) that subclasses <code>Screen</code>.  Just pass it into the <code>Register</code> function.</p>
-<pre><code class="C#">public Game1()
+<pre><code class="csharp">public Game1()
 {
     ScreenGameComponent screenGameComponent = new ScreenGameComponent(this);
     screenGameComponent.Register(new MyScreen());

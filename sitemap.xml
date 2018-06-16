@@ -2,77 +2,77 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
      <loc>/</loc>
-     <lastmod>2018-06-12</lastmod>
+     <lastmod>2018-06-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/installation/</loc>
-     <lastmod>2018-06-12</lastmod>
+     <lastmod>2018-06-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/NuGet-Pre-Release/</loc>
-     <lastmod>2018-06-12</lastmod>
+     <lastmod>2018-06-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/Building-from-Source/</loc>
-     <lastmod>2018-06-12</lastmod>
+     <lastmod>2018-06-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/Build-MonoGame-PCL/</loc>
-     <lastmod>2018-06-12</lastmod>
+     <lastmod>2018-06-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/MonoGame.Extended/BitmapFonts/</loc>
-     <lastmod>2018-06-12</lastmod>
+     <lastmod>2018-06-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/MonoGame.Extended/Camera2D/</loc>
-     <lastmod>2018-06-12</lastmod>
+     <lastmod>2018-06-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/MonoGame.Extended/Content/</loc>
-     <lastmod>2018-06-12</lastmod>
+     <lastmod>2018-06-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/MonoGame.Extended/Collections/</loc>
-     <lastmod>2018-06-12</lastmod>
+     <lastmod>2018-06-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/MonoGame.Extended/Object-Pooling/</loc>
-     <lastmod>2018-06-12</lastmod>
+     <lastmod>2018-06-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/MonoGame.Extended/Serialization/</loc>
-     <lastmod>2018-06-12</lastmod>
+     <lastmod>2018-06-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/MonoGame.Extended/Screens/</loc>
-     <lastmod>2018-06-12</lastmod>
+     <lastmod>2018-06-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/MonoGame.Extended.Animation/Animated-Sprites/</loc>
-     <lastmod>2018-06-12</lastmod>
+     <lastmod>2018-06-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/Community-and-Support/</loc>
-     <lastmod>2018-06-12</lastmod>
+     <lastmod>2018-06-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/Showcase/</loc>
-     <lastmod>2018-06-12</lastmod>
+     <lastmod>2018-06-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>

@@ -2,8 +2,8 @@
     "docs": [
         {
             "location": "/",
-            "text": "Welcome\n\n\nWelcome to the documentation for \nMonoGame.Extended\n, a collection of NuGet packages that make \nMonoGame\n more awesome.\n\n\nWe're only just getting started building this documentation. If you're not finding what you're looking for we've got a number of other places to get help.\n\n\n\n\nWe've got a live chatroom on \ngitter\n\n\nWe've got our own section on the \nMonoGame Community Forums\n\n\nDevelopment is usually discussed in \ngithub issues\n\n\nWe've even got a \ntag on stackoverflow\n ;)\n\n\n\n\nGetting Started\n\n\n\n\nInstallation\n\n\n\n\nAbout\n\n\nMonoGame.Extended is an open source extension library for \nMonoGame\n. A collection of classes and extensions to make it easier to make games with MonoGame.\n\n\nThe goal of the project is to provide a wide variety of features often needed when making games with MonoGame without being a complete game engine. Most of the features in MonoGame.Extended are isolated into different namespaces. You can pick and choose which bits you want and which bits you don't. It's designed to get you going fast and stay out of your way.\n\n\nThe core library is built as a Portable Class Library (PCL) that contains one code base for all supported platforms. PCL's are fully supported by \nVisual Studio 2015 on Windows\n, \nXamarin Studio\n for Android and iOS and have also been reported to work on Linux and Mac. This means that a single self contained library can be used to target a wide variety of platforms.\n\n\nMonoGame.Extended also provides another DLL that is to be used with the \nMonoGame Pipeline tool\n. This provides a set of extra content importers and processors that can be used to load extra content for your game. The content is processed into XNB files just like your textures and sounds and loaded into your games using the standard \nContent.Load\n method.\n\n\nPackages\n\n\nCore\n\n\nThe \nMonoGame.Extended\n core library contains common classes and interfaces the other MonoGame.Extended libraries reference.\n\n\nBy itself, it creates a solid foundation with sprites, \nbitmap fonts\n, \ncollections\n, \nserialization\n, shapes, texture atlases, viewport adapters, \ncameras\n, timers, math, \nobject pooling\n, \nscreens\n, and diagnostics.\n\n\nAnimations\n\n\nThe \nMonoGame.Extended.Animations\n library contains classes useful for 2D \nsprite sheet animations\n.\n\n\nCollisions\n\n\nThe \nMonoGame.Extended.Collisions\n library contains a 2D grid based collision system.\n\n\nContent.Pipeline\n\n\nThe \nMonoGame.Extended.Content.Pipeline\n library extends the \nMonoGame Content Pipeline tool\n. This adds Animations, BitmapFonts, TextureAtlases, and Tiled maps to the Content Pipeline tool.\n\n\nEntities\n\n\nThe \nMonoGame.Extended.Entities\n library adds an \nEntity Component System\n (ECS) to MonoGame.\n\n\nGraphics\n\n\nThe \nMonoGame.Extended.Graphics\n library contains extensions useful for generating dynamic geometry and batching draw calls.\n\n\nGui\n\n\nThe \nMonoGame.Extended.Gui\n library contains a complete GUI system.  It includes Buttons, Text Boxes, Dialogs and many other controls, and is skinnable.\n\n\nInput\n\n\nThe \nMonoGame.Extended.Input\n library contains input listener classes that have events you can use to subscribe to input events, instead of having to poll for input changes.\n\n\nNuclexGui\n\n\nThe \nMonoGame.Extended.NuclexGui\n library contains an implementation of the \nNuclex GUI Framework\n for XNA, ported to MonoGame.\n\n\nParticles\n\n\nThe \nMonoGame.Extended.Particles\n library contains a high performance Particle System ported from the \nMercury Particle Engine\n.\n\n\nSceneGraphs\n\n\nThe \nMonoGame.Extended.SceneGraphs\n library contains a scene graph (tree) system.\n\n\nTiled\n\n\nThe \nMonoGame.Extended.Tiled\n library loads and renders maps created with the popular \nTiled Map Editor\n.\n\n\nTweening\n\n\nThe \nMonoGame.Extended.Tweening\n library contains class extensions for tween based animations.",
-            "title": "Home"
+            "text": "Welcome\n\n\nWelcome to the documentation for \nMonoGame.Extended\n, a collection of NuGet packages that make \nMonoGame\n more awesome.\n\n\nWe're only just getting started building this documentation. If you're not finding what you're looking for we've got a number of other places to get help.\n\n\n\n\nWe've got a live chatroom on \ngitter\n\n\nWe've got our own section on the \nMonoGame Community Forums\n\n\nDevelopment is usually discussed in \ngithub issues\n\n\nWe've even got a \ntag on stackoverflow\n ;)\n\n\n\n\nGetting Started\n\n\n\n\nInstallation\n\n\n\n\nAbout\n\n\nMonoGame.Extended is an open source extension library for \nMonoGame\n. A collection of classes and extensions to make it easier to make games with MonoGame.\n\n\nThe goal of the project is to provide a wide variety of features often needed when making games with MonoGame without being a complete game engine. Most of the features in MonoGame.Extended are isolated into different namespaces. You can pick and choose which bits you want and which bits you don't. It's designed to get you going fast and stay out of your way.\n\n\nThe core library is built as a Portable Class Library (PCL) that contains one code base for all supported platforms. PCL's are fully supported by \nVisual Studio 2015 on Windows\n, \nXamarin Studio\n for Android and iOS and have also been reported to work on Linux and Mac. This means that a single self contained library can be used to target a wide variety of platforms.\n\n\nMonoGame.Extended also provides another DLL that is to be used with the \nMonoGame Pipeline tool\n. This provides a set of extra content importers and processors that can be used to load extra content for your game. The content is processed into XNB files just like your textures and sounds and loaded into your games using the standard \nContent.Load\n method.",
+            "title": "Welcome"
         },
         {
             "location": "/#welcome",
@@ -21,104 +21,69 @@
             "title": "About"
         },
         {
-            "location": "/#packages",
+            "location": "/Community-and-Support/",
+            "text": "Community and Support\n\n\nMonoGame.Extended has a growing community of users from all around the globe. We've got lots of ways you can ask questions and get help about the library.\n\n\n\n\nOf course, there's \nthis documentation\n. By contributing to it you're making it better for everyone.\n\n\nWe've got our own section on the \nMonoGame Community Forums\n\n\nWe've even got a \ntag on stackoverflow\n ;)\n\n\nDevelopment is usually discussed in \ngithub issues\n\n\nWe've got a live chatroom on \ngitter\n\n\n\n\nNote: When you ask a question, please consider how permanent the answer should be. If it's something that might benefit others choose the docs, forum or stack overflow over live chat.",
+            "title": "Community and Support"
+        },
+        {
+            "location": "/Community-and-Support/#community-and-support",
+            "text": "MonoGame.Extended has a growing community of users from all around the globe. We've got lots of ways you can ask questions and get help about the library.   Of course, there's  this documentation . By contributing to it you're making it better for everyone.  We've got our own section on the  MonoGame Community Forums  We've even got a  tag on stackoverflow  ;)  Development is usually discussed in  github issues  We've got a live chatroom on  gitter   Note: When you ask a question, please consider how permanent the answer should be. If it's something that might benefit others choose the docs, forum or stack overflow over live chat.",
+            "title": "Community and Support"
+        },
+        {
+            "location": "/Documentation/",
+            "text": "Documenation\n\n\nWe need your help writing better documentation\n\n\n\n\nGood documentation is what separates good open source projects from great ones. \n\n\nDocumentation is a community effort.\n\n\nEven a little bit of documentation is better than none.\n\n\nA rough draft is better than none.\n\n\nIf we all wrote a little documentation, it adds up to a lot.\n\n\n\n\nHow to contribute to the documentation\n\n\nThe docs are located in the source \nDocs/\n folder.  They are built with \nMkDocs\n.\n\n\n\n\nIf you spot an error in the documentation, fix it. This is the simplest way to contribute.\n\n\nIf you notice some missing or out of date information, add it. This is the next simplest way to contribute.\n\n\nIf there's something completely missing, write a stub page. It's a start.\n\n\nIf you want to go a step further, write a tutorial or a whole new page.\n\n\nIf you have any trouble editing the docs, please \ntell somebody\n.\n\n\nYou can edit the page directly on Github, it's Markdown, so you don't necessesarily need to install MkDocs to contribute.\n\n\n\n\nGetting started with MKDocs\n\n\nRunning your own dev docs server at http://127.0.0.1:8000 (your computer) can be done by installing python, and then installing mkdocs.\n\n\n> python -m pip install mkdocs\n\n\n\n\nTo run your local server run the mkdocs module with the \nserve\n command.\n\n\n> cd MonoGame.Extended\nMonoGame.Extended> python -m mkdocs serve\nINFO    -  Building documentation...\nINFO    -  Cleaning site directory\n[I 170608 01:12:06 server:283] Serving on http://127.0.0.1:8000\n[I 170608 01:12:06 handlers:60] Start watching changes\n[I 170608 01:12:06 handlers:62] Start detecting changes\n[I 170608 01:12:15 handlers:133] Browser Connected: http://127.0.0.1:8000/\n\n\n\n\nNow every time you edit a \n*.md\n file in the \nDocs/\n folder the site will refresh with the latest info.\n\n\nTo add a new page, you must add Markdown file, and then reference it in the \nmkdocs.yml\n file somewhere appropriate. \n\n\n\n\nAll pages must be somewhere in the mkdocs.yml \npages\n section, otherwise links to it will not work.",
+            "title": "Documenation"
+        },
+        {
+            "location": "/Documentation/#documenation",
             "text": "",
-            "title": "Packages"
+            "title": "Documenation"
         },
         {
-            "location": "/#core",
-            "text": "The  MonoGame.Extended  core library contains common classes and interfaces the other MonoGame.Extended libraries reference.  By itself, it creates a solid foundation with sprites,  bitmap fonts ,  collections ,  serialization , shapes, texture atlases, viewport adapters,  cameras , timers, math,  object pooling ,  screens , and diagnostics.",
-            "title": "Core"
+            "location": "/Documentation/#we-need-your-help-writing-better-documentation",
+            "text": "Good documentation is what separates good open source projects from great ones.   Documentation is a community effort.  Even a little bit of documentation is better than none.  A rough draft is better than none.  If we all wrote a little documentation, it adds up to a lot.",
+            "title": "We need your help writing better documentation"
         },
         {
-            "location": "/#animations",
-            "text": "The  MonoGame.Extended.Animations  library contains classes useful for 2D  sprite sheet animations .",
-            "title": "Animations"
+            "location": "/Documentation/#how-to-contribute-to-the-documentation",
+            "text": "The docs are located in the source  Docs/  folder.  They are built with  MkDocs .   If you spot an error in the documentation, fix it. This is the simplest way to contribute.  If you notice some missing or out of date information, add it. This is the next simplest way to contribute.  If there's something completely missing, write a stub page. It's a start.  If you want to go a step further, write a tutorial or a whole new page.  If you have any trouble editing the docs, please  tell somebody .  You can edit the page directly on Github, it's Markdown, so you don't necessesarily need to install MkDocs to contribute.",
+            "title": "How to contribute to the documentation"
         },
         {
-            "location": "/#collisions",
-            "text": "The  MonoGame.Extended.Collisions  library contains a 2D grid based collision system.",
-            "title": "Collisions"
+            "location": "/Documentation/#getting-started-with-mkdocs",
+            "text": "Running your own dev docs server at http://127.0.0.1:8000 (your computer) can be done by installing python, and then installing mkdocs.  > python -m pip install mkdocs  To run your local server run the mkdocs module with the  serve  command.  > cd MonoGame.Extended\nMonoGame.Extended> python -m mkdocs serve\nINFO    -  Building documentation...\nINFO    -  Cleaning site directory\n[I 170608 01:12:06 server:283] Serving on http://127.0.0.1:8000\n[I 170608 01:12:06 handlers:60] Start watching changes\n[I 170608 01:12:06 handlers:62] Start detecting changes\n[I 170608 01:12:15 handlers:133] Browser Connected: http://127.0.0.1:8000/  Now every time you edit a  *.md  file in the  Docs/  folder the site will refresh with the latest info.  To add a new page, you must add Markdown file, and then reference it in the  mkdocs.yml  file somewhere appropriate.    All pages must be somewhere in the mkdocs.yml  pages  section, otherwise links to it will not work.",
+            "title": "Getting started with MKDocs"
         },
         {
-            "location": "/#contentpipeline",
-            "text": "The  MonoGame.Extended.Content.Pipeline  library extends the  MonoGame Content Pipeline tool . This adds Animations, BitmapFonts, TextureAtlases, and Tiled maps to the Content Pipeline tool.",
-            "title": "Content.Pipeline"
-        },
-        {
-            "location": "/#entities",
-            "text": "The  MonoGame.Extended.Entities  library adds an  Entity Component System  (ECS) to MonoGame.",
-            "title": "Entities"
-        },
-        {
-            "location": "/#graphics",
-            "text": "The  MonoGame.Extended.Graphics  library contains extensions useful for generating dynamic geometry and batching draw calls.",
-            "title": "Graphics"
-        },
-        {
-            "location": "/#gui",
-            "text": "The  MonoGame.Extended.Gui  library contains a complete GUI system.  It includes Buttons, Text Boxes, Dialogs and many other controls, and is skinnable.",
-            "title": "Gui"
-        },
-        {
-            "location": "/#input",
-            "text": "The  MonoGame.Extended.Input  library contains input listener classes that have events you can use to subscribe to input events, instead of having to poll for input changes.",
-            "title": "Input"
-        },
-        {
-            "location": "/#nuclexgui",
-            "text": "The  MonoGame.Extended.NuclexGui  library contains an implementation of the  Nuclex GUI Framework  for XNA, ported to MonoGame.",
-            "title": "NuclexGui"
-        },
-        {
-            "location": "/#particles",
-            "text": "The  MonoGame.Extended.Particles  library contains a high performance Particle System ported from the  Mercury Particle Engine .",
-            "title": "Particles"
-        },
-        {
-            "location": "/#scenegraphs",
-            "text": "The  MonoGame.Extended.SceneGraphs  library contains a scene graph (tree) system.",
-            "title": "SceneGraphs"
-        },
-        {
-            "location": "/#tiled",
-            "text": "The  MonoGame.Extended.Tiled  library loads and renders maps created with the popular  Tiled Map Editor .",
-            "title": "Tiled"
-        },
-        {
-            "location": "/#tweening",
-            "text": "The  MonoGame.Extended.Tweening  library contains class extensions for tween based animations.",
-            "title": "Tweening"
-        },
-        {
-            "location": "/installation/",
+            "location": "/Installation/",
             "text": "Installation\n\n\nMonoGame.Extended is a collection of \nportable class libraries\n (PCL) designed to be referenced from any MonoGame project to add common extensions and classes for making your games more awesome.\n\n\nThe libraries are distributed as \nNuGet packages\n and can be installed using the NuGet Package Manager in \nVisual Studio\n, \nXamarin Studio\n, or \nMonoDevelop\n. They can also be installed by running the following command (or the equivilant command for the package you want to install) in the \nPackage Manager Console\n.\n\n\nInstall-Package MonoGame.Extended\n\n\n\nNote that \nMonoGame 3.6 will need to be installed\n to properly use MonoGame.Extended in your game project.\n\n\nReferencing the Content Pipeline extension\n\n\nTo get the full experience you'll also want to install the Content Pipeline extension:\n\n\nInstall-Package MonoGame.Extended.Content.Pipeline\n\n\n\nThis package won't add any references to your project. Instead it will download a DLL that's intended to be referenced from the \nMonoGame Content Pipeline tool\n.\n\n\nYou'll need to manually add the reference to your content file (usually \nContent.mgcb\n) using one of the following methods.\n\n\nUsing the MonoGame Pipeline GUI\n\n\nTo add the reference using the Pipeline GUI tool follow these steps:\n\n\n\n\nClick on the \nContent\n node in the root of the tree.\n\n\nIn the properties window, modify the \nReferences\n property.\n\n\nFind and add the \nMonoGame.Extended.Content.Pipeline.dll\n. It's usually located in the \npackages\n folder of your solution.\n\n\n\n\n\n\nUsing a text editor\n\n\nAn alternative way to add the reference is by manually editing the \nContent.mgcb\n file in a text editor or Visual Studio. Look for the references section and update it like this:\n\n\n#-------------------------------- References --------------------------------#\n\n/reference:..\\..\\packages\\MonoGame.Extended.Content.Pipeline.0.6.372\\tools\\MonoGame.Extended.Content.Pipeline.dll\n\n\n\n\nRemember:\n The \nMonoGame.Extended.dll\n and the \nMonoGame.Extended.Content.Pipeline.dll\n come as a pair. Always make sure the version referenced by your game matches the version referenced by the Pipeline tool.\n\n\nThat's it! Once you've referenced the library you can start using it to make your games even more awesome.",
-            "title": "NuGet"
+            "title": "Installation"
         },
         {
-            "location": "/installation/#installation",
+            "location": "/Installation/#installation",
             "text": "MonoGame.Extended is a collection of  portable class libraries  (PCL) designed to be referenced from any MonoGame project to add common extensions and classes for making your games more awesome.  The libraries are distributed as  NuGet packages  and can be installed using the NuGet Package Manager in  Visual Studio ,  Xamarin Studio , or  MonoDevelop . They can also be installed by running the following command (or the equivilant command for the package you want to install) in the  Package Manager Console .  Install-Package MonoGame.Extended  Note that  MonoGame 3.6 will need to be installed  to properly use MonoGame.Extended in your game project.",
             "title": "Installation"
         },
         {
-            "location": "/installation/#referencing-the-content-pipeline-extension",
+            "location": "/Installation/#referencing-the-content-pipeline-extension",
             "text": "To get the full experience you'll also want to install the Content Pipeline extension:  Install-Package MonoGame.Extended.Content.Pipeline  This package won't add any references to your project. Instead it will download a DLL that's intended to be referenced from the  MonoGame Content Pipeline tool .  You'll need to manually add the reference to your content file (usually  Content.mgcb ) using one of the following methods.",
             "title": "Referencing the Content Pipeline extension"
         },
         {
-            "location": "/installation/#using-the-monogame-pipeline-gui",
+            "location": "/Installation/#using-the-monogame-pipeline-gui",
             "text": "To add the reference using the Pipeline GUI tool follow these steps:   Click on the  Content  node in the root of the tree.  In the properties window, modify the  References  property.  Find and add the  MonoGame.Extended.Content.Pipeline.dll . It's usually located in the  packages  folder of your solution.",
             "title": "Using the MonoGame Pipeline GUI"
         },
         {
-            "location": "/installation/#using-a-text-editor",
+            "location": "/Installation/#using-a-text-editor",
             "text": "An alternative way to add the reference is by manually editing the  Content.mgcb  file in a text editor or Visual Studio. Look for the references section and update it like this:  #-------------------------------- References --------------------------------#\n\n/reference:..\\..\\packages\\MonoGame.Extended.Content.Pipeline.0.6.372\\tools\\MonoGame.Extended.Content.Pipeline.dll  Remember:  The  MonoGame.Extended.dll  and the  MonoGame.Extended.Content.Pipeline.dll  come as a pair. Always make sure the version referenced by your game matches the version referenced by the Pipeline tool.  That's it! Once you've referenced the library you can start using it to make your games even more awesome.",
             "title": "Using a text editor"
         },
         {
             "location": "/NuGet-Pre-Release/",
             "text": "Pre-Release NuGet packages\n\n\nYou can get access to the pre-release NuGet packages by adding the \nCraftwork Games Build Server\n as a NuGet package source in Visual Studio.\n\n\n\n\nInstructions\n\n\n\n\nIn Visual Studio go to Tools => NuGet Package Manager => Package Manager Settings => Package Sources\n\n\nAdd a new package source using the following url \nhttp://build.craftworkgames.com/guestAuth/app/nuget/v1/FeedService.svc/\n\n\nWhen you're adding the package, remember to tick the \"Include prerelease\" checkbox",
-            "title": "NuGet Pre-Release"
+            "title": "Pre-Release NuGet packages"
         },
         {
             "location": "/NuGet-Pre-Release/#pre-release-nuget-packages",
@@ -129,396 +94,6 @@
             "location": "/NuGet-Pre-Release/#instructions",
             "text": "In Visual Studio go to Tools => NuGet Package Manager => Package Manager Settings => Package Sources  Add a new package source using the following url  http://build.craftworkgames.com/guestAuth/app/nuget/v1/FeedService.svc/  When you're adding the package, remember to tick the \"Include prerelease\" checkbox",
             "title": "Instructions"
-        },
-        {
-            "location": "/Building-from-Source/",
-            "text": "Building From Source\n\n\nIdeally building from source should be as straightforward as possible. Everything should build right out of the repository. However, there are some external factors that can sometimes make things more difficult.\n\n\nMonoGame.Extended uses a few newish technologies:\n - \nMonoGame 3.6\n.\n - C# 6.0 and Portable Class Library support in your IDE.\n - .NET Framework 4.5 or equivalent (Mono).\n - An up to date NuGet package manager\n\n\nIf you're building on Windows I highly recommend using \nVisual Studio 2015\n because it supports all of the above out of the box.\n\n\nThere's not much more to it than that. Download the source using you're favorite git client and build.\n\n\ngit clone https://github.com/craftworkgames/MonoGame.Extended.git\n\n\n\nOn the first build the solution will download several NuGet packages.\n\n\nOnce the code builds, you can play with the demos in the \nDemos\n folder.",
-            "title": "Building from Source"
-        },
-        {
-            "location": "/Building-from-Source/#building-from-source",
-            "text": "Ideally building from source should be as straightforward as possible. Everything should build right out of the repository. However, there are some external factors that can sometimes make things more difficult.  MonoGame.Extended uses a few newish technologies:\n -  MonoGame 3.6 .\n - C# 6.0 and Portable Class Library support in your IDE.\n - .NET Framework 4.5 or equivalent (Mono).\n - An up to date NuGet package manager  If you're building on Windows I highly recommend using  Visual Studio 2015  because it supports all of the above out of the box.  There's not much more to it than that. Download the source using you're favorite git client and build.  git clone https://github.com/craftworkgames/MonoGame.Extended.git  On the first build the solution will download several NuGet packages.  Once the code builds, you can play with the demos in the  Demos  folder.",
-            "title": "Building From Source"
-        },
-        {
-            "location": "/Build-MonoGame-PCL/",
-            "text": "Building the MonoGame PCL\n\n\nThis guide is about building the MonoGame \nPortable Class Library\n (PCL) found in the \nDependencies folder\n of the project.\n\n\nNote\n: This is NOT a guide about building MonoGame.Extended from source. You won't need this guide unless you're trying to update the dependencies.\n\n\nOne of the challenges with using MonoGame is getting your project set up so that you can separate platform-specific and platform-independent code. One way, which we are using with MonoGame.Extended is to compile against a PCL (\nPortable Class Library\n). Instead of creating a platform specific binary of MonoGame.Extended for each platform, a cross-platform library is used and the platform specific code is substituted in later. A PCL is created through a certain set of tools such as \nVisual Studio\n on Windows, \nXamarin Studio\n on Windows and Mac, or \nMonoDevelop\n on Windows, Mac and Linux. Since PCLs are designed to be cross-platform they can be created with one toolchain and used through a different toolchain.\n\n\nWith MonoGame, making a PCL isn't so easy since a large amount of platform-specific code is mixed in with other code, so you can't (at the moment) make a PCL of MonoGame directly. There are a few other issues as well, but I won't go into those. The solution to this is to use a tool to scrape all of the platform-specific implementation details from a specific MonoGame platform library. It doesn't really matter if it's the WindowsGL platform version that is used for this, but it's recommended.\n\n\nInstall Tools\n\n\nThe first step in generating the PCL is to install the required tools. If you have Visual Studio, Xamarin Studio, you already have the tools. For Linux, you have to install the tools from Mono. To install Mono on a specific Linux distribution follow \ntheir directions on the Mono website\n. The important packages to install are \nmono-complete\n, which installs the complete mono runtime and development tools (including the tools in \nmono-devel\n if I remember correctly), and also the \nreferenceassemblies-pcl\n package, which installs tools and references required for PCL generation and usage.\n\n\nGet MonoGame Source\n\n\nNext, clone down the copy of \nMonoGame from GitHub\n that you want to generate a PCL for. Remember that a PCL that is generated will probably only be usable with binaries made from that exact same commit. \n\n\nBuild MonoGame\n\n\nAfter you have cloned the repository, follow the MonoGame build instructions and use Protobuild to generate the set of \n.sln\n files and \n.csproj\n files for your platform. Open up the solution, then compile it.\n\n\n\"Piranha\" Binary into PCL\n\n\nFinally, you need a copy of @Ark-kun's \nPiranha tool, which \"chews\" binaries to make them into PCLs\n. Download a copy of his repository from GitHub, then build it. Navigate to where Piranha is built and open up command prompt if you are on Windows (PROTIP: shift-right-click on the Explorer background and select \"Open command window here\"), or Terminal if you are on Mac or Linux (MAC USERS PROTIP: type \"cd\" into terminal then drag and drop the folder into the terminal window and hit return). Enter the following command where \nPATH_TO_MONOGAME_FRAMEWORK_DLL\n is the path to the target \nMonoGame.Framework.dll\n:\n\n\nWindows Users:\n\nPiranha.exe make-portable-skeleton -p \".NETPortable,Version=v4.5,Profile=Profile111\" -i \"PATH_TO_MONOGAME_FRAMEWORK_DLL\" -o MonoGame.Framework.dll\n\n\nMac and Linux Users:\n\nmono Piranha.exe make-portable-skeleton -p \".NETPortable,Version=v4.5,Profile=Profile111\" -i \"PATH_TO_MONOGAME_FRAMEWORK_DLL\" -o MonoGame.Framework.dll\n\n\nNote that the .NET framework portable profile might need to be changed to match your project.\n\n\nPiranha should of completed successfully and generated a portable \nMonoGame.Framework.dll\n.",
-            "title": "Building the MonoGame PCL"
-        },
-        {
-            "location": "/Build-MonoGame-PCL/#building-the-monogame-pcl",
-            "text": "This guide is about building the MonoGame  Portable Class Library  (PCL) found in the  Dependencies folder  of the project.  Note : This is NOT a guide about building MonoGame.Extended from source. You won't need this guide unless you're trying to update the dependencies.  One of the challenges with using MonoGame is getting your project set up so that you can separate platform-specific and platform-independent code. One way, which we are using with MonoGame.Extended is to compile against a PCL ( Portable Class Library ). Instead of creating a platform specific binary of MonoGame.Extended for each platform, a cross-platform library is used and the platform specific code is substituted in later. A PCL is created through a certain set of tools such as  Visual Studio  on Windows,  Xamarin Studio  on Windows and Mac, or  MonoDevelop  on Windows, Mac and Linux. Since PCLs are designed to be cross-platform they can be created with one toolchain and used through a different toolchain.  With MonoGame, making a PCL isn't so easy since a large amount of platform-specific code is mixed in with other code, so you can't (at the moment) make a PCL of MonoGame directly. There are a few other issues as well, but I won't go into those. The solution to this is to use a tool to scrape all of the platform-specific implementation details from a specific MonoGame platform library. It doesn't really matter if it's the WindowsGL platform version that is used for this, but it's recommended.",
-            "title": "Building the MonoGame PCL"
-        },
-        {
-            "location": "/Build-MonoGame-PCL/#install-tools",
-            "text": "The first step in generating the PCL is to install the required tools. If you have Visual Studio, Xamarin Studio, you already have the tools. For Linux, you have to install the tools from Mono. To install Mono on a specific Linux distribution follow  their directions on the Mono website . The important packages to install are  mono-complete , which installs the complete mono runtime and development tools (including the tools in  mono-devel  if I remember correctly), and also the  referenceassemblies-pcl  package, which installs tools and references required for PCL generation and usage.",
-            "title": "Install Tools"
-        },
-        {
-            "location": "/Build-MonoGame-PCL/#get-monogame-source",
-            "text": "Next, clone down the copy of  MonoGame from GitHub  that you want to generate a PCL for. Remember that a PCL that is generated will probably only be usable with binaries made from that exact same commit.",
-            "title": "Get MonoGame Source"
-        },
-        {
-            "location": "/Build-MonoGame-PCL/#build-monogame",
-            "text": "After you have cloned the repository, follow the MonoGame build instructions and use Protobuild to generate the set of  .sln  files and  .csproj  files for your platform. Open up the solution, then compile it.",
-            "title": "Build MonoGame"
-        },
-        {
-            "location": "/Build-MonoGame-PCL/#piranha-binary-into-pcl",
-            "text": "Finally, you need a copy of @Ark-kun's  Piranha tool, which \"chews\" binaries to make them into PCLs . Download a copy of his repository from GitHub, then build it. Navigate to where Piranha is built and open up command prompt if you are on Windows (PROTIP: shift-right-click on the Explorer background and select \"Open command window here\"), or Terminal if you are on Mac or Linux (MAC USERS PROTIP: type \"cd\" into terminal then drag and drop the folder into the terminal window and hit return). Enter the following command where  PATH_TO_MONOGAME_FRAMEWORK_DLL  is the path to the target  MonoGame.Framework.dll :  Windows Users: Piranha.exe make-portable-skeleton -p \".NETPortable,Version=v4.5,Profile=Profile111\" -i \"PATH_TO_MONOGAME_FRAMEWORK_DLL\" -o MonoGame.Framework.dll  Mac and Linux Users: mono Piranha.exe make-portable-skeleton -p \".NETPortable,Version=v4.5,Profile=Profile111\" -i \"PATH_TO_MONOGAME_FRAMEWORK_DLL\" -o MonoGame.Framework.dll  Note that the .NET framework portable profile might need to be changed to match your project.  Piranha should of completed successfully and generated a portable  MonoGame.Framework.dll .",
-            "title": "\"Piranha\" Binary into PCL"
-        },
-        {
-            "location": "/MonoGame.Extended/BitmapFonts/",
-            "text": "Bitmap Fonts\n\n\nBitmaps fonts generated with the \nBMFont\n tool are a great alternative to using the built in \nSpriteFont\n in MonoGame. There are a couple of reasons you might want to do this, either \nSpriteFont\n's are not working out for you or you want to have more control over the fonts in your game.\n\n\nThe \nBitmapFont\n class in \nMonoGame.Extended\n is designed to be a drop in replacement for the \nSpriteFont\n class as much as possible. The goal is to take a \n.fnt\n file and texture generated with the BMFont tool and load it into our game just like any other content. \n\n\n_bitmapFont = Content.Load<BitmapFont>(\"my-font\");\n\n\n\nThen render some text just like any other string.\n\n\n_spriteBatch.Begin();\n_spriteBatch.DrawString(_bitmapFont, \"Hello World\", new Vector2(100, 200), Color.Red);\n_spriteBatch.End();\n\n\n\nBut before we can do that, we'll need to generate our bitmap font file.\n\n\nGenerating the font file with BMFont\n\n\nIf you haven\u2019t already done so, download and install the \nBMFont\n tool. \n\n\n\n\nThe main window of BMFont displays all of the characters of the font. You'll need to click and drag over the characters to highlight them in white, these are the characters that will be saved to the exported texture. Typically you will take all of the top half and ignore the bottom half, although, you may only want to take a smaller subset to reduce texture size requirements.\n\n\nTo choose a font click \nOptions\n => \nFont Settings\n or hit the \nF\n key. You can pretty much choose whatever settings you like here.\n\n\n\n\nClose that dialog and make sure all your desired characters are highlighted in white. \n\n\nNext click \nOptions\n => \nExport Options\n or hit the \nT\n key. The important thing here is setting the file format to \nXML\n and getting the texture width and height right. It's preferable to fit the entire font on a single texture (although not required) and it can sometimes take a little tweaking.\n\n\nI also recommend using \nPNG\n textures, \n32 bit depth\n and the \nWhite text with alpha\n preset, but it's up to you. Play around with the settings for different effects.\n\n\n\n\nOnce you're done with the settings you can click \nOptions\n => \nVisualize\n or hit the \nV\n key to see a preview of how the texture will be packed.\n\n\nFinally, click \nOptions\n -> \nSave bitmap font as\n or hit \nCtrl+S\n to export the font file. The textures will also be saved at this location, you'll need to add both of these to your game's content.  \n\n\nBuilding the font file with the MonoGame Pipeline\n\n\nWe need to load the font file into the game, but first we need to add a reference to the \nMonoGame.Extended.Content.Pipleine.dll\n that comes with an importer and processor for BMFont files.  \n\n\n\n\nOnce the reference is added, you can add the font file and texture to the content. If all goes well, the importer and processor should be selected automatically.\n\n\n\n\nDon't forget to \nRebuild\n your content.\n\n\nRendering text in your game\n\n\nIf you've referenced the \nMonoGame.Extended.dll\n from your game project the code is pretty straightforward.\n\n\nFirst load the font into an instance of a \nBitmapFont\n variable.\n\n\n_bitmapFont = Content.Load<BitmapFont>(\"my-font\");\n\n\n\nThen in your \nDraw\n method use the \nDrawString\n extension method to render some text much like you would with a traditional \nSpriteFont\n.\n\n\n_spriteBatch.Begin();\n_spriteBatch.DrawString(_bitmapFont, \"Hello World\", new Vector2(50, 50), Color.Red);\n_spriteBatch.DrawString(_bitmapFont, \n    \"Contrary to popular belief, Lorem Ipsum is not simply random text.\\n\\n\" + \n    \"It has roots in a piece of classical Latin literature from 45 BC, \" + \n    \"making it over 2000 years old. Richard McClintock, a Latin professor\" + \n    \" at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin \" + \n    \"words, consectetur, from a Lorem Ipsum passage, and going through the cites of \" + \n    \"the word in classical literature, discovered the undoubtable source.\", \n    new Vector2(50, 100), new Color(Color.White, 0.5f), _viewportAdapter.VirtualWidth - 50);\n_spriteBatch.End();\n\n\n\nAnd observe the result! :)\n\n\n\n\nHappy coding! :)",
-            "title": "BitmapFonts"
-        },
-        {
-            "location": "/MonoGame.Extended/BitmapFonts/#bitmap-fonts",
-            "text": "Bitmaps fonts generated with the  BMFont  tool are a great alternative to using the built in  SpriteFont  in MonoGame. There are a couple of reasons you might want to do this, either  SpriteFont 's are not working out for you or you want to have more control over the fonts in your game.  The  BitmapFont  class in  MonoGame.Extended  is designed to be a drop in replacement for the  SpriteFont  class as much as possible. The goal is to take a  .fnt  file and texture generated with the BMFont tool and load it into our game just like any other content.   _bitmapFont = Content.Load<BitmapFont>(\"my-font\");  Then render some text just like any other string.  _spriteBatch.Begin();\n_spriteBatch.DrawString(_bitmapFont, \"Hello World\", new Vector2(100, 200), Color.Red);\n_spriteBatch.End();  But before we can do that, we'll need to generate our bitmap font file.",
-            "title": "Bitmap Fonts"
-        },
-        {
-            "location": "/MonoGame.Extended/BitmapFonts/#generating-the-font-file-with-bmfont",
-            "text": "If you haven\u2019t already done so, download and install the  BMFont  tool.    The main window of BMFont displays all of the characters of the font. You'll need to click and drag over the characters to highlight them in white, these are the characters that will be saved to the exported texture. Typically you will take all of the top half and ignore the bottom half, although, you may only want to take a smaller subset to reduce texture size requirements.  To choose a font click  Options  =>  Font Settings  or hit the  F  key. You can pretty much choose whatever settings you like here.   Close that dialog and make sure all your desired characters are highlighted in white.   Next click  Options  =>  Export Options  or hit the  T  key. The important thing here is setting the file format to  XML  and getting the texture width and height right. It's preferable to fit the entire font on a single texture (although not required) and it can sometimes take a little tweaking.  I also recommend using  PNG  textures,  32 bit depth  and the  White text with alpha  preset, but it's up to you. Play around with the settings for different effects.   Once you're done with the settings you can click  Options  =>  Visualize  or hit the  V  key to see a preview of how the texture will be packed.  Finally, click  Options  ->  Save bitmap font as  or hit  Ctrl+S  to export the font file. The textures will also be saved at this location, you'll need to add both of these to your game's content.",
-            "title": "Generating the font file with BMFont"
-        },
-        {
-            "location": "/MonoGame.Extended/BitmapFonts/#building-the-font-file-with-the-monogame-pipeline",
-            "text": "We need to load the font file into the game, but first we need to add a reference to the  MonoGame.Extended.Content.Pipleine.dll  that comes with an importer and processor for BMFont files.     Once the reference is added, you can add the font file and texture to the content. If all goes well, the importer and processor should be selected automatically.   Don't forget to  Rebuild  your content.",
-            "title": "Building the font file with the MonoGame Pipeline"
-        },
-        {
-            "location": "/MonoGame.Extended/BitmapFonts/#rendering-text-in-your-game",
-            "text": "If you've referenced the  MonoGame.Extended.dll  from your game project the code is pretty straightforward.  First load the font into an instance of a  BitmapFont  variable.  _bitmapFont = Content.Load<BitmapFont>(\"my-font\");  Then in your  Draw  method use the  DrawString  extension method to render some text much like you would with a traditional  SpriteFont .  _spriteBatch.Begin();\n_spriteBatch.DrawString(_bitmapFont, \"Hello World\", new Vector2(50, 50), Color.Red);\n_spriteBatch.DrawString(_bitmapFont, \n    \"Contrary to popular belief, Lorem Ipsum is not simply random text.\\n\\n\" + \n    \"It has roots in a piece of classical Latin literature from 45 BC, \" + \n    \"making it over 2000 years old. Richard McClintock, a Latin professor\" + \n    \" at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin \" + \n    \"words, consectetur, from a Lorem Ipsum passage, and going through the cites of \" + \n    \"the word in classical literature, discovered the undoubtable source.\", \n    new Vector2(50, 100), new Color(Color.White, 0.5f), _viewportAdapter.VirtualWidth - 50);\n_spriteBatch.End();  And observe the result! :)   Happy coding! :)",
-            "title": "Rendering text in your game"
-        },
-        {
-            "location": "/MonoGame.Extended/Camera2D/",
-            "text": "Camera2D Class\n\n\n\n\nNamespace:\n MonoGame.Extended\n\nInheritance:\n Camera2D > Object\n\nImplements:\n IMovable, IRotatable\n\n\nMembers\n\n\nMethods\n\n\nMember Detail\n\n\nConstructor Detail\n\n\nMethod Detail\n\n\nTutorial\n\n\nFurther Reading\n\n\n\n\nMembers\n\n\n_viewportAdapter\n : ViewportAdapter\n\n\nPosition\n : Vector2\n\nThe position of the camera as a Vector2\n\n\nMethods\n\n\npublic Camera2D\n(GraphicsDevice graphicsDevice)\n\nConstructor\n\n\npublic void Move\n(Vector2 direction)\n\nMoves the camera\n\n\nMember Detail\n\n\n_viewportAdapter\n\n\nprivate readonly ViewportAdapter\n\n\n\n\nPosition\n\n\npublic Vector2 Position { get; set; }\n\n\n\n\nThe position of the camera, used in matrix transformations.\n\n\nConstructor Detail\n\n\n\n\npublic Camera2D(GraphicsDevice graphicsDevice)\n\n\nParameters\n* graphicsDevice\n\n\nMethod Detail\n\n\n\n\npublic void Move(Vector2 direction)\n\nMoves the camera to a new position. (see \nusage\n)\n\n\nParameters\n* direction - The Vector2 that will become the new \nPosition\n of the camera.\n\n\nTutorial\n\n\nThe purpose of the camera is to create a transformation matrix that changes the way a sprite batch is rendered.\n\n\nTo create a camera initialize an instance of it using one of the constructor overloads. It's recommended that you used a viewport adapter to scale the screen but you don't have too.\n\n\n        private Camera2D _camera;\n\n        protected override void Initialize()\n        {\n            base.Initialize();\n\n            var viewportAdapter = new BoxingViewportAdapter(Window, GraphicsDevice, 800, 480);\n            _camera = new Camera2D(viewportAdapter);\n        }\n\n\n\n\nNext you'll need to apply the camera's view matrix to one or more of the \nSpriteBatch.Begin\n calls in your \nDraw\n method.\n\n\n        protected override void Draw(GameTime gameTime)\n        {\n            GraphicsDevice.Clear(Color.CornflowerBlue);\n\n            // the camera produces a view matrix that can be applied to any sprite batch\n            var transformMatrix = _camera.GetViewMatrix();\n            _spriteBatch.Begin(transformMatrix: transformMatrix);\n            // ... draw sprites here ...\n            _spriteBatch.End();\n        }\n\n\n\n\nA \ntransformation matrix\n is one of the parameters of a \nSpriteBatch.Begin\n call.\n\n\n\n\nTransformation matrix for scale, rotate, translate options.\n\n\n\n\nIn other words, we use the camera to transform the way a batch of sprites is rendered to the screen without actually modifying their positions, rotations or scales directly. This creates the effect of having a camera looking at your scene that can move, rotate and zoom in and out.\n\n\nOnce you've got a camera instance in your game you'll probably want to move it around in the \nUpdate\n method somehow. For example, you could move the camera's position with the arrow keys.\n\n\n\n        protected override void Update(GameTime gameTime)\n        {\n            var keyboardState = Keyboard.GetState();\n            const float movementSpeed = 200;\n\n            if (keyboardState.IsKeyDown(Keys.Up))\n                _camera.Move(new Vector2(0, -movementSpeed) * deltaTime);\n        }\n\n\n\n\nLast but not least, there'll be times when you want to convert from screen coordinates to world coordinates and visa-vera.  For example, if you want to know which sprite is under the mouse you'll need to convert the mouse position back into the world position that was used to position the sprite in the first place.\n\n\n    var mouseState = Mouse.GetState();\n    _worldPosition = _camera.ScreenToWorld(new Vector2(mouseState.X, mouseState.Y));\n\n\n\n\nFurther Reading\n\n\nTransformation Matrix on MSDN\n\n\nMatrix Basics",
-            "title": "Camera2D"
-        },
-        {
-            "location": "/MonoGame.Extended/Camera2D/#camera2d-class",
-            "text": "Namespace:  MonoGame.Extended Inheritance:  Camera2D > Object Implements:  IMovable, IRotatable  Members  Methods  Member Detail  Constructor Detail  Method Detail  Tutorial  Further Reading",
-            "title": "Camera2D Class"
-        },
-        {
-            "location": "/MonoGame.Extended/Camera2D/#members",
-            "text": "_viewportAdapter  : ViewportAdapter  Position  : Vector2 The position of the camera as a Vector2",
-            "title": "Members"
-        },
-        {
-            "location": "/MonoGame.Extended/Camera2D/#methods",
-            "text": "public Camera2D (GraphicsDevice graphicsDevice) Constructor  public void Move (Vector2 direction) Moves the camera",
-            "title": "Methods"
-        },
-        {
-            "location": "/MonoGame.Extended/Camera2D/#member-detail",
-            "text": "",
-            "title": "Member Detail"
-        },
-        {
-            "location": "/MonoGame.Extended/Camera2D/#_viewportadapter",
-            "text": "private readonly ViewportAdapter",
-            "title": "_viewportAdapter"
-        },
-        {
-            "location": "/MonoGame.Extended/Camera2D/#position",
-            "text": "public Vector2 Position { get; set; }  The position of the camera, used in matrix transformations.",
-            "title": "Position"
-        },
-        {
-            "location": "/MonoGame.Extended/Camera2D/#constructor-detail",
-            "text": "public Camera2D(GraphicsDevice graphicsDevice)  Parameters\n* graphicsDevice",
-            "title": "Constructor Detail"
-        },
-        {
-            "location": "/MonoGame.Extended/Camera2D/#method-detail",
-            "text": "public void Move(Vector2 direction) \nMoves the camera to a new position. (see  usage )  Parameters\n* direction - The Vector2 that will become the new  Position  of the camera.",
-            "title": "Method Detail"
-        },
-        {
-            "location": "/MonoGame.Extended/Camera2D/#tutorial",
-            "text": "The purpose of the camera is to create a transformation matrix that changes the way a sprite batch is rendered.  To create a camera initialize an instance of it using one of the constructor overloads. It's recommended that you used a viewport adapter to scale the screen but you don't have too.          private Camera2D _camera;\n\n        protected override void Initialize()\n        {\n            base.Initialize();\n\n            var viewportAdapter = new BoxingViewportAdapter(Window, GraphicsDevice, 800, 480);\n            _camera = new Camera2D(viewportAdapter);\n        }  Next you'll need to apply the camera's view matrix to one or more of the  SpriteBatch.Begin  calls in your  Draw  method.          protected override void Draw(GameTime gameTime)\n        {\n            GraphicsDevice.Clear(Color.CornflowerBlue);\n\n            // the camera produces a view matrix that can be applied to any sprite batch\n            var transformMatrix = _camera.GetViewMatrix();\n            _spriteBatch.Begin(transformMatrix: transformMatrix);\n            // ... draw sprites here ...\n            _spriteBatch.End();\n        }  A  transformation matrix  is one of the parameters of a  SpriteBatch.Begin  call.   Transformation matrix for scale, rotate, translate options.   In other words, we use the camera to transform the way a batch of sprites is rendered to the screen without actually modifying their positions, rotations or scales directly. This creates the effect of having a camera looking at your scene that can move, rotate and zoom in and out.  Once you've got a camera instance in your game you'll probably want to move it around in the  Update  method somehow. For example, you could move the camera's position with the arrow keys.          protected override void Update(GameTime gameTime)\n        {\n            var keyboardState = Keyboard.GetState();\n            const float movementSpeed = 200;\n\n            if (keyboardState.IsKeyDown(Keys.Up))\n                _camera.Move(new Vector2(0, -movementSpeed) * deltaTime);\n        }  Last but not least, there'll be times when you want to convert from screen coordinates to world coordinates and visa-vera.  For example, if you want to know which sprite is under the mouse you'll need to convert the mouse position back into the world position that was used to position the sprite in the first place.      var mouseState = Mouse.GetState();\n    _worldPosition = _camera.ScreenToWorld(new Vector2(mouseState.X, mouseState.Y));",
-            "title": "Tutorial"
-        },
-        {
-            "location": "/MonoGame.Extended/Camera2D/#further-reading",
-            "text": "Transformation Matrix on MSDN  Matrix Basics",
-            "title": "Further Reading"
-        },
-        {
-            "location": "/MonoGame.Extended/Content/",
-            "text": "ContentManager extensions\n\n\nContentManager.OpenStream\n\n\nSystem.IO.Stream ContentManager.OpenStream(string filename)\n\n\nOpenStream\n allows easy access to \nTitleContainer.OpenStream\n so you can use the \nGame.Content\n object to load compiled resources \nand\n included resources.\n\n\n// my-file.txt is in the RootDirectory\nvar stream = Content.OpenStream(\"my-file.txt\");\n// do something with file\nstream.Close();\n\n\n\n\nContentManager.GetGraphicsDevice\n\n\nGraphicsDevice ContentManager.GetGraphicsDevice()\n\n\nGetGraphicsDevice\n returns the current \nGraphicsDevice\n from the services.\n\n\nvar graphicsDevice = Content.GetGraphicsDevice();\nvar width = graphicsDevice.DisplayMode.Width;\n\n\n\n\nContentReader extensions\n\n\nThe \nContentReader\n extensions help when writing your own content pipeline readers.\n\n\nContentReader.GetGraphicsDevice\n\n\nGraphicsDevice ContentManager.GetGraphicsDevice()\n\n\nGetGraphicsDevice\n returns the current \nGraphicsDevice\n to help when loading content for the current display.\n\n\npublic class MyTypeReader : ContentTypeReader<MyType> {\n    protected override MyType Read(ContentReader reader, MyType existingInstance)\n    {\n        var graphicsDevice = reader.GetGraphicsDevice();\n        // ...\n    }\n}\n\n\n\n\nContentReader.GetRelativeAssetName\n\n\nstring ContentReader.GetRelativeAssetName(string relativeName)\n\n\nGetRelativeAssetName\n helps when your content type loads a different type, and you want to know the name to give \nContentManager.Load\n.\n\n\npublic class MyTypeReader : ContentTypeReader<MyType> {\n    protected override MyType Read(ContentReader reader, MyType existingInstance)\n    {\n        var assetName = reader.GetRelativeAssetName(reader.ReadString());\n        var other = reader.ContentManager.Load<OtherType>(assetName);\n        // ...\n    }\n}",
-            "title": "Content Extensions"
-        },
-        {
-            "location": "/MonoGame.Extended/Content/#contentmanager-extensions",
-            "text": "",
-            "title": "ContentManager extensions"
-        },
-        {
-            "location": "/MonoGame.Extended/Content/#contentmanageropenstream",
-            "text": "System.IO.Stream ContentManager.OpenStream(string filename)  OpenStream  allows easy access to  TitleContainer.OpenStream  so you can use the  Game.Content  object to load compiled resources  and  included resources.  // my-file.txt is in the RootDirectory\nvar stream = Content.OpenStream(\"my-file.txt\");\n// do something with file\nstream.Close();",
-            "title": "ContentManager.OpenStream"
-        },
-        {
-            "location": "/MonoGame.Extended/Content/#contentmanagergetgraphicsdevice",
-            "text": "GraphicsDevice ContentManager.GetGraphicsDevice()  GetGraphicsDevice  returns the current  GraphicsDevice  from the services.  var graphicsDevice = Content.GetGraphicsDevice();\nvar width = graphicsDevice.DisplayMode.Width;",
-            "title": "ContentManager.GetGraphicsDevice"
-        },
-        {
-            "location": "/MonoGame.Extended/Content/#contentreader-extensions",
-            "text": "The  ContentReader  extensions help when writing your own content pipeline readers.",
-            "title": "ContentReader extensions"
-        },
-        {
-            "location": "/MonoGame.Extended/Content/#contentreadergetgraphicsdevice",
-            "text": "GraphicsDevice ContentManager.GetGraphicsDevice()  GetGraphicsDevice  returns the current  GraphicsDevice  to help when loading content for the current display.  public class MyTypeReader : ContentTypeReader<MyType> {\n    protected override MyType Read(ContentReader reader, MyType existingInstance)\n    {\n        var graphicsDevice = reader.GetGraphicsDevice();\n        // ...\n    }\n}",
-            "title": "ContentReader.GetGraphicsDevice"
-        },
-        {
-            "location": "/MonoGame.Extended/Content/#contentreadergetrelativeassetname",
-            "text": "string ContentReader.GetRelativeAssetName(string relativeName)  GetRelativeAssetName  helps when your content type loads a different type, and you want to know the name to give  ContentManager.Load .  public class MyTypeReader : ContentTypeReader<MyType> {\n    protected override MyType Read(ContentReader reader, MyType existingInstance)\n    {\n        var assetName = reader.GetRelativeAssetName(reader.ReadString());\n        var other = reader.ContentManager.Load<OtherType>(assetName);\n        // ...\n    }\n}",
-            "title": "ContentReader.GetRelativeAssetName"
-        },
-        {
-            "location": "/MonoGame.Extended/Collections/",
-            "text": "Collections\n\n\nCollections are extensions to the C# collections that are useful for game programming.\n\n\nBag\n\n\nA \nBag\n is an un-ordered array of items with fast Add and Remove properties.\n\n\nIt is much faster than an array when removing items, and takes less space than a linked list.\n\n\nBag will resize itself only when it needs to.\n\n\nvar bag = new Bag<int>(3);\nbag.Add(4);\nbag.Add(8);\nbag.Add(15);\n// bag is now [4, 8, 15]\n\nbag.Add(16); // array is extended here, capacity is now 4 instead of 3\n\nbag.Remove(1);\n// bag is now [4, 16, 15] with a capacity of 4\n\n\n\n\nBitVector32\n\n\nThe \nBitVector32\n class provides easy access to 32 individual bit flags.\n\n\nDeque\n\n\nRepresents a collection of objects which elements can added to or removed either from the front or back; a\n\ndouble ended queue\n.\n\n\nDictionaryExtensions\n\n\nExtends all \nDictionary<>\n classes with \nGetValueOrDefault(key, default)\n.\n\n\nKeyedCollection\n\n\nA KeyedCollection is used like a \nDictionary<>\n, except you provide a function that takes a value and return's it's key.\n\n\nListExtensions\n\n\nAdds \nShuffle(Random)\n to all \nIList<>\n classes.\n\n\nObject Pooling\n\n\nAn \nObjectPool<T>\n allows reuse of memory for a group of items to avoid Garbage Collection.\nMore information is in the \nObject Pooling\n documentation.\n\n\nObservableCollection\n\n\nAn \nObservableCollection<T>\n manages an \nIList<T>\n of items firing \nItemAdded\n, \nItemRemoved\n, \nClearing\n and \nCleared\n events when the collection is changed.",
-            "title": "Collections"
-        },
-        {
-            "location": "/MonoGame.Extended/Collections/#collections",
-            "text": "Collections are extensions to the C# collections that are useful for game programming.",
-            "title": "Collections"
-        },
-        {
-            "location": "/MonoGame.Extended/Collections/#bag",
-            "text": "A  Bag  is an un-ordered array of items with fast Add and Remove properties.  It is much faster than an array when removing items, and takes less space than a linked list.  Bag will resize itself only when it needs to.  var bag = new Bag<int>(3);\nbag.Add(4);\nbag.Add(8);\nbag.Add(15);\n// bag is now [4, 8, 15]\n\nbag.Add(16); // array is extended here, capacity is now 4 instead of 3\n\nbag.Remove(1);\n// bag is now [4, 16, 15] with a capacity of 4",
-            "title": "Bag"
-        },
-        {
-            "location": "/MonoGame.Extended/Collections/#bitvector32",
-            "text": "The  BitVector32  class provides easy access to 32 individual bit flags.",
-            "title": "BitVector32"
-        },
-        {
-            "location": "/MonoGame.Extended/Collections/#deque",
-            "text": "Represents a collection of objects which elements can added to or removed either from the front or back; a double ended queue .",
-            "title": "Deque"
-        },
-        {
-            "location": "/MonoGame.Extended/Collections/#dictionaryextensions",
-            "text": "Extends all  Dictionary<>  classes with  GetValueOrDefault(key, default) .",
-            "title": "DictionaryExtensions"
-        },
-        {
-            "location": "/MonoGame.Extended/Collections/#keyedcollection",
-            "text": "A KeyedCollection is used like a  Dictionary<> , except you provide a function that takes a value and return's it's key.",
-            "title": "KeyedCollection"
-        },
-        {
-            "location": "/MonoGame.Extended/Collections/#listextensions",
-            "text": "Adds  Shuffle(Random)  to all  IList<>  classes.",
-            "title": "ListExtensions"
-        },
-        {
-            "location": "/MonoGame.Extended/Collections/#object-pooling",
-            "text": "An  ObjectPool<T>  allows reuse of memory for a group of items to avoid Garbage Collection.\nMore information is in the  Object Pooling  documentation.",
-            "title": "Object Pooling"
-        },
-        {
-            "location": "/MonoGame.Extended/Collections/#observablecollection",
-            "text": "An  ObservableCollection<T>  manages an  IList<T>  of items firing  ItemAdded ,  ItemRemoved ,  Clearing  and  Cleared  events when the collection is changed.",
-            "title": "ObservableCollection"
-        },
-        {
-            "location": "/MonoGame.Extended/Object-Pooling/",
-            "text": "Object Pooling\n\n\nObject pooling is an optimization pattern. It's used to improve performance, in certain cases, by re-using objects instead of allocating memory for them on demand. In C/C++, one the things object pooling has to offer is a solution to avoid \nmemory fragmentation\n. In C#, we don't have to worry about memory fragmentation thanks to \ngarbage collection\n. However, garbage collection can be still be too expensive for certain parts of real-time applications, especially on mobile devices with slower CPUs and simpler garbage collectors. \nMore details on object pooling here\n.\n\n\nIMPORTANT\n\n\nAlways profile the game for performance problems!\nUsing a \nPool<T>\n without first profiling for the need of one may result in a \ndecrease\n in performance in certain cases. If you are unsure, don't use the object pooling pattern.\n\n\nCreating a Pool-able Object\n\n\nAll objects which can be pooled need to implement the \nIPoolable\n interface.\nThe following is a code snippet with comments demonstrating how to implement the interface.\n\n\nprivate class MyPoolable : IPoolable\n{\n    private ReturnToPoolDelegate _returnAction;\n\n    void IPoolable.Initialize(ReturnToPoolDelegate returnAction)\n    {\n        // copy the instance reference of the return function so we can call it later\n        _returnAction = returnAction;\n    }\n\n    public void Return()\n    {\n        // check if this instance has already been returned\n        if (_returnAction != null)\n        {\n            // not yet returned, return it now\n            _returnAction.Invoke(this);\n            // set the delegate instance reference to null, so we don't accidentally return it again\n            _returnAction = null;\n        }\n    }\n}\n\n\n\n\nUsing Pooled Objects\n\n\nCreating a Pool\n\n\nInstantiating a \nPool<T>\n is similar to any generic collection, i.e \nList<T>\n, but the pool does require 2 parameters for it's constructor. \nT\n also has to implement \nIPoolable\n.\n\n\nvar pool = new Pool<MyPoolable>(50, index => new MyPoolable());\n\n\n\n\nThe first parameter is the \ncapacity\n of the pool; the maximum number of object instances the pool has reference to. The second parameter is the delegate responsible for creating each object instance.\n\n\nNOTE\n\n\nHaving too large of a capacity will waste memory, but having too small of a capacity will limit the number of object instances that can be pooled.\n\n\nAll object instances are created when the pool is instantiated.\n\n\nGetting a Pooled Object\n\n\nA free pooled object instance can be requested from the pool instance.\n\n\nvar myPoolable = pool.Request();\n\n\n\n\nNOTE\n\n\nIf the pool is empty, the result will be \nnull\n.\n\n\nReturning a Object to the Pool\n\n\nWhen the object instance is no longer needed it should be returned to the pool so it can be re-used.\n\n\nmyPoolable.Return();",
-            "title": "Object Pooling"
-        },
-        {
-            "location": "/MonoGame.Extended/Object-Pooling/#object-pooling",
-            "text": "Object pooling is an optimization pattern. It's used to improve performance, in certain cases, by re-using objects instead of allocating memory for them on demand. In C/C++, one the things object pooling has to offer is a solution to avoid  memory fragmentation . In C#, we don't have to worry about memory fragmentation thanks to  garbage collection . However, garbage collection can be still be too expensive for certain parts of real-time applications, especially on mobile devices with slower CPUs and simpler garbage collectors.  More details on object pooling here .",
-            "title": "Object Pooling"
-        },
-        {
-            "location": "/MonoGame.Extended/Object-Pooling/#important",
-            "text": "Always profile the game for performance problems!\nUsing a  Pool<T>  without first profiling for the need of one may result in a  decrease  in performance in certain cases. If you are unsure, don't use the object pooling pattern.",
-            "title": "IMPORTANT"
-        },
-        {
-            "location": "/MonoGame.Extended/Object-Pooling/#creating-a-pool-able-object",
-            "text": "All objects which can be pooled need to implement the  IPoolable  interface.\nThe following is a code snippet with comments demonstrating how to implement the interface.  private class MyPoolable : IPoolable\n{\n    private ReturnToPoolDelegate _returnAction;\n\n    void IPoolable.Initialize(ReturnToPoolDelegate returnAction)\n    {\n        // copy the instance reference of the return function so we can call it later\n        _returnAction = returnAction;\n    }\n\n    public void Return()\n    {\n        // check if this instance has already been returned\n        if (_returnAction != null)\n        {\n            // not yet returned, return it now\n            _returnAction.Invoke(this);\n            // set the delegate instance reference to null, so we don't accidentally return it again\n            _returnAction = null;\n        }\n    }\n}",
-            "title": "Creating a Pool-able Object"
-        },
-        {
-            "location": "/MonoGame.Extended/Object-Pooling/#using-pooled-objects",
-            "text": "",
-            "title": "Using Pooled Objects"
-        },
-        {
-            "location": "/MonoGame.Extended/Object-Pooling/#creating-a-pool",
-            "text": "Instantiating a  Pool<T>  is similar to any generic collection, i.e  List<T> , but the pool does require 2 parameters for it's constructor.  T  also has to implement  IPoolable .  var pool = new Pool<MyPoolable>(50, index => new MyPoolable());  The first parameter is the  capacity  of the pool; the maximum number of object instances the pool has reference to. The second parameter is the delegate responsible for creating each object instance.",
-            "title": "Creating a Pool"
-        },
-        {
-            "location": "/MonoGame.Extended/Object-Pooling/#note",
-            "text": "Having too large of a capacity will waste memory, but having too small of a capacity will limit the number of object instances that can be pooled.  All object instances are created when the pool is instantiated.",
-            "title": "NOTE"
-        },
-        {
-            "location": "/MonoGame.Extended/Object-Pooling/#getting-a-pooled-object",
-            "text": "A free pooled object instance can be requested from the pool instance.  var myPoolable = pool.Request();",
-            "title": "Getting a Pooled Object"
-        },
-        {
-            "location": "/MonoGame.Extended/Object-Pooling/#note_1",
-            "text": "If the pool is empty, the result will be  null .",
-            "title": "NOTE"
-        },
-        {
-            "location": "/MonoGame.Extended/Object-Pooling/#returning-a-object-to-the-pool",
-            "text": "When the object instance is no longer needed it should be returned to the pool so it can be re-used.  myPoolable.Return();",
-            "title": "Returning a Object to the Pool"
-        },
-        {
-            "location": "/MonoGame.Extended/Serialization/",
-            "text": "Serialization\n\n\nMonoGame.Extended contains various serialization helpers that work with \nNewtonsoft Json.NET\n.\n\n\nJson Converters\n\n\nThe following XNA/MonoGame types have converters:\n\n\n\n\nColor\n via \nColorJsonConverter\n\n\nVector2\n via \nVector2JsonConverter\n\n\n\n\nThe following MonoGame.Extended types have converters:\n\n\n\n\nNinePatchRegion2D\n via \nNinePatchRegion2DJsonConverter\n\n\nSize2\n via \nSize2JsonConverter\n\n\nRange<T>\n via \nRangeJsonConverter\n\n\nTextureRegion2D\n via \nTextureRegion2DJsonConverter\n\n\nThickness\n via \nThicknessJsonConverter\n\n\n\n\nJsonConverter Example\n\n\nusing Newtonsoft.Json;\nusing Microsoft.Xna.Framework;\nusing MonoGame.Extended.Serialization;\n\nstruct Thing {\n    public Color BootStrapBlue;\n    public Vector2 Position;\n}\nvar data = @\"{\n    'BootStrapBlue':'#428bca00',\n    'Position':'1.1 4',\n}\";\n\nvar thing = JsonConvert.DeserializeObject<Thing>(data,\n    new ColorJsonConverter(),\n    new Vector2JsonConverter()\n);\n\nthing.BootStrapBlue; // \"{R:66 G:139 B:202 A:0}\"\nthing.Posistion; // \"{X:1.1 Y:4}\"\n\n\n\n\nColor JsonConverter\n\n\nColorJsonConverter tells Newtonsoft Json.NET now to convert string hex values into XNA \nColor\n objects.\n\n\nGiven the JSON string value\n\n\n\"#10203040\"\n\n\n\n\nA Color object is created.\n\n\nnew Color(16, 32, 48, 64);\n\n\n\n\nThe format is a \n#\n followed by byte hex codes for Red, Green, Blue, and Alpha channels.\n\n\nVector2 JsonConverter\n\n\nVector2JsonConverter tells Newtonsoft Json.NET how to serialize XNA \nVector2\n objects.\n\n\nGiven the JSON string value\n\n\n\"1.2 33\"\n\n\n\n\nA new Vector2 is created.\n\n\nnew Vector2(1.2f, 33f);\n\n\n\n\nThe format is \nX Y\n for the x and y components of a 2D vector.\n\n\nNinePatchRegion2D JsonConverter\n\n\nNinePatchRegion2DJsonConverter tells Newtonsoft Json.NET how to serialize MonoGame.Extended \nNinePatchRegion2D\n objects.\n\n\nGiven the JSON object value\n\n\n{\"TextureRegion\":\"Center\",\"Padding\":\"1 2 3 4\"}\n\n\n\n\nA new NinePatchRegion2D is created and the TextureRegion is looked up in the TextureRegionService.\n\n\nnew NinePatchRegion2D(TextureRegion2D('Center',...), 1, 2, 3, 4)\n\n\n\n\nThe format is not a string value, but a nested JSON object where \nPadding\n is a \nThickness\n value.\n\n\nSize2 JsonConverter\n\n\nSize2JsonConverter tells Newtonsoft Json.NET how to serialize MonoGame.Extended \nSize2\n objects.\n\n\nGiven the JSON string value\n\n\n\"10 4\"\n\n\n\n\nA new Size2 object is created.  Understood, good buddy.\n\n\nnew Size2(10f, 4f)\n\n\n\n\nThe format is a JSON string containing the Width, and Height values as decimal numbers.\n\n\nRange JsonConverter\n\n\nRangeJsonConverter<T>\n tells Newtonsoft Json.NET how to serialize MonoGame.Extended \nRange<T>\n objects.\n\n\nGiven the JSON string value\n\n\n\"1 9000\"\n\n\n\n\nA new Range\n object is created.\n\n\nnew Range<int>(1, 9000);\n\n\n\n\nThe format is a JSON string containing one or two values.\n\n\nTextureRegion2D JsonConverter\n\n\nTextureRegion2DJsonConverter tells Newtonsoft Json.NET how to serialize MonoGame.Extended \nTextureRegion2D\n objects.\n\n\nGiven the JSON string value\n\n\n\"Center\"\n\n\n\n\nThe TextureRegionService is queried with \nGetTextureRegion(\"Center\")\n\n\nThe format is a JSON string with the name of the TextureRegion in a TextureAtlas.\n\n\nThickness JsonConverter\n\n\nThicknessJsonConverter tells Newtonsoft Json.NET how to serialize a MonoGame.Extended \nThickness\n object.\n\n\nGiven the JSON string value\n\n\n\"1 2 3 4\"\n\n\n\n\nA new Thickness object is created.\n\n\nThickness.Parse(\"1 2 3 4\")\n\n\n\n\nThe format is a JSON string containing a value to be parsed by Thickness.\n\n\n\n\n\"1 2 3 4\"\n is left:1, top:2, right:3, bottom:4\n\n\n\"2 4\"\n is left:2, top:4, right:2, bottom:4\n\n\n\"8\"\n is left:8, top:8, right:8, bottom:8\n\n\n\"1,2\"\n is left:1, top:2, right:1, top:2\n\n\n\n\nExtensions\n\n\nReadAsMultiDimensional\n\n\nNewtonsoft.Json.JsonReader\n is extended with \nT[] ReadAsMultiDimensional<T>()\n\n\nThis allows you to easily create a custom JsonConverter with a list of values.\n\n\nFor example a list of floats\n\n\n\"1.1 2.3 4.5 6.1\"\n\n\n\n\nCould be parsed into an array of floats using the following JsonConverter that uses \nReadAsMultiDimensional\n\n\npublic class PathJsonConverter : JsonConverter\n{\n    public override object ReadJson(JsonReader reader, Type objectType, object value, JsonSerializer serializer)\n    {\n        float[] path = reader.ReadAsMultiDimensional<float>();\n        return path;\n    }\n\n    public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)\n    {\n        var path = (float[]) value;\n        writer.WriteValue(string.Join(\" \", path));\n    }\n}",
-            "title": "Serialization"
-        },
-        {
-            "location": "/MonoGame.Extended/Serialization/#serialization",
-            "text": "MonoGame.Extended contains various serialization helpers that work with  Newtonsoft Json.NET .",
-            "title": "Serialization"
-        },
-        {
-            "location": "/MonoGame.Extended/Serialization/#json-converters",
-            "text": "The following XNA/MonoGame types have converters:   Color  via  ColorJsonConverter  Vector2  via  Vector2JsonConverter   The following MonoGame.Extended types have converters:   NinePatchRegion2D  via  NinePatchRegion2DJsonConverter  Size2  via  Size2JsonConverter  Range<T>  via  RangeJsonConverter  TextureRegion2D  via  TextureRegion2DJsonConverter  Thickness  via  ThicknessJsonConverter",
-            "title": "Json Converters"
-        },
-        {
-            "location": "/MonoGame.Extended/Serialization/#jsonconverter-example",
-            "text": "using Newtonsoft.Json;\nusing Microsoft.Xna.Framework;\nusing MonoGame.Extended.Serialization;\n\nstruct Thing {\n    public Color BootStrapBlue;\n    public Vector2 Position;\n}\nvar data = @\"{\n    'BootStrapBlue':'#428bca00',\n    'Position':'1.1 4',\n}\";\n\nvar thing = JsonConvert.DeserializeObject<Thing>(data,\n    new ColorJsonConverter(),\n    new Vector2JsonConverter()\n);\n\nthing.BootStrapBlue; // \"{R:66 G:139 B:202 A:0}\"\nthing.Posistion; // \"{X:1.1 Y:4}\"",
-            "title": "JsonConverter Example"
-        },
-        {
-            "location": "/MonoGame.Extended/Serialization/#color-jsonconverter",
-            "text": "ColorJsonConverter tells Newtonsoft Json.NET now to convert string hex values into XNA  Color  objects.  Given the JSON string value  \"#10203040\"  A Color object is created.  new Color(16, 32, 48, 64);  The format is a  #  followed by byte hex codes for Red, Green, Blue, and Alpha channels.",
-            "title": "Color JsonConverter"
-        },
-        {
-            "location": "/MonoGame.Extended/Serialization/#vector2-jsonconverter",
-            "text": "Vector2JsonConverter tells Newtonsoft Json.NET how to serialize XNA  Vector2  objects.  Given the JSON string value  \"1.2 33\"  A new Vector2 is created.  new Vector2(1.2f, 33f);  The format is  X Y  for the x and y components of a 2D vector.",
-            "title": "Vector2 JsonConverter"
-        },
-        {
-            "location": "/MonoGame.Extended/Serialization/#ninepatchregion2d-jsonconverter",
-            "text": "NinePatchRegion2DJsonConverter tells Newtonsoft Json.NET how to serialize MonoGame.Extended  NinePatchRegion2D  objects.  Given the JSON object value  {\"TextureRegion\":\"Center\",\"Padding\":\"1 2 3 4\"}  A new NinePatchRegion2D is created and the TextureRegion is looked up in the TextureRegionService.  new NinePatchRegion2D(TextureRegion2D('Center',...), 1, 2, 3, 4)  The format is not a string value, but a nested JSON object where  Padding  is a  Thickness  value.",
-            "title": "NinePatchRegion2D JsonConverter"
-        },
-        {
-            "location": "/MonoGame.Extended/Serialization/#size2-jsonconverter",
-            "text": "Size2JsonConverter tells Newtonsoft Json.NET how to serialize MonoGame.Extended  Size2  objects.  Given the JSON string value  \"10 4\"  A new Size2 object is created.  Understood, good buddy.  new Size2(10f, 4f)  The format is a JSON string containing the Width, and Height values as decimal numbers.",
-            "title": "Size2 JsonConverter"
-        },
-        {
-            "location": "/MonoGame.Extended/Serialization/#range-jsonconverter",
-            "text": "RangeJsonConverter<T>  tells Newtonsoft Json.NET how to serialize MonoGame.Extended  Range<T>  objects.  Given the JSON string value  \"1 9000\"  A new Range  object is created.  new Range<int>(1, 9000);  The format is a JSON string containing one or two values.",
-            "title": "Range JsonConverter"
-        },
-        {
-            "location": "/MonoGame.Extended/Serialization/#textureregion2d-jsonconverter",
-            "text": "TextureRegion2DJsonConverter tells Newtonsoft Json.NET how to serialize MonoGame.Extended  TextureRegion2D  objects.  Given the JSON string value  \"Center\"  The TextureRegionService is queried with  GetTextureRegion(\"Center\")  The format is a JSON string with the name of the TextureRegion in a TextureAtlas.",
-            "title": "TextureRegion2D JsonConverter"
-        },
-        {
-            "location": "/MonoGame.Extended/Serialization/#thickness-jsonconverter",
-            "text": "ThicknessJsonConverter tells Newtonsoft Json.NET how to serialize a MonoGame.Extended  Thickness  object.  Given the JSON string value  \"1 2 3 4\"  A new Thickness object is created.  Thickness.Parse(\"1 2 3 4\")  The format is a JSON string containing a value to be parsed by Thickness.   \"1 2 3 4\"  is left:1, top:2, right:3, bottom:4  \"2 4\"  is left:2, top:4, right:2, bottom:4  \"8\"  is left:8, top:8, right:8, bottom:8  \"1,2\"  is left:1, top:2, right:1, top:2",
-            "title": "Thickness JsonConverter"
-        },
-        {
-            "location": "/MonoGame.Extended/Serialization/#extensions",
-            "text": "",
-            "title": "Extensions"
-        },
-        {
-            "location": "/MonoGame.Extended/Serialization/#readasmultidimensional",
-            "text": "Newtonsoft.Json.JsonReader  is extended with  T[] ReadAsMultiDimensional<T>()  This allows you to easily create a custom JsonConverter with a list of values.  For example a list of floats  \"1.1 2.3 4.5 6.1\"  Could be parsed into an array of floats using the following JsonConverter that uses  ReadAsMultiDimensional  public class PathJsonConverter : JsonConverter\n{\n    public override object ReadJson(JsonReader reader, Type objectType, object value, JsonSerializer serializer)\n    {\n        float[] path = reader.ReadAsMultiDimensional<float>();\n        return path;\n    }\n\n    public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)\n    {\n        var path = (float[]) value;\n        writer.WriteValue(string.Join(\" \", path));\n    }\n}",
-            "title": "ReadAsMultiDimensional"
-        },
-        {
-            "location": "/MonoGame.Extended/Screens/",
-            "text": "Screen Management\n\n\nExample\n\n\nThe \nScreenGameComponent\n manages individual \nScreen\n objects.  Add a new \nScreenGameComponent\n to your Game's \nComponents\n, and the screen manager will pass \nInitialize\n \nLoadContent\n \nUnloadContent\n \nUpdate\n and \nDraw\n to every registered screen.\n\n\npublic Game1()\n{\n    // Add the screen manager to your Components.\n    ScreenGameComponent screenGameComponent = new ScreenGameComponent(this);\n    Components.Add(screenGameComponent);\n}\n\n\n\n\nTo register your class (MyScreen) that subclasses \nScreen\n.  Just pass it into the \nRegister\n function.\n\n\npublic Game1()\n{\n    ScreenGameComponent screenGameComponent = new ScreenGameComponent(this);\n    screenGameComponent.Register(new MyScreen());\n    Components.Add(screenGameComponent);\n}\n\n\n\n\nDemos\n\n\nDemo.Features/Demos/ScreensDemo.cs",
-            "title": "Screens"
-        },
-        {
-            "location": "/MonoGame.Extended/Screens/#screen-management",
-            "text": "",
-            "title": "Screen Management"
-        },
-        {
-            "location": "/MonoGame.Extended/Screens/#example",
-            "text": "The  ScreenGameComponent  manages individual  Screen  objects.  Add a new  ScreenGameComponent  to your Game's  Components , and the screen manager will pass  Initialize   LoadContent   UnloadContent   Update  and  Draw  to every registered screen.  public Game1()\n{\n    // Add the screen manager to your Components.\n    ScreenGameComponent screenGameComponent = new ScreenGameComponent(this);\n    Components.Add(screenGameComponent);\n}  To register your class (MyScreen) that subclasses  Screen .  Just pass it into the  Register  function.  public Game1()\n{\n    ScreenGameComponent screenGameComponent = new ScreenGameComponent(this);\n    screenGameComponent.Register(new MyScreen());\n    Components.Add(screenGameComponent);\n}",
-            "title": "Example"
-        },
-        {
-            "location": "/MonoGame.Extended/Screens/#demos",
-            "text": "Demo.Features/Demos/ScreensDemo.cs",
-            "title": "Demos"
-        },
-        {
-            "location": "/MonoGame.Extended.Animation/Animated-Sprites/",
-            "text": "With Textures and Sprites we can import Sprite Sheets, collections of maped images paced on one same file, and draw them on screen through SpriteBatch like any other object on our game. Lets see how add \"movement\" on these sprites using the SpriteSheetAnimation classes from Animations.SpriteSheets package.\n\n\nStarting choosing what to animate\n\n\nSo lets add a simple character and some sprites to simulate movement, to import the resources using the pipeline we will need a pair of files here:\nThe Image file with all the sprites combined in a Map\n\n\n\n\nAnd an xml describing the coordenates and size of each sprite within the map:\n\n\n<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<XnaContent>\n    <Asset Type=\"System.Collections.Generic.Dictionary[System.String, Microsoft.Xna.Framework.Rectangle]\">\n    <Item><Key>33155_001.png</Key><Value>34 401 31 32</Value></Item>\n    <Item><Key>33155_002.png</Key><Value>370 349 17 29</Value></Item>\n    </Asset>\n</XnaContent>\n\n\n\n\nHopefully there are a couple of programs to create shis files. Once you have those just throw them inside the Content Pipeline\n\n\n\n\nConstruct the move\n\n\nLets initiate our pixels using the Texture imported and then we will use the map to limit and access easily each image.\n\n\nvar characterTexture = content.Load<Texture2D>(\"Sprites/kunio\");\nvar characterMap = content.Load<Dictionary<string, Rectangle>>(\"Sprites/kunioMap\");\nvar characterAtlas = new TextureAtlas(\"kunio\", characterTexture, characterMap);\nvar characterAnimationFactory = new SpriteSheetAnimationFactory(characterAtlas);\n\ncharacterAnimationFactory.Add(\"idle\", new SpriteSheetAnimationData(new[] { 0, 1 }, isLooping: true));\n\nvar characterSpriteAnimation = new AnimatedSprite(characterAnimationFactory,\"idle\");\n\n\n\n\nUsing a SpriteSheetAnimationFactory we can create Animations and set index of frames included. And passing this to AnimatedSprite we can name an autoplay animation. \"idle\" is the only one we have for now.\n\n\nDrawing the final result\n\n\nOn each update you will need to call the animation to make the transitions between frames.\n\n\ncharacterSpriteAnimation.Update(deltaSeconds);\n\n\n\n\nAnd finally on Draw the SpriteBatch will do the rest\n\n\nspriteBatch.Begin();\nspriteBatch.Draw(characterSpriteAnimation);\nspriteBatch.End();",
-            "title": "Animated Sprites"
-        },
-        {
-            "location": "/MonoGame.Extended.Animation/Animated-Sprites/#starting-choosing-what-to-animate",
-            "text": "So lets add a simple character and some sprites to simulate movement, to import the resources using the pipeline we will need a pair of files here:\nThe Image file with all the sprites combined in a Map   And an xml describing the coordenates and size of each sprite within the map:  <?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<XnaContent>\n    <Asset Type=\"System.Collections.Generic.Dictionary[System.String, Microsoft.Xna.Framework.Rectangle]\">\n    <Item><Key>33155_001.png</Key><Value>34 401 31 32</Value></Item>\n    <Item><Key>33155_002.png</Key><Value>370 349 17 29</Value></Item>\n    </Asset>\n</XnaContent>  Hopefully there are a couple of programs to create shis files. Once you have those just throw them inside the Content Pipeline",
-            "title": "Starting choosing what to animate"
-        },
-        {
-            "location": "/MonoGame.Extended.Animation/Animated-Sprites/#construct-the-move",
-            "text": "Lets initiate our pixels using the Texture imported and then we will use the map to limit and access easily each image.  var characterTexture = content.Load<Texture2D>(\"Sprites/kunio\");\nvar characterMap = content.Load<Dictionary<string, Rectangle>>(\"Sprites/kunioMap\");\nvar characterAtlas = new TextureAtlas(\"kunio\", characterTexture, characterMap);\nvar characterAnimationFactory = new SpriteSheetAnimationFactory(characterAtlas);\n\ncharacterAnimationFactory.Add(\"idle\", new SpriteSheetAnimationData(new[] { 0, 1 }, isLooping: true));\n\nvar characterSpriteAnimation = new AnimatedSprite(characterAnimationFactory,\"idle\");  Using a SpriteSheetAnimationFactory we can create Animations and set index of frames included. And passing this to AnimatedSprite we can name an autoplay animation. \"idle\" is the only one we have for now.",
-            "title": "Construct the move"
-        },
-        {
-            "location": "/MonoGame.Extended.Animation/Animated-Sprites/#drawing-the-final-result",
-            "text": "On each update you will need to call the animation to make the transitions between frames.  characterSpriteAnimation.Update(deltaSeconds);  And finally on Draw the SpriteBatch will do the rest  spriteBatch.Begin();\nspriteBatch.Draw(characterSpriteAnimation);\nspriteBatch.End();",
-            "title": "Drawing the final result"
-        },
-        {
-            "location": "/Community-and-Support/",
-            "text": "Community and Support\n\n\nMonoGame.Extended has a growing community of users from all around the globe. We've got lots of ways you can ask questions and get help about the library.\n\n\n\n\nOf course, there's \nthis documentation\n. By contributing to it you're making it better for everyone.\n\n\nWe've got our own section on the \nMonoGame Community Forums\n\n\nWe've even got a \ntag on stackoverflow\n ;)\n\n\nDevelopment is usually discussed in \ngithub issues\n\n\nWe've got a live chatroom on \ngitter\n\n\n\n\nNote: When you ask a question, please consider how permanent the answer should be. If it's something that might benefit others choose the docs, forum or stack overflow over live chat.\n\n\nDocs\n\n\nWe need your help writing better documentation\n\n\n\n\nGood documentation is what separates good open source projects from great ones. \n\n\nDocumentation is a community effort.\n\n\nEven a little bit of documentation is better than none.\n\n\nA rough draft is better than none.\n\n\nIf we all wrote a little documentation, it adds up to a lot.\n\n\n\n\nHow to contribute to the documentation\n\n\nThe docs are located in the source \nDocs/\n folder.  They are built with \nMkDocs\n.\n\n\n\n\nIf you spot an error in the documentation, fix it. This is the simplest way to contribute.\n\n\nIf you notice some missing or out of date information, add it. This is the next simplest way to contribute.\n\n\nIf there's something completely missing, write a stub page. It's a start.\n\n\nIf you want to go a step further, write a tutorial or a whole new page.\n\n\nIf you have any trouble editing the docs, please \ntell somebody\n.\n\n\nYou can edit the page directly on Github, it's Markdown, so you don't necessesarily need to install MkDocs to contribute.\n\n\n\n\nGetting started with MKDocs\n\n\nRunning your own dev docs server at http://127.0.0.1:8000 (your computer) can be done by installing python, and then installing mkdocs.\n\n\n> python -m pip install mkdocs\n\n\n\n\nTo run your local server run the mkdocs module with the \nserve\n command.\n\n\n> cd MonoGame.Extended\nMonoGame.Extended> python -m mkdocs serve\nINFO    -  Building documentation...\nINFO    -  Cleaning site directory\n[I 170608 01:12:06 server:283] Serving on http://127.0.0.1:8000\n[I 170608 01:12:06 handlers:60] Start watching changes\n[I 170608 01:12:06 handlers:62] Start detecting changes\n[I 170608 01:12:15 handlers:133] Browser Connected: http://127.0.0.1:8000/\n\n\n\n\nNow every time you edit a \n*.md\n file in the \nDocs/\n folder the site will refresh with the latest info.\n\n\nTo add a new page, you must add Markdown file, and then reference it in the \nmkdocs.yml\n file somewhere appropriate. \n\n\n\n\nAll pages must be somewhere in the mkdocs.yml \npages\n section, otherwise links to it will not work.",
-            "title": "Support"
-        },
-        {
-            "location": "/Community-and-Support/#community-and-support",
-            "text": "MonoGame.Extended has a growing community of users from all around the globe. We've got lots of ways you can ask questions and get help about the library.   Of course, there's  this documentation . By contributing to it you're making it better for everyone.  We've got our own section on the  MonoGame Community Forums  We've even got a  tag on stackoverflow  ;)  Development is usually discussed in  github issues  We've got a live chatroom on  gitter   Note: When you ask a question, please consider how permanent the answer should be. If it's something that might benefit others choose the docs, forum or stack overflow over live chat.",
-            "title": "Community and Support"
-        },
-        {
-            "location": "/Community-and-Support/#docs",
-            "text": "",
-            "title": "Docs"
-        },
-        {
-            "location": "/Community-and-Support/#we-need-your-help-writing-better-documentation",
-            "text": "Good documentation is what separates good open source projects from great ones.   Documentation is a community effort.  Even a little bit of documentation is better than none.  A rough draft is better than none.  If we all wrote a little documentation, it adds up to a lot.",
-            "title": "We need your help writing better documentation"
-        },
-        {
-            "location": "/Community-and-Support/#how-to-contribute-to-the-documentation",
-            "text": "The docs are located in the source  Docs/  folder.  They are built with  MkDocs .   If you spot an error in the documentation, fix it. This is the simplest way to contribute.  If you notice some missing or out of date information, add it. This is the next simplest way to contribute.  If there's something completely missing, write a stub page. It's a start.  If you want to go a step further, write a tutorial or a whole new page.  If you have any trouble editing the docs, please  tell somebody .  You can edit the page directly on Github, it's Markdown, so you don't necessesarily need to install MkDocs to contribute.",
-            "title": "How to contribute to the documentation"
-        },
-        {
-            "location": "/Community-and-Support/#getting-started-with-mkdocs",
-            "text": "Running your own dev docs server at http://127.0.0.1:8000 (your computer) can be done by installing python, and then installing mkdocs.  > python -m pip install mkdocs  To run your local server run the mkdocs module with the  serve  command.  > cd MonoGame.Extended\nMonoGame.Extended> python -m mkdocs serve\nINFO    -  Building documentation...\nINFO    -  Cleaning site directory\n[I 170608 01:12:06 server:283] Serving on http://127.0.0.1:8000\n[I 170608 01:12:06 handlers:60] Start watching changes\n[I 170608 01:12:06 handlers:62] Start detecting changes\n[I 170608 01:12:15 handlers:133] Browser Connected: http://127.0.0.1:8000/  Now every time you edit a  *.md  file in the  Docs/  folder the site will refresh with the latest info.  To add a new page, you must add Markdown file, and then reference it in the  mkdocs.yml  file somewhere appropriate.    All pages must be somewhere in the mkdocs.yml  pages  section, otherwise links to it will not work.",
-            "title": "Getting started with MKDocs"
         },
         {
             "location": "/Showcase/",
@@ -554,6 +129,501 @@
             "location": "/Showcase/#monogame-engines-frameworks-more",
             "text": "DDReaper talks about the framework in his youtube video around the 10 minute mark.",
             "title": "MonoGame - Engines, Frameworks &amp; More"
+        },
+        {
+            "location": "/Development/Build-MonoGame-PCL/",
+            "text": "Building the MonoGame PCL\n\n\nThis guide is about building the MonoGame \nPortable Class Library\n (PCL) found in the \nDependencies folder\n of the project.\n\n\nNote\n: This is NOT a guide about building MonoGame.Extended from source. You won't need this guide unless you're trying to update the dependencies.\n\n\nOne of the challenges with using MonoGame is getting your project set up so that you can separate platform-specific and platform-independent code. One way, which we are using with MonoGame.Extended is to compile against a PCL (\nPortable Class Library\n). Instead of creating a platform specific binary of MonoGame.Extended for each platform, a cross-platform library is used and the platform specific code is substituted in later. A PCL is created through a certain set of tools such as \nVisual Studio\n on Windows, \nXamarin Studio\n on Windows and Mac, or \nMonoDevelop\n on Windows, Mac and Linux. Since PCLs are designed to be cross-platform they can be created with one toolchain and used through a different toolchain.\n\n\nWith MonoGame, making a PCL isn't so easy since a large amount of platform-specific code is mixed in with other code, so you can't (at the moment) make a PCL of MonoGame directly. There are a few other issues as well, but I won't go into those. The solution to this is to use a tool to scrape all of the platform-specific implementation details from a specific MonoGame platform library. It doesn't really matter if it's the WindowsGL platform version that is used for this, but it's recommended.\n\n\nInstall Tools\n\n\nThe first step in generating the PCL is to install the required tools. If you have Visual Studio, Xamarin Studio, you already have the tools. For Linux, you have to install the tools from Mono. To install Mono on a specific Linux distribution follow \ntheir directions on the Mono website\n. The important packages to install are \nmono-complete\n, which installs the complete mono runtime and development tools (including the tools in \nmono-devel\n if I remember correctly), and also the \nreferenceassemblies-pcl\n package, which installs tools and references required for PCL generation and usage.\n\n\nGet MonoGame Source\n\n\nNext, clone down the copy of \nMonoGame from GitHub\n that you want to generate a PCL for. Remember that a PCL that is generated will probably only be usable with binaries made from that exact same commit. \n\n\nBuild MonoGame\n\n\nAfter you have cloned the repository, follow the MonoGame build instructions and use Protobuild to generate the set of \n.sln\n files and \n.csproj\n files for your platform. Open up the solution, then compile it.\n\n\n\"Piranha\" Binary into PCL\n\n\nFinally, you need a copy of @Ark-kun's \nPiranha tool, which \"chews\" binaries to make them into PCLs\n. Download a copy of his repository from GitHub, then build it. Navigate to where Piranha is built and open up command prompt if you are on Windows (PROTIP: shift-right-click on the Explorer background and select \"Open command window here\"), or Terminal if you are on Mac or Linux (MAC USERS PROTIP: type \"cd\" into terminal then drag and drop the folder into the terminal window and hit return). Enter the following command where \nPATH_TO_MONOGAME_FRAMEWORK_DLL\n is the path to the target \nMonoGame.Framework.dll\n:\n\n\nWindows Users:\n\nPiranha.exe make-portable-skeleton -p \".NETPortable,Version=v4.5,Profile=Profile111\" -i \"PATH_TO_MONOGAME_FRAMEWORK_DLL\" -o MonoGame.Framework.dll\n\n\nMac and Linux Users:\n\nmono Piranha.exe make-portable-skeleton -p \".NETPortable,Version=v4.5,Profile=Profile111\" -i \"PATH_TO_MONOGAME_FRAMEWORK_DLL\" -o MonoGame.Framework.dll\n\n\nNote that the .NET framework portable profile might need to be changed to match your project.\n\n\nPiranha should of completed successfully and generated a portable \nMonoGame.Framework.dll\n.",
+            "title": "Building the MonoGame PCL"
+        },
+        {
+            "location": "/Development/Build-MonoGame-PCL/#building-the-monogame-pcl",
+            "text": "This guide is about building the MonoGame  Portable Class Library  (PCL) found in the  Dependencies folder  of the project.  Note : This is NOT a guide about building MonoGame.Extended from source. You won't need this guide unless you're trying to update the dependencies.  One of the challenges with using MonoGame is getting your project set up so that you can separate platform-specific and platform-independent code. One way, which we are using with MonoGame.Extended is to compile against a PCL ( Portable Class Library ). Instead of creating a platform specific binary of MonoGame.Extended for each platform, a cross-platform library is used and the platform specific code is substituted in later. A PCL is created through a certain set of tools such as  Visual Studio  on Windows,  Xamarin Studio  on Windows and Mac, or  MonoDevelop  on Windows, Mac and Linux. Since PCLs are designed to be cross-platform they can be created with one toolchain and used through a different toolchain.  With MonoGame, making a PCL isn't so easy since a large amount of platform-specific code is mixed in with other code, so you can't (at the moment) make a PCL of MonoGame directly. There are a few other issues as well, but I won't go into those. The solution to this is to use a tool to scrape all of the platform-specific implementation details from a specific MonoGame platform library. It doesn't really matter if it's the WindowsGL platform version that is used for this, but it's recommended.",
+            "title": "Building the MonoGame PCL"
+        },
+        {
+            "location": "/Development/Build-MonoGame-PCL/#install-tools",
+            "text": "The first step in generating the PCL is to install the required tools. If you have Visual Studio, Xamarin Studio, you already have the tools. For Linux, you have to install the tools from Mono. To install Mono on a specific Linux distribution follow  their directions on the Mono website . The important packages to install are  mono-complete , which installs the complete mono runtime and development tools (including the tools in  mono-devel  if I remember correctly), and also the  referenceassemblies-pcl  package, which installs tools and references required for PCL generation and usage.",
+            "title": "Install Tools"
+        },
+        {
+            "location": "/Development/Build-MonoGame-PCL/#get-monogame-source",
+            "text": "Next, clone down the copy of  MonoGame from GitHub  that you want to generate a PCL for. Remember that a PCL that is generated will probably only be usable with binaries made from that exact same commit.",
+            "title": "Get MonoGame Source"
+        },
+        {
+            "location": "/Development/Build-MonoGame-PCL/#build-monogame",
+            "text": "After you have cloned the repository, follow the MonoGame build instructions and use Protobuild to generate the set of  .sln  files and  .csproj  files for your platform. Open up the solution, then compile it.",
+            "title": "Build MonoGame"
+        },
+        {
+            "location": "/Development/Build-MonoGame-PCL/#piranha-binary-into-pcl",
+            "text": "Finally, you need a copy of @Ark-kun's  Piranha tool, which \"chews\" binaries to make them into PCLs . Download a copy of his repository from GitHub, then build it. Navigate to where Piranha is built and open up command prompt if you are on Windows (PROTIP: shift-right-click on the Explorer background and select \"Open command window here\"), or Terminal if you are on Mac or Linux (MAC USERS PROTIP: type \"cd\" into terminal then drag and drop the folder into the terminal window and hit return). Enter the following command where  PATH_TO_MONOGAME_FRAMEWORK_DLL  is the path to the target  MonoGame.Framework.dll :  Windows Users: Piranha.exe make-portable-skeleton -p \".NETPortable,Version=v4.5,Profile=Profile111\" -i \"PATH_TO_MONOGAME_FRAMEWORK_DLL\" -o MonoGame.Framework.dll  Mac and Linux Users: mono Piranha.exe make-portable-skeleton -p \".NETPortable,Version=v4.5,Profile=Profile111\" -i \"PATH_TO_MONOGAME_FRAMEWORK_DLL\" -o MonoGame.Framework.dll  Note that the .NET framework portable profile might need to be changed to match your project.  Piranha should of completed successfully and generated a portable  MonoGame.Framework.dll .",
+            "title": "\"Piranha\" Binary into PCL"
+        },
+        {
+            "location": "/Development/Building-from-Source/",
+            "text": "Building From Source\n\n\nIdeally building from source should be as straightforward as possible. Everything should build right out of the repository. However, there are some external factors that can sometimes make things more difficult.\n\n\nMonoGame.Extended uses a few newish technologies:\n - \nMonoGame 3.6\n.\n - C# 6.0 and Portable Class Library support in your IDE.\n - .NET Framework 4.5 or equivalent (Mono).\n - An up to date NuGet package manager\n\n\nIf you're building on Windows I highly recommend using \nVisual Studio 2015\n because it supports all of the above out of the box.\n\n\nThere's not much more to it than that. Download the source using you're favorite git client and build.\n\n\ngit clone https://github.com/craftworkgames/MonoGame.Extended.git\n\n\n\nOn the first build the solution will download several NuGet packages.\n\n\nOnce the code builds, you can play with the demos in the \nDemos\n folder.",
+            "title": "Building From Source"
+        },
+        {
+            "location": "/Development/Building-from-Source/#building-from-source",
+            "text": "Ideally building from source should be as straightforward as possible. Everything should build right out of the repository. However, there are some external factors that can sometimes make things more difficult.  MonoGame.Extended uses a few newish technologies:\n -  MonoGame 3.6 .\n - C# 6.0 and Portable Class Library support in your IDE.\n - .NET Framework 4.5 or equivalent (Mono).\n - An up to date NuGet package manager  If you're building on Windows I highly recommend using  Visual Studio 2015  because it supports all of the above out of the box.  There's not much more to it than that. Download the source using you're favorite git client and build.  git clone https://github.com/craftworkgames/MonoGame.Extended.git  On the first build the solution will download several NuGet packages.  Once the code builds, you can play with the demos in the  Demos  folder.",
+            "title": "Building From Source"
+        },
+        {
+            "location": "/Features/Animations/",
+            "text": "Animations\n\n\nThe \nMonoGame.Extended.Animations\n library contains classes useful for 2D \nsprite sheet animations\n.\n\n\nWith Textures and Sprites we can import Sprite Sheets, collections of maped images paced on one same file, and draw them on screen through SpriteBatch like any other object on our game. Lets see how add \"movement\" on these sprites using the SpriteSheetAnimation classes from Animations.SpriteSheets package.\n\n\nStarting choosing what to animate\n\n\nSo lets add a simple character and some sprites to simulate movement, to import the resources using the pipeline we will need a pair of files here:\nThe Image file with all the sprites combined in a Map\n\n\n\n\nAnd an xml describing the coordenates and size of each sprite within the map:\n\n\n<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<XnaContent>\n    <Asset Type=\"System.Collections.Generic.Dictionary[System.String, Microsoft.Xna.Framework.Rectangle]\">\n    <Item><Key>33155_001.png</Key><Value>34 401 31 32</Value></Item>\n    <Item><Key>33155_002.png</Key><Value>370 349 17 29</Value></Item>\n    </Asset>\n</XnaContent>\n\n\n\n\nHopefully there are a couple of programs to create shis files. Once you have those just throw them inside the Content Pipeline\n\n\n\n\nConstruct the move\n\n\nLets initiate our pixels using the Texture imported and then we will use the map to limit and access easily each image.\n\n\nvar characterTexture = content.Load<Texture2D>(\"Sprites/kunio\");\nvar characterMap = content.Load<Dictionary<string, Rectangle>>(\"Sprites/kunioMap\");\nvar characterAtlas = new TextureAtlas(\"kunio\", characterTexture, characterMap);\nvar characterAnimationFactory = new SpriteSheetAnimationFactory(characterAtlas);\n\ncharacterAnimationFactory.Add(\"idle\", new SpriteSheetAnimationData(new[] { 0, 1 }, isLooping: true));\n\nvar characterSpriteAnimation = new AnimatedSprite(characterAnimationFactory,\"idle\");\n\n\n\n\nUsing a SpriteSheetAnimationFactory we can create Animations and set index of frames included. And passing this to AnimatedSprite we can name an autoplay animation. \"idle\" is the only one we have for now.\n\n\nDrawing the final result\n\n\nOn each update you will need to call the animation to make the transitions between frames.\n\n\ncharacterSpriteAnimation.Update(deltaSeconds);\n\n\n\n\nAnd finally on Draw the SpriteBatch will do the rest\n\n\nspriteBatch.Begin();\nspriteBatch.Draw(characterSpriteAnimation);\nspriteBatch.End();",
+            "title": "Animations"
+        },
+        {
+            "location": "/Features/Animations/#animations",
+            "text": "The  MonoGame.Extended.Animations  library contains classes useful for 2D  sprite sheet animations .  With Textures and Sprites we can import Sprite Sheets, collections of maped images paced on one same file, and draw them on screen through SpriteBatch like any other object on our game. Lets see how add \"movement\" on these sprites using the SpriteSheetAnimation classes from Animations.SpriteSheets package.",
+            "title": "Animations"
+        },
+        {
+            "location": "/Features/Animations/#starting-choosing-what-to-animate",
+            "text": "So lets add a simple character and some sprites to simulate movement, to import the resources using the pipeline we will need a pair of files here:\nThe Image file with all the sprites combined in a Map   And an xml describing the coordenates and size of each sprite within the map:  <?xml version=\"1.0\" encoding=\"utf-8\" ?>\n<XnaContent>\n    <Asset Type=\"System.Collections.Generic.Dictionary[System.String, Microsoft.Xna.Framework.Rectangle]\">\n    <Item><Key>33155_001.png</Key><Value>34 401 31 32</Value></Item>\n    <Item><Key>33155_002.png</Key><Value>370 349 17 29</Value></Item>\n    </Asset>\n</XnaContent>  Hopefully there are a couple of programs to create shis files. Once you have those just throw them inside the Content Pipeline",
+            "title": "Starting choosing what to animate"
+        },
+        {
+            "location": "/Features/Animations/#construct-the-move",
+            "text": "Lets initiate our pixels using the Texture imported and then we will use the map to limit and access easily each image.  var characterTexture = content.Load<Texture2D>(\"Sprites/kunio\");\nvar characterMap = content.Load<Dictionary<string, Rectangle>>(\"Sprites/kunioMap\");\nvar characterAtlas = new TextureAtlas(\"kunio\", characterTexture, characterMap);\nvar characterAnimationFactory = new SpriteSheetAnimationFactory(characterAtlas);\n\ncharacterAnimationFactory.Add(\"idle\", new SpriteSheetAnimationData(new[] { 0, 1 }, isLooping: true));\n\nvar characterSpriteAnimation = new AnimatedSprite(characterAnimationFactory,\"idle\");  Using a SpriteSheetAnimationFactory we can create Animations and set index of frames included. And passing this to AnimatedSprite we can name an autoplay animation. \"idle\" is the only one we have for now.",
+            "title": "Construct the move"
+        },
+        {
+            "location": "/Features/Animations/#drawing-the-final-result",
+            "text": "On each update you will need to call the animation to make the transitions between frames.  characterSpriteAnimation.Update(deltaSeconds);  And finally on Draw the SpriteBatch will do the rest  spriteBatch.Begin();\nspriteBatch.Draw(characterSpriteAnimation);\nspriteBatch.End();",
+            "title": "Drawing the final result"
+        },
+        {
+            "location": "/Features/Bitmap-Fonts/",
+            "text": "Bitmap Fonts\n\n\nBitmaps fonts generated with the \nBMFont\n tool are a great alternative to using the built in \nSpriteFont\n in MonoGame. There are a couple of reasons you might want to do this, either \nSpriteFont\n's are not working out for you or you want to have more control over the fonts in your game.\n\n\nThe \nBitmapFont\n class in \nMonoGame.Extended\n is designed to be a drop in replacement for the \nSpriteFont\n class as much as possible. The goal is to take a \n.fnt\n file and texture generated with the BMFont tool and load it into our game just like any other content. \n\n\n_bitmapFont = Content.Load<BitmapFont>(\"my-font\");\n\n\n\nThen render some text just like any other string.\n\n\n_spriteBatch.Begin();\n_spriteBatch.DrawString(_bitmapFont, \"Hello World\", new Vector2(100, 200), Color.Red);\n_spriteBatch.End();\n\n\n\nBut before we can do that, we'll need to generate our bitmap font file.\n\n\nGenerating the font file with BMFont\n\n\nIf you haven\u2019t already done so, download and install the \nBMFont\n tool. \n\n\n\n\nThe main window of BMFont displays all of the characters of the font. You'll need to click and drag over the characters to highlight them in white, these are the characters that will be saved to the exported texture. Typically you will take all of the top half and ignore the bottom half, although, you may only want to take a smaller subset to reduce texture size requirements.\n\n\nTo choose a font click \nOptions\n => \nFont Settings\n or hit the \nF\n key. You can pretty much choose whatever settings you like here.\n\n\n\n\nClose that dialog and make sure all your desired characters are highlighted in white. \n\n\nNext click \nOptions\n => \nExport Options\n or hit the \nT\n key. The important thing here is setting the file format to \nXML\n and getting the texture width and height right. It's preferable to fit the entire font on a single texture (although not required) and it can sometimes take a little tweaking.\n\n\nI also recommend using \nPNG\n textures, \n32 bit depth\n and the \nWhite text with alpha\n preset, but it's up to you. Play around with the settings for different effects.\n\n\n\n\nOnce you're done with the settings you can click \nOptions\n => \nVisualize\n or hit the \nV\n key to see a preview of how the texture will be packed.\n\n\nFinally, click \nOptions\n -> \nSave bitmap font as\n or hit \nCtrl+S\n to export the font file. The textures will also be saved at this location, you'll need to add both of these to your game's content.  \n\n\nBuilding the font file with the MonoGame Pipeline\n\n\nWe need to load the font file into the game, but first we need to add a reference to the \nMonoGame.Extended.Content.Pipleine.dll\n that comes with an importer and processor for BMFont files.  \n\n\n\n\nOnce the reference is added, you can add the font file and texture to the content. If all goes well, the importer and processor should be selected automatically.\n\n\n\n\nDon't forget to \nRebuild\n your content.\n\n\nRendering text in your game\n\n\nIf you've referenced the \nMonoGame.Extended.dll\n from your game project the code is pretty straightforward.\n\n\nFirst load the font into an instance of a \nBitmapFont\n variable.\n\n\n_bitmapFont = Content.Load<BitmapFont>(\"my-font\");\n\n\n\nThen in your \nDraw\n method use the \nDrawString\n extension method to render some text much like you would with a traditional \nSpriteFont\n.\n\n\n_spriteBatch.Begin();\n_spriteBatch.DrawString(_bitmapFont, \"Hello World\", new Vector2(50, 50), Color.Red);\n_spriteBatch.DrawString(_bitmapFont, \n    \"Contrary to popular belief, Lorem Ipsum is not simply random text.\\n\\n\" + \n    \"It has roots in a piece of classical Latin literature from 45 BC, \" + \n    \"making it over 2000 years old. Richard McClintock, a Latin professor\" + \n    \" at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin \" + \n    \"words, consectetur, from a Lorem Ipsum passage, and going through the cites of \" + \n    \"the word in classical literature, discovered the undoubtable source.\", \n    new Vector2(50, 100), new Color(Color.White, 0.5f), _viewportAdapter.VirtualWidth - 50);\n_spriteBatch.End();\n\n\n\nAnd observe the result! :)\n\n\n\n\nHappy coding! :)",
+            "title": "Bitmap Fonts"
+        },
+        {
+            "location": "/Features/Bitmap-Fonts/#bitmap-fonts",
+            "text": "Bitmaps fonts generated with the  BMFont  tool are a great alternative to using the built in  SpriteFont  in MonoGame. There are a couple of reasons you might want to do this, either  SpriteFont 's are not working out for you or you want to have more control over the fonts in your game.  The  BitmapFont  class in  MonoGame.Extended  is designed to be a drop in replacement for the  SpriteFont  class as much as possible. The goal is to take a  .fnt  file and texture generated with the BMFont tool and load it into our game just like any other content.   _bitmapFont = Content.Load<BitmapFont>(\"my-font\");  Then render some text just like any other string.  _spriteBatch.Begin();\n_spriteBatch.DrawString(_bitmapFont, \"Hello World\", new Vector2(100, 200), Color.Red);\n_spriteBatch.End();  But before we can do that, we'll need to generate our bitmap font file.",
+            "title": "Bitmap Fonts"
+        },
+        {
+            "location": "/Features/Bitmap-Fonts/#generating-the-font-file-with-bmfont",
+            "text": "If you haven\u2019t already done so, download and install the  BMFont  tool.    The main window of BMFont displays all of the characters of the font. You'll need to click and drag over the characters to highlight them in white, these are the characters that will be saved to the exported texture. Typically you will take all of the top half and ignore the bottom half, although, you may only want to take a smaller subset to reduce texture size requirements.  To choose a font click  Options  =>  Font Settings  or hit the  F  key. You can pretty much choose whatever settings you like here.   Close that dialog and make sure all your desired characters are highlighted in white.   Next click  Options  =>  Export Options  or hit the  T  key. The important thing here is setting the file format to  XML  and getting the texture width and height right. It's preferable to fit the entire font on a single texture (although not required) and it can sometimes take a little tweaking.  I also recommend using  PNG  textures,  32 bit depth  and the  White text with alpha  preset, but it's up to you. Play around with the settings for different effects.   Once you're done with the settings you can click  Options  =>  Visualize  or hit the  V  key to see a preview of how the texture will be packed.  Finally, click  Options  ->  Save bitmap font as  or hit  Ctrl+S  to export the font file. The textures will also be saved at this location, you'll need to add both of these to your game's content.",
+            "title": "Generating the font file with BMFont"
+        },
+        {
+            "location": "/Features/Bitmap-Fonts/#building-the-font-file-with-the-monogame-pipeline",
+            "text": "We need to load the font file into the game, but first we need to add a reference to the  MonoGame.Extended.Content.Pipleine.dll  that comes with an importer and processor for BMFont files.     Once the reference is added, you can add the font file and texture to the content. If all goes well, the importer and processor should be selected automatically.   Don't forget to  Rebuild  your content.",
+            "title": "Building the font file with the MonoGame Pipeline"
+        },
+        {
+            "location": "/Features/Bitmap-Fonts/#rendering-text-in-your-game",
+            "text": "If you've referenced the  MonoGame.Extended.dll  from your game project the code is pretty straightforward.  First load the font into an instance of a  BitmapFont  variable.  _bitmapFont = Content.Load<BitmapFont>(\"my-font\");  Then in your  Draw  method use the  DrawString  extension method to render some text much like you would with a traditional  SpriteFont .  _spriteBatch.Begin();\n_spriteBatch.DrawString(_bitmapFont, \"Hello World\", new Vector2(50, 50), Color.Red);\n_spriteBatch.DrawString(_bitmapFont, \n    \"Contrary to popular belief, Lorem Ipsum is not simply random text.\\n\\n\" + \n    \"It has roots in a piece of classical Latin literature from 45 BC, \" + \n    \"making it over 2000 years old. Richard McClintock, a Latin professor\" + \n    \" at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin \" + \n    \"words, consectetur, from a Lorem Ipsum passage, and going through the cites of \" + \n    \"the word in classical literature, discovered the undoubtable source.\", \n    new Vector2(50, 100), new Color(Color.White, 0.5f), _viewportAdapter.VirtualWidth - 50);\n_spriteBatch.End();  And observe the result! :)   Happy coding! :)",
+            "title": "Rendering text in your game"
+        },
+        {
+            "location": "/Features/Cameras/",
+            "text": "Cameras\n\n\nOrthographic Camera\n\n\nThe purpose of the camera is to create a transformation matrix that changes the way a sprite batch is rendered.\n\n\nTo create a camera initialize an instance of it using one of the constructor overloads. It's recommended that you used a viewport adapter to scale the screen but you don't have too.\n\n\n        private Camera2D _camera;\n\n        protected override void Initialize()\n        {\n            base.Initialize();\n\n            var viewportAdapter = new BoxingViewportAdapter(Window, GraphicsDevice, 800, 480);\n            _camera = new Camera2D(viewportAdapter);\n        }\n\n\n\n\nNext you'll need to apply the camera's view matrix to one or more of the \nSpriteBatch.Begin\n calls in your \nDraw\n method.\n\n\n        protected override void Draw(GameTime gameTime)\n        {\n            GraphicsDevice.Clear(Color.CornflowerBlue);\n\n            // the camera produces a view matrix that can be applied to any sprite batch\n            var transformMatrix = _camera.GetViewMatrix();\n            _spriteBatch.Begin(transformMatrix: transformMatrix);\n            // ... draw sprites here ...\n            _spriteBatch.End();\n        }\n\n\n\n\nA \ntransformation matrix\n is one of the parameters of a \nSpriteBatch.Begin\n call.\n\n\n\n\nTransformation matrix for scale, rotate, translate options.\n\n\n\n\nIn other words, we use the camera to transform the way a batch of sprites is rendered to the screen without actually modifying their positions, rotations or scales directly. This creates the effect of having a camera looking at your scene that can move, rotate and zoom in and out.\n\n\nOnce you've got a camera instance in your game you'll probably want to move it around in the \nUpdate\n method somehow. For example, you could move the camera's position with the arrow keys.\n\n\n\n        protected override void Update(GameTime gameTime)\n        {\n            var keyboardState = Keyboard.GetState();\n            const float movementSpeed = 200;\n\n            if (keyboardState.IsKeyDown(Keys.Up))\n                _camera.Move(new Vector2(0, -movementSpeed) * deltaTime);\n        }\n\n\n\n\nLast but not least, there'll be times when you want to convert from screen coordinates to world coordinates and visa-vera.  For example, if you want to know which sprite is under the mouse you'll need to convert the mouse position back into the world position that was used to position the sprite in the first place.\n\n\n    var mouseState = Mouse.GetState();\n    _worldPosition = _camera.ScreenToWorld(new Vector2(mouseState.X, mouseState.Y));\n\n\n\n\nFurther Reading\n\n\nTransformation Matrix on MSDN\n\n\nMatrix Basics",
+            "title": "Cameras"
+        },
+        {
+            "location": "/Features/Cameras/#cameras",
+            "text": "",
+            "title": "Cameras"
+        },
+        {
+            "location": "/Features/Cameras/#orthographic-camera",
+            "text": "The purpose of the camera is to create a transformation matrix that changes the way a sprite batch is rendered.  To create a camera initialize an instance of it using one of the constructor overloads. It's recommended that you used a viewport adapter to scale the screen but you don't have too.          private Camera2D _camera;\n\n        protected override void Initialize()\n        {\n            base.Initialize();\n\n            var viewportAdapter = new BoxingViewportAdapter(Window, GraphicsDevice, 800, 480);\n            _camera = new Camera2D(viewportAdapter);\n        }  Next you'll need to apply the camera's view matrix to one or more of the  SpriteBatch.Begin  calls in your  Draw  method.          protected override void Draw(GameTime gameTime)\n        {\n            GraphicsDevice.Clear(Color.CornflowerBlue);\n\n            // the camera produces a view matrix that can be applied to any sprite batch\n            var transformMatrix = _camera.GetViewMatrix();\n            _spriteBatch.Begin(transformMatrix: transformMatrix);\n            // ... draw sprites here ...\n            _spriteBatch.End();\n        }  A  transformation matrix  is one of the parameters of a  SpriteBatch.Begin  call.   Transformation matrix for scale, rotate, translate options.   In other words, we use the camera to transform the way a batch of sprites is rendered to the screen without actually modifying their positions, rotations or scales directly. This creates the effect of having a camera looking at your scene that can move, rotate and zoom in and out.  Once you've got a camera instance in your game you'll probably want to move it around in the  Update  method somehow. For example, you could move the camera's position with the arrow keys.          protected override void Update(GameTime gameTime)\n        {\n            var keyboardState = Keyboard.GetState();\n            const float movementSpeed = 200;\n\n            if (keyboardState.IsKeyDown(Keys.Up))\n                _camera.Move(new Vector2(0, -movementSpeed) * deltaTime);\n        }  Last but not least, there'll be times when you want to convert from screen coordinates to world coordinates and visa-vera.  For example, if you want to know which sprite is under the mouse you'll need to convert the mouse position back into the world position that was used to position the sprite in the first place.      var mouseState = Mouse.GetState();\n    _worldPosition = _camera.ScreenToWorld(new Vector2(mouseState.X, mouseState.Y));",
+            "title": "Orthographic Camera"
+        },
+        {
+            "location": "/Features/Cameras/#further-reading",
+            "text": "Transformation Matrix on MSDN  Matrix Basics",
+            "title": "Further Reading"
+        },
+        {
+            "location": "/Features/Collections/",
+            "text": "Collections\n\n\nCollections are extensions to the C# collections that are useful for game programming.\n\n\nBag\n\n\nA \nBag\n is an un-ordered array of items with fast Add and Remove properties.\n\n\nIt is much faster than an array when removing items, and takes less space than a linked list.\n\n\nBag will resize itself only when it needs to.\n\n\nvar bag = new Bag<int>(3);\nbag.Add(4);\nbag.Add(8);\nbag.Add(15);\n// bag is now [4, 8, 15]\n\nbag.Add(16); // array is extended here, capacity is now 4 instead of 3\n\nbag.Remove(1);\n// bag is now [4, 16, 15] with a capacity of 4\n\n\n\n\nBitVector32\n\n\nThe \nBitVector32\n class provides easy access to 32 individual bit flags.\n\n\nDeque\n\n\nRepresents a collection of objects which elements can added to or removed either from the front or back; a\n\ndouble ended queue\n.\n\n\nDictionaryExtensions\n\n\nExtends all \nDictionary<>\n classes with \nGetValueOrDefault(key, default)\n.\n\n\nKeyedCollection\n\n\nA KeyedCollection is used like a \nDictionary<>\n, except you provide a function that takes a value and return's it's key.\n\n\nListExtensions\n\n\nAdds \nShuffle(Random)\n to all \nIList<>\n classes.\n\n\nObject Pooling\n\n\nAn \nObjectPool<T>\n allows reuse of memory for a group of items to avoid Garbage Collection.\nMore information is in the \nObject Pooling\n documentation.\n\n\nObservableCollection\n\n\nAn \nObservableCollection<T>\n manages an \nIList<T>\n of items firing \nItemAdded\n, \nItemRemoved\n, \nClearing\n and \nCleared\n events when the collection is changed.",
+            "title": "Collections"
+        },
+        {
+            "location": "/Features/Collections/#collections",
+            "text": "Collections are extensions to the C# collections that are useful for game programming.",
+            "title": "Collections"
+        },
+        {
+            "location": "/Features/Collections/#bag",
+            "text": "A  Bag  is an un-ordered array of items with fast Add and Remove properties.  It is much faster than an array when removing items, and takes less space than a linked list.  Bag will resize itself only when it needs to.  var bag = new Bag<int>(3);\nbag.Add(4);\nbag.Add(8);\nbag.Add(15);\n// bag is now [4, 8, 15]\n\nbag.Add(16); // array is extended here, capacity is now 4 instead of 3\n\nbag.Remove(1);\n// bag is now [4, 16, 15] with a capacity of 4",
+            "title": "Bag"
+        },
+        {
+            "location": "/Features/Collections/#bitvector32",
+            "text": "The  BitVector32  class provides easy access to 32 individual bit flags.",
+            "title": "BitVector32"
+        },
+        {
+            "location": "/Features/Collections/#deque",
+            "text": "Represents a collection of objects which elements can added to or removed either from the front or back; a double ended queue .",
+            "title": "Deque"
+        },
+        {
+            "location": "/Features/Collections/#dictionaryextensions",
+            "text": "Extends all  Dictionary<>  classes with  GetValueOrDefault(key, default) .",
+            "title": "DictionaryExtensions"
+        },
+        {
+            "location": "/Features/Collections/#keyedcollection",
+            "text": "A KeyedCollection is used like a  Dictionary<> , except you provide a function that takes a value and return's it's key.",
+            "title": "KeyedCollection"
+        },
+        {
+            "location": "/Features/Collections/#listextensions",
+            "text": "Adds  Shuffle(Random)  to all  IList<>  classes.",
+            "title": "ListExtensions"
+        },
+        {
+            "location": "/Features/Collections/#object-pooling",
+            "text": "An  ObjectPool<T>  allows reuse of memory for a group of items to avoid Garbage Collection.\nMore information is in the  Object Pooling  documentation.",
+            "title": "Object Pooling"
+        },
+        {
+            "location": "/Features/Collections/#observablecollection",
+            "text": "An  ObservableCollection<T>  manages an  IList<T>  of items firing  ItemAdded ,  ItemRemoved ,  Clearing  and  Cleared  events when the collection is changed.",
+            "title": "ObservableCollection"
+        },
+        {
+            "location": "/Features/Collisions/",
+            "text": "Collisions\n\n\nThe \nMonoGame.Extended.Collisions\n library contains a 2D grid based collision system.",
+            "title": "Collisions"
+        },
+        {
+            "location": "/Features/Collisions/#collisions",
+            "text": "The  MonoGame.Extended.Collisions  library contains a 2D grid based collision system.",
+            "title": "Collisions"
+        },
+        {
+            "location": "/Features/Content-Pipeline/",
+            "text": "Content.Pipeline\n\n\nThe \nMonoGame.Extended.Content.Pipeline\n library extends the \nMonoGame Content Pipeline tool\n. This adds Animations, BitmapFonts, TextureAtlases, and Tiled maps to the Content Pipeline tool.",
+            "title": "Content Pipeline"
+        },
+        {
+            "location": "/Features/Content-Pipeline/#contentpipeline",
+            "text": "The  MonoGame.Extended.Content.Pipeline  library extends the  MonoGame Content Pipeline tool . This adds Animations, BitmapFonts, TextureAtlases, and Tiled maps to the Content Pipeline tool.",
+            "title": "Content.Pipeline"
+        },
+        {
+            "location": "/Features/Content/",
+            "text": "ContentManager extensions\n\n\nContentManager.OpenStream\n\n\nSystem.IO.Stream ContentManager.OpenStream(string filename)\n\n\nOpenStream\n allows easy access to \nTitleContainer.OpenStream\n so you can use the \nGame.Content\n object to load compiled resources \nand\n included resources.\n\n\n// my-file.txt is in the RootDirectory\nvar stream = Content.OpenStream(\"my-file.txt\");\n// do something with file\nstream.Close();\n\n\n\n\nContentManager.GetGraphicsDevice\n\n\nGraphicsDevice ContentManager.GetGraphicsDevice()\n\n\nGetGraphicsDevice\n returns the current \nGraphicsDevice\n from the services.\n\n\nvar graphicsDevice = Content.GetGraphicsDevice();\nvar width = graphicsDevice.DisplayMode.Width;\n\n\n\n\nContentReader extensions\n\n\nThe \nContentReader\n extensions help when writing your own content pipeline readers.\n\n\nContentReader.GetGraphicsDevice\n\n\nGraphicsDevice ContentManager.GetGraphicsDevice()\n\n\nGetGraphicsDevice\n returns the current \nGraphicsDevice\n to help when loading content for the current display.\n\n\npublic class MyTypeReader : ContentTypeReader<MyType> {\n    protected override MyType Read(ContentReader reader, MyType existingInstance)\n    {\n        var graphicsDevice = reader.GetGraphicsDevice();\n        // ...\n    }\n}\n\n\n\n\nContentReader.GetRelativeAssetName\n\n\nstring ContentReader.GetRelativeAssetName(string relativeName)\n\n\nGetRelativeAssetName\n helps when your content type loads a different type, and you want to know the name to give \nContentManager.Load\n.\n\n\npublic class MyTypeReader : ContentTypeReader<MyType> {\n    protected override MyType Read(ContentReader reader, MyType existingInstance)\n    {\n        var assetName = reader.GetRelativeAssetName(reader.ReadString());\n        var other = reader.ContentManager.Load<OtherType>(assetName);\n        // ...\n    }\n}",
+            "title": "ContentManager extensions"
+        },
+        {
+            "location": "/Features/Content/#contentmanager-extensions",
+            "text": "",
+            "title": "ContentManager extensions"
+        },
+        {
+            "location": "/Features/Content/#contentmanageropenstream",
+            "text": "System.IO.Stream ContentManager.OpenStream(string filename)  OpenStream  allows easy access to  TitleContainer.OpenStream  so you can use the  Game.Content  object to load compiled resources  and  included resources.  // my-file.txt is in the RootDirectory\nvar stream = Content.OpenStream(\"my-file.txt\");\n// do something with file\nstream.Close();",
+            "title": "ContentManager.OpenStream"
+        },
+        {
+            "location": "/Features/Content/#contentmanagergetgraphicsdevice",
+            "text": "GraphicsDevice ContentManager.GetGraphicsDevice()  GetGraphicsDevice  returns the current  GraphicsDevice  from the services.  var graphicsDevice = Content.GetGraphicsDevice();\nvar width = graphicsDevice.DisplayMode.Width;",
+            "title": "ContentManager.GetGraphicsDevice"
+        },
+        {
+            "location": "/Features/Content/#contentreader-extensions",
+            "text": "The  ContentReader  extensions help when writing your own content pipeline readers.",
+            "title": "ContentReader extensions"
+        },
+        {
+            "location": "/Features/Content/#contentreadergetgraphicsdevice",
+            "text": "GraphicsDevice ContentManager.GetGraphicsDevice()  GetGraphicsDevice  returns the current  GraphicsDevice  to help when loading content for the current display.  public class MyTypeReader : ContentTypeReader<MyType> {\n    protected override MyType Read(ContentReader reader, MyType existingInstance)\n    {\n        var graphicsDevice = reader.GetGraphicsDevice();\n        // ...\n    }\n}",
+            "title": "ContentReader.GetGraphicsDevice"
+        },
+        {
+            "location": "/Features/Content/#contentreadergetrelativeassetname",
+            "text": "string ContentReader.GetRelativeAssetName(string relativeName)  GetRelativeAssetName  helps when your content type loads a different type, and you want to know the name to give  ContentManager.Load .  public class MyTypeReader : ContentTypeReader<MyType> {\n    protected override MyType Read(ContentReader reader, MyType existingInstance)\n    {\n        var assetName = reader.GetRelativeAssetName(reader.ReadString());\n        var other = reader.ContentManager.Load<OtherType>(assetName);\n        // ...\n    }\n}",
+            "title": "ContentReader.GetRelativeAssetName"
+        },
+        {
+            "location": "/Features/Entities/",
+            "text": "Entities\n\n\nThe Entities package is a modern high performance Artemis based Entity Component System. Many of the features found in this implementation were inspired by \nartemis-odb\n. Although, many others were also studied during development. As you'll see the systems are designed to feel familar to MonoGame developers.\n\n\nWhat is an ECS?\n\n\nAn \nEntity Component System (ECS)\n is a way to build and manage the entities (or game objects) in your game by composing their component parts together. An ECS consists of three main parts:\n\n\nComponents\n\n\nA component is simply a class that holds some state about the entity. Typically, components are lightweight and don't contain any game logic. It's common to have components with only a few properties or fields. Components can be more complex but inheritence is not encouraged.\n\n\nEntities\n\n\nAn entity is a composition of components identified by an ID. Often you only need the ID of the entity to work with it. For performance reasons, and entity ID is only valid while the entity is alive. Once the entity is destroyed, it's ID may be recycled.\n\n\nSystems\n\n\nA system is a class that will run during the game's \nUpdate\n or \nDraw\n calls. They usually contain the game logic about how to manage a filtered collection of entities and their components. \n\n\nCreating the world\n\n\nThe \nWorld\n is the entry point to the ECS. It holds your entities and systems and you'll use it later to create and destroy entities.\n\n\nTo create the world you need to use the \nWorldBuilder\n and add your systems before building the \nWorld\n instance.\n\n\n_world = new WorldBuilder()\n    .AddSystem(new PlayerSystem())\n    .AddSystem(new RenderSystem(GraphicsDevice))\n    .Build();\n\n\n\n\nNote:\n Manually adding your systems this way might seem annoying at first, but it can be highly desireable to be able to control the order systems are added. It also allows you to constructor inject services as desired.\n\n\nOnce the world is created you need to call the \nUpdate\n and \nDraw\n methods. \n\n\nprotected override void Update(GameTime gameTime)\n{\n    _world.Update(gameTime);\n    base.Update(gameTime);\n}\n\n\n\n\nprotected override void Draw(GameTime gameTime)\n{\n    _world.Draw(gameTime);\n    base.Draw(gameTime);\n}\n\n\n\n\nNote:\n The world also implements the \nIGameComponent\n interface, so if you prefer you can add it to the \nGameComponentCollection\n instead (not to be confused with ECS components).\n\n\nCreating entities\n\n\nUsually when you create an entity you'll want to attach some components to it immediately. This is not required though, as components can be added and removed anytime by systems.\n\n\nvar entity = _world.CreateEntity();\nentity.Attach(new Transform2(position));\nentity.Attach(new Sprite(textureRegion));\n\n\n\n\nAny standard class can be used as a component but typically you'll want to keep your components lightweight and specific.\n\n\nNote:\n An entity can only have one instance of each component type.\n\n\nDestroying entities\n\n\nRemoving entities from the world is easy.\n\n\n_world.DestroyEntity(entity);\n\n\n\n\nIt should be noted that the actual entity creation and removal is deferred until the next update. This allows for some performance optimizations and batches events so that they can be handled more gracefully by systems.\n\n\nNote:\n When you're inside an \nEntitySystem\n there are helper methods for creating destroying entities so that you don't need to access the \nWorld\n instance each time.\n\n\nTypes of systems\n\n\nSystems can be used to do all kinds of processing during your game. There are several kinds of base systems available to build your game.\n\n\n\n\nAn \nUpdateSystem\n is a basic system that has an \nUpdate\n method called every frame.\n\n\nA \nDrawSystem\n is a basic system that has a \nDraw\n method called every frame.\n\n\nAn \nEntityUpdateSystem\n is used to process to process a filtered collection of entities during the \nUpdate\n call.\n\n\nAn \nEntityDrawSystem\n is used to process a filtered collection of entities during the \nDraw\n call.\n\n\nAn \nEntityProcessingSystem\n can be used to process a filtered collection of entities one at a time during the \nUpdate\n call. \n\n\nYou can also create a system that has both an \nUpdate\n method and a \nDraw\n method by implementing the \nIUpdateSystem\n and \nIDrawSystem\n interfaces respectively.\n\n\nAn \nEntitySystem\n is the base class for all entity processing systems. Typically you won't derive from this class unless you're building a new type of entity processing system. If you do derive from this class you probably also want to implement one of the update or draw interfaces.\n\n\n\n\nCreating systems\n\n\nTo create a new system, decide which base system to derive from and implement a new class.\n\n\npublic class RenderSystem : EntityDrawSystem\n\n\n\n\nWhen you're creating entity systems the first thing you'll want to do is provide an \nAspect\n to filter the system to only process the entities you're interested in.\n\n\nFor example, a typical \nRenderSystem\n might want to process entities with a \nSprite\n component and a \nTransform2\n component. To provide an aspect you pass it into the base constructor.\n\n\npublic RenderSystem(GraphicsDevice graphicsDevice)\n    : base(Aspect.All(typeof(Sprite), typeof(Transform2)))\n{\n    _graphicsDevice = graphicsDevice;\n    _spriteBatch = new SpriteBatch(graphicsDevice);\n}\n\n\n\n\nNext, you'll need to override the \nUpdate\n or \nDraw\n method (depending on what type of system you're implementing).\n\n\nIn our case, the \nDraw\n method might look something like this:\n\n\npublic override void Draw(GameTime gameTime)\n{\n    _spriteBatch.Begin();\n\n    foreach (var entity in ActiveEntities)\n    {\n      // draw your entities\n    }\n\n    _spriteBatch.End();\n}\n\n\n\n\nNote:\n Don't forget to add your system to the \nWorldBuilder\n when you're done.\n\n\nAccessing components\n\n\nThe preferred way to access components is to use component mappers.\n\n\nA \nComponentMapper\n provides a very fast way to access components within a system. When you're using a component mapper you're getting nearly direct access to the underlying arrays that hold the components under the hood.\n\n\nTo get a component mapper, create a field on your system and use the \nInitialize\n method to grab an instance of the mapper. Do this for each component type you want to process.\n\n\npublic override void Initialize(IComponentMapperService mapperService)\n{\n  _transformMapper = mapperService.GetMapper<Transform2>();\n  _spriteMapper = mapperService.GetMapper<Sprite>();\n}\n\n\n\n\nThen inside the \nUpdate\n or \nDraw\n method you can get access to the components for each entity you want to process.\n\n\nvar transform = _transformMapper.Get(entityId);\nvar sprite = _spriteMapper.Get(entityId);\n\n_spriteBatch.Draw(sprite, transform);\n\n\n\n\nComponent mappers can also be used to modify entities on the fly. For example, you can add a new component to an entity with the \nPut\n method.\n\n\n_buffMapper.Put(entityId, buffComponent);\n\n\n\n\nNote:\n The \nPut\n method will replace an existing component of the same type if it already exists. There is no need to check if the entity already has the component.\n\n\nYou can also check if an entity \nHas\n a component or \nDelete\n a component with the mapper.\n\n\n\n\nFor convienience it's also possible to access components on an entity \nwithout\n using component mappers. This can be useful for prototyping ideas or when performance isn't a primary concern.\n\n\nvar entity = GetEntity(entityId);\nvar health = entity.Get<HealthComponent>();\nvar transform = entity.Get<Transform2>();\n\n\n\n\nNote:\n This method of accessing components requires dictionary lookups of the component types each frame. This is still a fairly fast operation, and for some games it'll do just fine.\n\n\nFiltering components\n\n\nAn \nAspect\n is used by entity systems to decide what component types the system will process. The entities will be available in the system's \nActiveEntities\n collection.\n\n\nAn aspect has three methods:\n\n\n\n\nAspect.All(A, B)\n requires the entities to have all of the desired components.\n\n\nAspect.One(C, D)\n requires the entities to have any one or more of the components.\n\n\nAspect.Exclude(E, F)\n will exclude entities that have any of these components.\n\n\n\n\nAspects can also be chained together. For example, an entity matching:\n\n\nAspect.All(A, B).One(C, D).Exclude(E)\n would need to have A and B and at least one of C or D except if it has E.",
+            "title": "Entities"
+        },
+        {
+            "location": "/Features/Entities/#entities",
+            "text": "The Entities package is a modern high performance Artemis based Entity Component System. Many of the features found in this implementation were inspired by  artemis-odb . Although, many others were also studied during development. As you'll see the systems are designed to feel familar to MonoGame developers.",
+            "title": "Entities"
+        },
+        {
+            "location": "/Features/Entities/#what-is-an-ecs",
+            "text": "An  Entity Component System (ECS)  is a way to build and manage the entities (or game objects) in your game by composing their component parts together. An ECS consists of three main parts:",
+            "title": "What is an ECS?"
+        },
+        {
+            "location": "/Features/Entities/#components",
+            "text": "A component is simply a class that holds some state about the entity. Typically, components are lightweight and don't contain any game logic. It's common to have components with only a few properties or fields. Components can be more complex but inheritence is not encouraged.",
+            "title": "Components"
+        },
+        {
+            "location": "/Features/Entities/#entities_1",
+            "text": "An entity is a composition of components identified by an ID. Often you only need the ID of the entity to work with it. For performance reasons, and entity ID is only valid while the entity is alive. Once the entity is destroyed, it's ID may be recycled.",
+            "title": "Entities"
+        },
+        {
+            "location": "/Features/Entities/#systems",
+            "text": "A system is a class that will run during the game's  Update  or  Draw  calls. They usually contain the game logic about how to manage a filtered collection of entities and their components.",
+            "title": "Systems"
+        },
+        {
+            "location": "/Features/Entities/#creating-the-world",
+            "text": "The  World  is the entry point to the ECS. It holds your entities and systems and you'll use it later to create and destroy entities.  To create the world you need to use the  WorldBuilder  and add your systems before building the  World  instance.  _world = new WorldBuilder()\n    .AddSystem(new PlayerSystem())\n    .AddSystem(new RenderSystem(GraphicsDevice))\n    .Build();  Note:  Manually adding your systems this way might seem annoying at first, but it can be highly desireable to be able to control the order systems are added. It also allows you to constructor inject services as desired.  Once the world is created you need to call the  Update  and  Draw  methods.   protected override void Update(GameTime gameTime)\n{\n    _world.Update(gameTime);\n    base.Update(gameTime);\n}  protected override void Draw(GameTime gameTime)\n{\n    _world.Draw(gameTime);\n    base.Draw(gameTime);\n}  Note:  The world also implements the  IGameComponent  interface, so if you prefer you can add it to the  GameComponentCollection  instead (not to be confused with ECS components).",
+            "title": "Creating the world"
+        },
+        {
+            "location": "/Features/Entities/#creating-entities",
+            "text": "Usually when you create an entity you'll want to attach some components to it immediately. This is not required though, as components can be added and removed anytime by systems.  var entity = _world.CreateEntity();\nentity.Attach(new Transform2(position));\nentity.Attach(new Sprite(textureRegion));  Any standard class can be used as a component but typically you'll want to keep your components lightweight and specific.  Note:  An entity can only have one instance of each component type.",
+            "title": "Creating entities"
+        },
+        {
+            "location": "/Features/Entities/#destroying-entities",
+            "text": "Removing entities from the world is easy.  _world.DestroyEntity(entity);  It should be noted that the actual entity creation and removal is deferred until the next update. This allows for some performance optimizations and batches events so that they can be handled more gracefully by systems.  Note:  When you're inside an  EntitySystem  there are helper methods for creating destroying entities so that you don't need to access the  World  instance each time.",
+            "title": "Destroying entities"
+        },
+        {
+            "location": "/Features/Entities/#types-of-systems",
+            "text": "Systems can be used to do all kinds of processing during your game. There are several kinds of base systems available to build your game.   An  UpdateSystem  is a basic system that has an  Update  method called every frame.  A  DrawSystem  is a basic system that has a  Draw  method called every frame.  An  EntityUpdateSystem  is used to process to process a filtered collection of entities during the  Update  call.  An  EntityDrawSystem  is used to process a filtered collection of entities during the  Draw  call.  An  EntityProcessingSystem  can be used to process a filtered collection of entities one at a time during the  Update  call.   You can also create a system that has both an  Update  method and a  Draw  method by implementing the  IUpdateSystem  and  IDrawSystem  interfaces respectively.  An  EntitySystem  is the base class for all entity processing systems. Typically you won't derive from this class unless you're building a new type of entity processing system. If you do derive from this class you probably also want to implement one of the update or draw interfaces.",
+            "title": "Types of systems"
+        },
+        {
+            "location": "/Features/Entities/#creating-systems",
+            "text": "To create a new system, decide which base system to derive from and implement a new class.  public class RenderSystem : EntityDrawSystem  When you're creating entity systems the first thing you'll want to do is provide an  Aspect  to filter the system to only process the entities you're interested in.  For example, a typical  RenderSystem  might want to process entities with a  Sprite  component and a  Transform2  component. To provide an aspect you pass it into the base constructor.  public RenderSystem(GraphicsDevice graphicsDevice)\n    : base(Aspect.All(typeof(Sprite), typeof(Transform2)))\n{\n    _graphicsDevice = graphicsDevice;\n    _spriteBatch = new SpriteBatch(graphicsDevice);\n}  Next, you'll need to override the  Update  or  Draw  method (depending on what type of system you're implementing).  In our case, the  Draw  method might look something like this:  public override void Draw(GameTime gameTime)\n{\n    _spriteBatch.Begin();\n\n    foreach (var entity in ActiveEntities)\n    {\n      // draw your entities\n    }\n\n    _spriteBatch.End();\n}  Note:  Don't forget to add your system to the  WorldBuilder  when you're done.",
+            "title": "Creating systems"
+        },
+        {
+            "location": "/Features/Entities/#accessing-components",
+            "text": "The preferred way to access components is to use component mappers.  A  ComponentMapper  provides a very fast way to access components within a system. When you're using a component mapper you're getting nearly direct access to the underlying arrays that hold the components under the hood.  To get a component mapper, create a field on your system and use the  Initialize  method to grab an instance of the mapper. Do this for each component type you want to process.  public override void Initialize(IComponentMapperService mapperService)\n{\n  _transformMapper = mapperService.GetMapper<Transform2>();\n  _spriteMapper = mapperService.GetMapper<Sprite>();\n}  Then inside the  Update  or  Draw  method you can get access to the components for each entity you want to process.  var transform = _transformMapper.Get(entityId);\nvar sprite = _spriteMapper.Get(entityId);\n\n_spriteBatch.Draw(sprite, transform);  Component mappers can also be used to modify entities on the fly. For example, you can add a new component to an entity with the  Put  method.  _buffMapper.Put(entityId, buffComponent);  Note:  The  Put  method will replace an existing component of the same type if it already exists. There is no need to check if the entity already has the component.  You can also check if an entity  Has  a component or  Delete  a component with the mapper.   For convienience it's also possible to access components on an entity  without  using component mappers. This can be useful for prototyping ideas or when performance isn't a primary concern.  var entity = GetEntity(entityId);\nvar health = entity.Get<HealthComponent>();\nvar transform = entity.Get<Transform2>();  Note:  This method of accessing components requires dictionary lookups of the component types each frame. This is still a fairly fast operation, and for some games it'll do just fine.",
+            "title": "Accessing components"
+        },
+        {
+            "location": "/Features/Entities/#filtering-components",
+            "text": "An  Aspect  is used by entity systems to decide what component types the system will process. The entities will be available in the system's  ActiveEntities  collection.  An aspect has three methods:   Aspect.All(A, B)  requires the entities to have all of the desired components.  Aspect.One(C, D)  requires the entities to have any one or more of the components.  Aspect.Exclude(E, F)  will exclude entities that have any of these components.   Aspects can also be chained together. For example, an entity matching:  Aspect.All(A, B).One(C, D).Exclude(E)  would need to have A and B and at least one of C or D except if it has E.",
+            "title": "Filtering components"
+        },
+        {
+            "location": "/Features/Graphics/",
+            "text": "Graphics\n\n\nThe \nMonoGame.Extended.Graphics\n library contains extensions useful for generating dynamic geometry and batching draw calls.",
+            "title": "Graphics"
+        },
+        {
+            "location": "/Features/Graphics/#graphics",
+            "text": "The  MonoGame.Extended.Graphics  library contains extensions useful for generating dynamic geometry and batching draw calls.",
+            "title": "Graphics"
+        },
+        {
+            "location": "/Features/Gui/",
+            "text": "Gui\n\n\nThe \nMonoGame.Extended.Gui\n library contains a complete GUI system.  It includes Buttons, Text Boxes, Dialogs and many other controls, and is skinnable.\n\n\nNuclexGui\n\n\nThe \nMonoGame.Extended.NuclexGui\n library contains an implementation of the \nNuclex GUI Framework\n for XNA, ported to MonoGame.",
+            "title": "Gui"
+        },
+        {
+            "location": "/Features/Gui/#gui",
+            "text": "The  MonoGame.Extended.Gui  library contains a complete GUI system.  It includes Buttons, Text Boxes, Dialogs and many other controls, and is skinnable.",
+            "title": "Gui"
+        },
+        {
+            "location": "/Features/Gui/#nuclexgui",
+            "text": "The  MonoGame.Extended.NuclexGui  library contains an implementation of the  Nuclex GUI Framework  for XNA, ported to MonoGame.",
+            "title": "NuclexGui"
+        },
+        {
+            "location": "/Features/Input/",
+            "text": "Input\n\n\nThe \nMonoGame.Extended.Input\n library contains input listener classes that have events you can use to subscribe to input events, instead of having to poll for input changes.",
+            "title": "Input"
+        },
+        {
+            "location": "/Features/Input/#input",
+            "text": "The  MonoGame.Extended.Input  library contains input listener classes that have events you can use to subscribe to input events, instead of having to poll for input changes.",
+            "title": "Input"
+        },
+        {
+            "location": "/Features/Object-Pooling/",
+            "text": "Object Pooling\n\n\nObject pooling is an optimization pattern. It's used to improve performance, in certain cases, by re-using objects instead of allocating memory for them on demand. In C/C++, one the things object pooling has to offer is a solution to avoid \nmemory fragmentation\n. In C#, we don't have to worry about memory fragmentation thanks to \ngarbage collection\n. However, garbage collection can be still be too expensive for certain parts of real-time applications, especially on mobile devices with slower CPUs and simpler garbage collectors. \nMore details on object pooling here\n.\n\n\nIMPORTANT\n\n\nAlways profile the game for performance problems!\nUsing a \nPool<T>\n without first profiling for the need of one may result in a \ndecrease\n in performance in certain cases. If you are unsure, don't use the object pooling pattern.\n\n\nCreating a Pool-able Object\n\n\nAll objects which can be pooled need to implement the \nIPoolable\n interface.\nThe following is a code snippet with comments demonstrating how to implement the interface.\n\n\nprivate class MyPoolable : IPoolable\n{\n    private ReturnToPoolDelegate _returnAction;\n\n    void IPoolable.Initialize(ReturnToPoolDelegate returnAction)\n    {\n        // copy the instance reference of the return function so we can call it later\n        _returnAction = returnAction;\n    }\n\n    public void Return()\n    {\n        // check if this instance has already been returned\n        if (_returnAction != null)\n        {\n            // not yet returned, return it now\n            _returnAction.Invoke(this);\n            // set the delegate instance reference to null, so we don't accidentally return it again\n            _returnAction = null;\n        }\n    }\n}\n\n\n\n\nUsing Pooled Objects\n\n\nCreating a Pool\n\n\nInstantiating a \nPool<T>\n is similar to any generic collection, i.e \nList<T>\n, but the pool does require 2 parameters for it's constructor. \nT\n also has to implement \nIPoolable\n.\n\n\nvar pool = new Pool<MyPoolable>(50, index => new MyPoolable());\n\n\n\n\nThe first parameter is the \ncapacity\n of the pool; the maximum number of object instances the pool has reference to. The second parameter is the delegate responsible for creating each object instance.\n\n\nNOTE\n\n\nHaving too large of a capacity will waste memory, but having too small of a capacity will limit the number of object instances that can be pooled.\n\n\nAll object instances are created when the pool is instantiated.\n\n\nGetting a Pooled Object\n\n\nA free pooled object instance can be requested from the pool instance.\n\n\nvar myPoolable = pool.Request();\n\n\n\n\nNOTE\n\n\nIf the pool is empty, the result will be \nnull\n.\n\n\nReturning a Object to the Pool\n\n\nWhen the object instance is no longer needed it should be returned to the pool so it can be re-used.\n\n\nmyPoolable.Return();",
+            "title": "Object Pooling"
+        },
+        {
+            "location": "/Features/Object-Pooling/#object-pooling",
+            "text": "Object pooling is an optimization pattern. It's used to improve performance, in certain cases, by re-using objects instead of allocating memory for them on demand. In C/C++, one the things object pooling has to offer is a solution to avoid  memory fragmentation . In C#, we don't have to worry about memory fragmentation thanks to  garbage collection . However, garbage collection can be still be too expensive for certain parts of real-time applications, especially on mobile devices with slower CPUs and simpler garbage collectors.  More details on object pooling here .",
+            "title": "Object Pooling"
+        },
+        {
+            "location": "/Features/Object-Pooling/#important",
+            "text": "Always profile the game for performance problems!\nUsing a  Pool<T>  without first profiling for the need of one may result in a  decrease  in performance in certain cases. If you are unsure, don't use the object pooling pattern.",
+            "title": "IMPORTANT"
+        },
+        {
+            "location": "/Features/Object-Pooling/#creating-a-pool-able-object",
+            "text": "All objects which can be pooled need to implement the  IPoolable  interface.\nThe following is a code snippet with comments demonstrating how to implement the interface.  private class MyPoolable : IPoolable\n{\n    private ReturnToPoolDelegate _returnAction;\n\n    void IPoolable.Initialize(ReturnToPoolDelegate returnAction)\n    {\n        // copy the instance reference of the return function so we can call it later\n        _returnAction = returnAction;\n    }\n\n    public void Return()\n    {\n        // check if this instance has already been returned\n        if (_returnAction != null)\n        {\n            // not yet returned, return it now\n            _returnAction.Invoke(this);\n            // set the delegate instance reference to null, so we don't accidentally return it again\n            _returnAction = null;\n        }\n    }\n}",
+            "title": "Creating a Pool-able Object"
+        },
+        {
+            "location": "/Features/Object-Pooling/#using-pooled-objects",
+            "text": "",
+            "title": "Using Pooled Objects"
+        },
+        {
+            "location": "/Features/Object-Pooling/#creating-a-pool",
+            "text": "Instantiating a  Pool<T>  is similar to any generic collection, i.e  List<T> , but the pool does require 2 parameters for it's constructor.  T  also has to implement  IPoolable .  var pool = new Pool<MyPoolable>(50, index => new MyPoolable());  The first parameter is the  capacity  of the pool; the maximum number of object instances the pool has reference to. The second parameter is the delegate responsible for creating each object instance.",
+            "title": "Creating a Pool"
+        },
+        {
+            "location": "/Features/Object-Pooling/#note",
+            "text": "Having too large of a capacity will waste memory, but having too small of a capacity will limit the number of object instances that can be pooled.  All object instances are created when the pool is instantiated.",
+            "title": "NOTE"
+        },
+        {
+            "location": "/Features/Object-Pooling/#getting-a-pooled-object",
+            "text": "A free pooled object instance can be requested from the pool instance.  var myPoolable = pool.Request();",
+            "title": "Getting a Pooled Object"
+        },
+        {
+            "location": "/Features/Object-Pooling/#note_1",
+            "text": "If the pool is empty, the result will be  null .",
+            "title": "NOTE"
+        },
+        {
+            "location": "/Features/Object-Pooling/#returning-a-object-to-the-pool",
+            "text": "When the object instance is no longer needed it should be returned to the pool so it can be re-used.  myPoolable.Return();",
+            "title": "Returning a Object to the Pool"
+        },
+        {
+            "location": "/Features/Particles/",
+            "text": "Particles\n\n\nThe \nMonoGame.Extended.Particles\n library contains a high performance Particle System ported from the \nMercury Particle Engine\n.",
+            "title": "Particles"
+        },
+        {
+            "location": "/Features/Particles/#particles",
+            "text": "The  MonoGame.Extended.Particles  library contains a high performance Particle System ported from the  Mercury Particle Engine .",
+            "title": "Particles"
+        },
+        {
+            "location": "/Features/Scene-Graphs/",
+            "text": "SceneGraphs\n\n\nThe \nMonoGame.Extended.SceneGraphs\n library contains a scene graph (tree) system.",
+            "title": "Scene Graphs"
+        },
+        {
+            "location": "/Features/Scene-Graphs/#scenegraphs",
+            "text": "The  MonoGame.Extended.SceneGraphs  library contains a scene graph (tree) system.",
+            "title": "SceneGraphs"
+        },
+        {
+            "location": "/Features/Screens/",
+            "text": "Screen Management\n\n\nExample\n\n\nThe \nScreenGameComponent\n manages individual \nScreen\n objects.  Add a new \nScreenGameComponent\n to your Game's \nComponents\n, and the screen manager will pass \nInitialize\n \nLoadContent\n \nUnloadContent\n \nUpdate\n and \nDraw\n to every registered screen.\n\n\npublic Game1()\n{\n    // Add the screen manager to your Components.\n    ScreenGameComponent screenGameComponent = new ScreenGameComponent(this);\n    Components.Add(screenGameComponent);\n}\n\n\n\n\nTo register your class (MyScreen) that subclasses \nScreen\n.  Just pass it into the \nRegister\n function.\n\n\npublic Game1()\n{\n    ScreenGameComponent screenGameComponent = new ScreenGameComponent(this);\n    screenGameComponent.Register(new MyScreen());\n    Components.Add(screenGameComponent);\n}\n\n\n\n\nDemos\n\n\nDemo.Features/Demos/ScreensDemo.cs",
+            "title": "Screen Management"
+        },
+        {
+            "location": "/Features/Screens/#screen-management",
+            "text": "",
+            "title": "Screen Management"
+        },
+        {
+            "location": "/Features/Screens/#example",
+            "text": "The  ScreenGameComponent  manages individual  Screen  objects.  Add a new  ScreenGameComponent  to your Game's  Components , and the screen manager will pass  Initialize   LoadContent   UnloadContent   Update  and  Draw  to every registered screen.  public Game1()\n{\n    // Add the screen manager to your Components.\n    ScreenGameComponent screenGameComponent = new ScreenGameComponent(this);\n    Components.Add(screenGameComponent);\n}  To register your class (MyScreen) that subclasses  Screen .  Just pass it into the  Register  function.  public Game1()\n{\n    ScreenGameComponent screenGameComponent = new ScreenGameComponent(this);\n    screenGameComponent.Register(new MyScreen());\n    Components.Add(screenGameComponent);\n}",
+            "title": "Example"
+        },
+        {
+            "location": "/Features/Screens/#demos",
+            "text": "Demo.Features/Demos/ScreensDemo.cs",
+            "title": "Demos"
+        },
+        {
+            "location": "/Features/Serialization/",
+            "text": "Serialization\n\n\nMonoGame.Extended contains various serialization helpers that work with \nNewtonsoft Json.NET\n.\n\n\nJson Converters\n\n\nThe following XNA/MonoGame types have converters:\n\n\n\n\nColor\n via \nColorJsonConverter\n\n\nVector2\n via \nVector2JsonConverter\n\n\n\n\nThe following MonoGame.Extended types have converters:\n\n\n\n\nNinePatchRegion2D\n via \nNinePatchRegion2DJsonConverter\n\n\nSize2\n via \nSize2JsonConverter\n\n\nRange<T>\n via \nRangeJsonConverter\n\n\nTextureRegion2D\n via \nTextureRegion2DJsonConverter\n\n\nThickness\n via \nThicknessJsonConverter\n\n\n\n\nJsonConverter Example\n\n\nusing Newtonsoft.Json;\nusing Microsoft.Xna.Framework;\nusing MonoGame.Extended.Serialization;\n\nstruct Thing {\n    public Color BootStrapBlue;\n    public Vector2 Position;\n}\nvar data = @\"{\n    'BootStrapBlue':'#428bca00',\n    'Position':'1.1 4',\n}\";\n\nvar thing = JsonConvert.DeserializeObject<Thing>(data,\n    new ColorJsonConverter(),\n    new Vector2JsonConverter()\n);\n\nthing.BootStrapBlue; // \"{R:66 G:139 B:202 A:0}\"\nthing.Posistion; // \"{X:1.1 Y:4}\"\n\n\n\n\nColor JsonConverter\n\n\nColorJsonConverter tells Newtonsoft Json.NET now to convert string hex values into XNA \nColor\n objects.\n\n\nGiven the JSON string value\n\n\n\"#10203040\"\n\n\n\n\nA Color object is created.\n\n\nnew Color(16, 32, 48, 64);\n\n\n\n\nThe format is a \n#\n followed by byte hex codes for Red, Green, Blue, and Alpha channels.\n\n\nVector2 JsonConverter\n\n\nVector2JsonConverter tells Newtonsoft Json.NET how to serialize XNA \nVector2\n objects.\n\n\nGiven the JSON string value\n\n\n\"1.2 33\"\n\n\n\n\nA new Vector2 is created.\n\n\nnew Vector2(1.2f, 33f);\n\n\n\n\nThe format is \nX Y\n for the x and y components of a 2D vector.\n\n\nNinePatchRegion2D JsonConverter\n\n\nNinePatchRegion2DJsonConverter tells Newtonsoft Json.NET how to serialize MonoGame.Extended \nNinePatchRegion2D\n objects.\n\n\nGiven the JSON object value\n\n\n{\"TextureRegion\":\"Center\",\"Padding\":\"1 2 3 4\"}\n\n\n\n\nA new NinePatchRegion2D is created and the TextureRegion is looked up in the TextureRegionService.\n\n\nnew NinePatchRegion2D(TextureRegion2D('Center',...), 1, 2, 3, 4)\n\n\n\n\nThe format is not a string value, but a nested JSON object where \nPadding\n is a \nThickness\n value.\n\n\nSize2 JsonConverter\n\n\nSize2JsonConverter tells Newtonsoft Json.NET how to serialize MonoGame.Extended \nSize2\n objects.\n\n\nGiven the JSON string value\n\n\n\"10 4\"\n\n\n\n\nA new Size2 object is created.  Understood, good buddy.\n\n\nnew Size2(10f, 4f)\n\n\n\n\nThe format is a JSON string containing the Width, and Height values as decimal numbers.\n\n\nRange JsonConverter\n\n\nRangeJsonConverter<T>\n tells Newtonsoft Json.NET how to serialize MonoGame.Extended \nRange<T>\n objects.\n\n\nGiven the JSON string value\n\n\n\"1 9000\"\n\n\n\n\nA new Range\n object is created.\n\n\nnew Range<int>(1, 9000);\n\n\n\n\nThe format is a JSON string containing one or two values.\n\n\nTextureRegion2D JsonConverter\n\n\nTextureRegion2DJsonConverter tells Newtonsoft Json.NET how to serialize MonoGame.Extended \nTextureRegion2D\n objects.\n\n\nGiven the JSON string value\n\n\n\"Center\"\n\n\n\n\nThe TextureRegionService is queried with \nGetTextureRegion(\"Center\")\n\n\nThe format is a JSON string with the name of the TextureRegion in a TextureAtlas.\n\n\nThickness JsonConverter\n\n\nThicknessJsonConverter tells Newtonsoft Json.NET how to serialize a MonoGame.Extended \nThickness\n object.\n\n\nGiven the JSON string value\n\n\n\"1 2 3 4\"\n\n\n\n\nA new Thickness object is created.\n\n\nThickness.Parse(\"1 2 3 4\")\n\n\n\n\nThe format is a JSON string containing a value to be parsed by Thickness.\n\n\n\n\n\"1 2 3 4\"\n is left:1, top:2, right:3, bottom:4\n\n\n\"2 4\"\n is left:2, top:4, right:2, bottom:4\n\n\n\"8\"\n is left:8, top:8, right:8, bottom:8\n\n\n\"1,2\"\n is left:1, top:2, right:1, top:2\n\n\n\n\nExtensions\n\n\nReadAsMultiDimensional\n\n\nNewtonsoft.Json.JsonReader\n is extended with \nT[] ReadAsMultiDimensional<T>()\n\n\nThis allows you to easily create a custom JsonConverter with a list of values.\n\n\nFor example a list of floats\n\n\n\"1.1 2.3 4.5 6.1\"\n\n\n\n\nCould be parsed into an array of floats using the following JsonConverter that uses \nReadAsMultiDimensional\n\n\npublic class PathJsonConverter : JsonConverter\n{\n    public override object ReadJson(JsonReader reader, Type objectType, object value, JsonSerializer serializer)\n    {\n        float[] path = reader.ReadAsMultiDimensional<float>();\n        return path;\n    }\n\n    public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)\n    {\n        var path = (float[]) value;\n        writer.WriteValue(string.Join(\" \", path));\n    }\n}",
+            "title": "Serialization"
+        },
+        {
+            "location": "/Features/Serialization/#serialization",
+            "text": "MonoGame.Extended contains various serialization helpers that work with  Newtonsoft Json.NET .",
+            "title": "Serialization"
+        },
+        {
+            "location": "/Features/Serialization/#json-converters",
+            "text": "The following XNA/MonoGame types have converters:   Color  via  ColorJsonConverter  Vector2  via  Vector2JsonConverter   The following MonoGame.Extended types have converters:   NinePatchRegion2D  via  NinePatchRegion2DJsonConverter  Size2  via  Size2JsonConverter  Range<T>  via  RangeJsonConverter  TextureRegion2D  via  TextureRegion2DJsonConverter  Thickness  via  ThicknessJsonConverter",
+            "title": "Json Converters"
+        },
+        {
+            "location": "/Features/Serialization/#jsonconverter-example",
+            "text": "using Newtonsoft.Json;\nusing Microsoft.Xna.Framework;\nusing MonoGame.Extended.Serialization;\n\nstruct Thing {\n    public Color BootStrapBlue;\n    public Vector2 Position;\n}\nvar data = @\"{\n    'BootStrapBlue':'#428bca00',\n    'Position':'1.1 4',\n}\";\n\nvar thing = JsonConvert.DeserializeObject<Thing>(data,\n    new ColorJsonConverter(),\n    new Vector2JsonConverter()\n);\n\nthing.BootStrapBlue; // \"{R:66 G:139 B:202 A:0}\"\nthing.Posistion; // \"{X:1.1 Y:4}\"",
+            "title": "JsonConverter Example"
+        },
+        {
+            "location": "/Features/Serialization/#color-jsonconverter",
+            "text": "ColorJsonConverter tells Newtonsoft Json.NET now to convert string hex values into XNA  Color  objects.  Given the JSON string value  \"#10203040\"  A Color object is created.  new Color(16, 32, 48, 64);  The format is a  #  followed by byte hex codes for Red, Green, Blue, and Alpha channels.",
+            "title": "Color JsonConverter"
+        },
+        {
+            "location": "/Features/Serialization/#vector2-jsonconverter",
+            "text": "Vector2JsonConverter tells Newtonsoft Json.NET how to serialize XNA  Vector2  objects.  Given the JSON string value  \"1.2 33\"  A new Vector2 is created.  new Vector2(1.2f, 33f);  The format is  X Y  for the x and y components of a 2D vector.",
+            "title": "Vector2 JsonConverter"
+        },
+        {
+            "location": "/Features/Serialization/#ninepatchregion2d-jsonconverter",
+            "text": "NinePatchRegion2DJsonConverter tells Newtonsoft Json.NET how to serialize MonoGame.Extended  NinePatchRegion2D  objects.  Given the JSON object value  {\"TextureRegion\":\"Center\",\"Padding\":\"1 2 3 4\"}  A new NinePatchRegion2D is created and the TextureRegion is looked up in the TextureRegionService.  new NinePatchRegion2D(TextureRegion2D('Center',...), 1, 2, 3, 4)  The format is not a string value, but a nested JSON object where  Padding  is a  Thickness  value.",
+            "title": "NinePatchRegion2D JsonConverter"
+        },
+        {
+            "location": "/Features/Serialization/#size2-jsonconverter",
+            "text": "Size2JsonConverter tells Newtonsoft Json.NET how to serialize MonoGame.Extended  Size2  objects.  Given the JSON string value  \"10 4\"  A new Size2 object is created.  Understood, good buddy.  new Size2(10f, 4f)  The format is a JSON string containing the Width, and Height values as decimal numbers.",
+            "title": "Size2 JsonConverter"
+        },
+        {
+            "location": "/Features/Serialization/#range-jsonconverter",
+            "text": "RangeJsonConverter<T>  tells Newtonsoft Json.NET how to serialize MonoGame.Extended  Range<T>  objects.  Given the JSON string value  \"1 9000\"  A new Range  object is created.  new Range<int>(1, 9000);  The format is a JSON string containing one or two values.",
+            "title": "Range JsonConverter"
+        },
+        {
+            "location": "/Features/Serialization/#textureregion2d-jsonconverter",
+            "text": "TextureRegion2DJsonConverter tells Newtonsoft Json.NET how to serialize MonoGame.Extended  TextureRegion2D  objects.  Given the JSON string value  \"Center\"  The TextureRegionService is queried with  GetTextureRegion(\"Center\")  The format is a JSON string with the name of the TextureRegion in a TextureAtlas.",
+            "title": "TextureRegion2D JsonConverter"
+        },
+        {
+            "location": "/Features/Serialization/#thickness-jsonconverter",
+            "text": "ThicknessJsonConverter tells Newtonsoft Json.NET how to serialize a MonoGame.Extended  Thickness  object.  Given the JSON string value  \"1 2 3 4\"  A new Thickness object is created.  Thickness.Parse(\"1 2 3 4\")  The format is a JSON string containing a value to be parsed by Thickness.   \"1 2 3 4\"  is left:1, top:2, right:3, bottom:4  \"2 4\"  is left:2, top:4, right:2, bottom:4  \"8\"  is left:8, top:8, right:8, bottom:8  \"1,2\"  is left:1, top:2, right:1, top:2",
+            "title": "Thickness JsonConverter"
+        },
+        {
+            "location": "/Features/Serialization/#extensions",
+            "text": "",
+            "title": "Extensions"
+        },
+        {
+            "location": "/Features/Serialization/#readasmultidimensional",
+            "text": "Newtonsoft.Json.JsonReader  is extended with  T[] ReadAsMultiDimensional<T>()  This allows you to easily create a custom JsonConverter with a list of values.  For example a list of floats  \"1.1 2.3 4.5 6.1\"  Could be parsed into an array of floats using the following JsonConverter that uses  ReadAsMultiDimensional  public class PathJsonConverter : JsonConverter\n{\n    public override object ReadJson(JsonReader reader, Type objectType, object value, JsonSerializer serializer)\n    {\n        float[] path = reader.ReadAsMultiDimensional<float>();\n        return path;\n    }\n\n    public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)\n    {\n        var path = (float[]) value;\n        writer.WriteValue(string.Join(\" \", path));\n    }\n}",
+            "title": "ReadAsMultiDimensional"
+        },
+        {
+            "location": "/Features/Tiled/",
+            "text": "Tiled\n\n\nThe \nMonoGame.Extended.Tiled\n library loads and renders maps created with the popular \nTiled Map Editor\n.\n\n\nTiled is an \nopen sourced\n free to use \"generic tile map editor\". Tiled lets you easily design and view tile maps, and through the \nMonogame.Extended.Tiled\n package, you can load and display a map generated with Tiled in monogame\n\n\nTo load a TiledMap into your project, you first need to add it to your \nContentManager\n, and in order to compile the tile map for use in \nMonoGame\n you must add a reference to the pipeline tool.\n\n\nInstructions to do so can be found \nhere\n\n\nUsing the map in your game\n\n\nTo create and render a map you will need two new properties\n\n\n// The tile map\nprivate TiledMap map;\n// The renderer for the map\nprivate TiledMapRenderer mapRenderer;\n\n\n\n\nIn your \nInitialize()\n method, you can initialize the two methods\n\n\nprotected override void Initialize() {\n    base.Initialize();\n\n    // Load the compiled map\n    map = Content.Load<TiledMap>(\"path/to/your/map/file\");\n    // Create the map renderer\n    mapRenderer = new TiledMapRenderer(GraphicsDevice);\n}\n\n\n\n\nTo finally render and tick the map, call \nmapRenderer.Update();\n and \nmapRenderer.Draw();\n in their respective methods\n\n\nprotected override void Update(GameTime gameTime) {\n    // Update the map\n    // map Should be the `TiledMap`\n    mapRenderer.Update(map, gameTime);\n\n    base.Update(gameTime);\n}\n\nprotected override void Draw(GameTime gameTime) {\n    // Clear the screen\n    GraphicsDevice.Clear(Color.Pink);\n\n    // Transform matrix is only needed if you have a Camera2D\n    // Setting the sampler state to `SamplerState.PointClamp` is reccomended to remove gaps between the tiles when rendering\n    spriteBatch.Begin(transformMatrix: camera.GetViewMatrix(), samplerState: SamplerState.PointClamp);\n\n    // map Should be the `TiledMap`\n    // Once again, the transform matrix is only needed if you have a Camera2D\n    mapRenderer.Draw(map, camera.GetViewMatrix());\n\n    // End the sprite batch\n    spriteBatch.End();\n\n    base.Draw(gameTime);\n}\n\n\n\n\nGood luck and happy coding! :)",
+            "title": "Tiled"
+        },
+        {
+            "location": "/Features/Tiled/#tiled",
+            "text": "The  MonoGame.Extended.Tiled  library loads and renders maps created with the popular  Tiled Map Editor .  Tiled is an  open sourced  free to use \"generic tile map editor\". Tiled lets you easily design and view tile maps, and through the  Monogame.Extended.Tiled  package, you can load and display a map generated with Tiled in monogame  To load a TiledMap into your project, you first need to add it to your  ContentManager , and in order to compile the tile map for use in  MonoGame  you must add a reference to the pipeline tool.  Instructions to do so can be found  here",
+            "title": "Tiled"
+        },
+        {
+            "location": "/Features/Tiled/#using-the-map-in-your-game",
+            "text": "To create and render a map you will need two new properties  // The tile map\nprivate TiledMap map;\n// The renderer for the map\nprivate TiledMapRenderer mapRenderer;  In your  Initialize()  method, you can initialize the two methods  protected override void Initialize() {\n    base.Initialize();\n\n    // Load the compiled map\n    map = Content.Load<TiledMap>(\"path/to/your/map/file\");\n    // Create the map renderer\n    mapRenderer = new TiledMapRenderer(GraphicsDevice);\n}  To finally render and tick the map, call  mapRenderer.Update();  and  mapRenderer.Draw();  in their respective methods  protected override void Update(GameTime gameTime) {\n    // Update the map\n    // map Should be the `TiledMap`\n    mapRenderer.Update(map, gameTime);\n\n    base.Update(gameTime);\n}\n\nprotected override void Draw(GameTime gameTime) {\n    // Clear the screen\n    GraphicsDevice.Clear(Color.Pink);\n\n    // Transform matrix is only needed if you have a Camera2D\n    // Setting the sampler state to `SamplerState.PointClamp` is reccomended to remove gaps between the tiles when rendering\n    spriteBatch.Begin(transformMatrix: camera.GetViewMatrix(), samplerState: SamplerState.PointClamp);\n\n    // map Should be the `TiledMap`\n    // Once again, the transform matrix is only needed if you have a Camera2D\n    mapRenderer.Draw(map, camera.GetViewMatrix());\n\n    // End the sprite batch\n    spriteBatch.End();\n\n    base.Draw(gameTime);\n}  Good luck and happy coding! :)",
+            "title": "Using the map in your game"
+        },
+        {
+            "location": "/Features/Tweening/",
+            "text": "Tweening\n\n\nThe \nMonoGame.Extended.Tweening\n library contains class extensions for tween based animations.",
+            "title": "Tweening"
+        },
+        {
+            "location": "/Features/Tweening/#tweening",
+            "text": "The  MonoGame.Extended.Tweening  library contains class extensions for tween based animations.",
+            "title": "Tweening"
         }
     ]
 }

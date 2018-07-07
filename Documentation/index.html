@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Community and Support - MonoGame.Extended</title>
+  <title>Documenation - MonoGame.Extended</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -17,9 +17,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Community and Support";
-    var mkdocs_page_input_path = "Community-and-Support.md";
-    var mkdocs_page_url = "/Community-and-Support/";
+    var mkdocs_page_name = "Documenation";
+    var mkdocs_page_input_path = "Documentation.md";
+    var mkdocs_page_url = "/Documentation/";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js"></script>
@@ -52,20 +52,30 @@
     <a class="" href="..">Welcome</a>
 	    </li>
           
+            <li class="toctree-l1">
+		
+    <a class="" href="../Community-and-Support/">Community and Support</a>
+	    </li>
+          
             <li class="toctree-l1 current">
 		
-    <a class="current" href="./">Community and Support</a>
+    <a class="current" href="./">Documenation</a>
     <ul class="subnav">
             
-    <li class="toctree-l2"><a href="#community-and-support">Community and Support</a></li>
+    <li class="toctree-l2"><a href="#documenation">Documenation</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#we-need-your-help-writing-better-documentation">We need your help writing better documentation</a></li>
+        
+            <li><a class="toctree-l3" href="#how-to-contribute-to-the-documentation">How to contribute to the documentation</a></li>
+        
+            <li><a class="toctree-l3" href="#getting-started-with-mkdocs">Getting started with MKDocs</a></li>
+        
+        </ul>
     
 
     </ul>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../Documentation/">Documentation</a>
 	    </li>
           
             <li class="toctree-l1">
@@ -199,10 +209,10 @@
     
       
     
-    <li>Community and Support</li>
+    <li>Documenation</li>
     <li class="wy-breadcrumbs-aside">
       
-        <a href="https://github.com/craftworkgames/MonoGame.Extended/edit/develop/Docs/Community-and-Support.md"
+        <a href="https://github.com/craftworkgames/MonoGame.Extended/edit/develop/Docs/Documentation.md"
           class="icon icon-github"> Edit on GitHub</a>
       
     </li>
@@ -212,16 +222,46 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="community-and-support">Community and Support</h1>
-<p>MonoGame.Extended has a growing community of users from all around the globe. We've got lots of ways you can ask questions and get help about the library.</p>
+                <h1 id="documenation">Documenation</h1>
+<h2 id="we-need-your-help-writing-better-documentation">We need your help writing better documentation</h2>
 <ul>
-<li>Of course, there's <a href="http://craftworkgames.github.io/MonoGame.Extended/">this documentation</a>. By contributing to it you're making it better for everyone.</li>
-<li>We've got our own section on the <a href="http://community.monogame.net/c/extended">MonoGame Community Forums</a></li>
-<li>We've even got a <a href="http://gamedev.stackexchange.com/questions/tagged/monogame-extended">tag on stackoverflow</a> ;)</li>
-<li>Development is usually discussed in <a href="https://github.com/craftworkgames/MonoGame.Extended/issues">github issues</a></li>
-<li>We've got a live chatroom on <a href="https://gitter.im/craftworkgames/MonoGame.Extended">gitter</a></li>
+<li>Good documentation is what separates good open source projects from great ones. </li>
+<li>Documentation is a community effort.</li>
+<li>Even a little bit of documentation is better than none.</li>
+<li>A rough draft is better than none.</li>
+<li>If we all wrote a little documentation, it adds up to a lot.</li>
 </ul>
-<p>Note: When you ask a question, please consider how permanent the answer should be. If it's something that might benefit others choose the docs, forum or stack overflow over live chat.</p>
+<h2 id="how-to-contribute-to-the-documentation">How to contribute to the documentation</h2>
+<p>The docs are located in the source <a href="https://github.com/craftworkgames/MonoGame.Extended/tree/develop/Docs">Docs/</a> folder.  They are built with <a href="http://www.mkdocs.org/#installation">MkDocs</a>.</p>
+<ul>
+<li>If you spot an error in the documentation, fix it. This is the simplest way to contribute.</li>
+<li>If you notice some missing or out of date information, add it. This is the next simplest way to contribute.</li>
+<li>If there's something completely missing, write a stub page. It's a start.</li>
+<li>If you want to go a step further, write a tutorial or a whole new page.</li>
+<li>If you have any trouble editing the docs, please <a href="#community-and-support">tell somebody</a>.</li>
+<li>You can edit the page directly on Github, it's Markdown, so you don't necessesarily need to install MkDocs to contribute.</li>
+</ul>
+<h2 id="getting-started-with-mkdocs">Getting started with MKDocs</h2>
+<p>Running your own dev docs server at http://127.0.0.1:8000 (your computer) can be done by installing python, and then installing mkdocs.</p>
+<pre><code class="bash">&gt; python -m pip install mkdocs
+</code></pre>
+
+<p>To run your local server run the mkdocs module with the <code>serve</code> command.</p>
+<pre><code class="bash">&gt; cd MonoGame.Extended
+MonoGame.Extended&gt; python -m mkdocs serve
+INFO    -  Building documentation...
+INFO    -  Cleaning site directory
+[I 170608 01:12:06 server:283] Serving on http://127.0.0.1:8000
+[I 170608 01:12:06 handlers:60] Start watching changes
+[I 170608 01:12:06 handlers:62] Start detecting changes
+[I 170608 01:12:15 handlers:133] Browser Connected: http://127.0.0.1:8000/
+</code></pre>
+
+<p>Now every time you edit a <code>*.md</code> file in the <code>Docs/</code> folder the site will refresh with the latest info.</p>
+<p>To add a new page, you must add Markdown file, and then reference it in the <code>mkdocs.yml</code> file somewhere appropriate. </p>
+<blockquote>
+<p>All pages must be somewhere in the mkdocs.yml <code>pages</code> section, otherwise links to it will not work.</p>
+</blockquote>
               
             </div>
           </div>
@@ -229,10 +269,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../Documentation/" class="btn btn-neutral float-right" title="Documentation">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../Installation/" class="btn btn-neutral float-right" title="Installation">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href=".." class="btn btn-neutral" title="Welcome"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../Community-and-Support/" class="btn btn-neutral" title="Community and Support"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -260,10 +300,10 @@
           <a href="https://github.com/craftworkgames/MonoGame.Extended/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../Community-and-Support/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../Documentation/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../Installation/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

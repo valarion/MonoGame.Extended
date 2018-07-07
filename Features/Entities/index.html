@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Entities - MonoGame.Extended</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Entities";
+    var mkdocs_page_input_path = "Features\\Entities.md";
+    var mkdocs_page_url = "/Features/Entities/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> MonoGame.Extended</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">Welcome</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../Community-and-Support/">Community and Support</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../Documentation/">Documenation</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../Installation/">Installation</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../NuGet-Pre-Release/">Pre-Release NuGet packages</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../Showcase/">Showcase</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Development</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../Development/Build-MonoGame-PCL/">Building the MonoGame PCL</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../Development/Building-from-Source/">Building From Source</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Features</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Animations/">Animations</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Bitmap-Fonts/">Bitmap Fonts</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Cameras/">Cameras</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Collections/">Collections</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Collisions/">Collisions</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Content-Pipeline/">Content Pipeline</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Content/">ContentManager extensions</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Entities</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#entities">Entities</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#what-is-an-ecs">What is an ECS?</a></li>
+        
+            <li><a class="toctree-l4" href="#creating-the-world">Creating the world</a></li>
+        
+            <li><a class="toctree-l4" href="#creating-entities">Creating entities</a></li>
+        
+            <li><a class="toctree-l4" href="#destroying-entities">Destroying entities</a></li>
+        
+            <li><a class="toctree-l4" href="#types-of-systems">Types of systems</a></li>
+        
+            <li><a class="toctree-l4" href="#creating-systems">Creating systems</a></li>
+        
+            <li><a class="toctree-l4" href="#accessing-components">Accessing components</a></li>
+        
+            <li><a class="toctree-l4" href="#filtering-components">Filtering components</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Graphics/">Graphics</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Gui/">Gui</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Input/">Input</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Object-Pooling/">Object Pooling</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Particles/">Particles</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Scene-Graphs/">Scene Graphs</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Screens/">Screens</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Serialization/">Serialization</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Tiled/">Tiled</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Tweening/">Tweening</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">MonoGame.Extended</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Features &raquo;</li>
+        
+      
+    
+    <li>Entities</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/craftworkgames/MonoGame.Extended/edit/develop/Docs/Features/Entities.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="entities">Entities</h1>
+<p>The Entities package is a modern high performance Artemis based Entity Component System. Many of the features found in this implementation were inspired by <a href="https://github.com/junkdog/artemis-odb/">artemis-odb</a>. Although, many others were also studied during development. As you'll see the systems are designed to feel familar to MonoGame developers.</p>
+<h2 id="what-is-an-ecs">What is an ECS?</h2>
+<p>An <a href="https://www.gamedev.net/articles/programming/general-and-gameplay-programming/understanding-component-entity-systems-r3013">Entity Component System (ECS)</a> is a way to build and manage the entities (or game objects) in your game by composing their component parts together. An ECS consists of three main parts:</p>
+<h3 id="components">Components</h3>
+<p>A component is simply a class that holds some state about the entity. Typically, components are lightweight and don't contain any game logic. It's common to have components with only a few properties or fields. Components can be more complex but inheritence is not encouraged.</p>
+<h3 id="entities_1">Entities</h3>
+<p>An entity is a composition of components identified by an ID. Often you only need the ID of the entity to work with it. For performance reasons, and entity ID is only valid while the entity is alive. Once the entity is destroyed, it's ID may be recycled.</p>
+<h3 id="systems">Systems</h3>
+<p>A system is a class that will run during the game's <code>Update</code> or <code>Draw</code> calls. They usually contain the game logic about how to manage a filtered collection of entities and their components. </p>
+<h2 id="creating-the-world">Creating the world</h2>
+<p>The <code>World</code> is the entry point to the ECS. It holds your entities and systems and you'll use it later to create and destroy entities.</p>
+<p>To create the world you need to use the <code>WorldBuilder</code> and add your systems before building the <code>World</code> instance.</p>
+<pre><code class="csharp">_world = new WorldBuilder()
+    .AddSystem(new PlayerSystem())
+    .AddSystem(new RenderSystem(GraphicsDevice))
+    .Build();
+</code></pre>
+
+<p><em>Note:</em> Manually adding your systems this way might seem annoying at first, but it can be highly desireable to be able to control the order systems are added. It also allows you to constructor inject services as desired.</p>
+<p>Once the world is created you need to call the <code>Update</code> and <code>Draw</code> methods. </p>
+<pre><code class="csharp">protected override void Update(GameTime gameTime)
+{
+    _world.Update(gameTime);
+    base.Update(gameTime);
+}
+</code></pre>
+
+<pre><code class="csharp">protected override void Draw(GameTime gameTime)
+{
+    _world.Draw(gameTime);
+    base.Draw(gameTime);
+}
+</code></pre>
+
+<p><em>Note:</em> The world also implements the <code>IGameComponent</code> interface, so if you prefer you can add it to the <code>GameComponentCollection</code> instead (not to be confused with ECS components).</p>
+<h2 id="creating-entities">Creating entities</h2>
+<p>Usually when you create an entity you'll want to attach some components to it immediately. This is not required though, as components can be added and removed anytime by systems.</p>
+<pre><code class="csharp">var entity = _world.CreateEntity();
+entity.Attach(new Transform2(position));
+entity.Attach(new Sprite(textureRegion));
+</code></pre>
+
+<p>Any standard class can be used as a component but typically you'll want to keep your components lightweight and specific.</p>
+<p><em>Note:</em> An entity can only have one instance of each component type.</p>
+<h2 id="destroying-entities">Destroying entities</h2>
+<p>Removing entities from the world is easy.</p>
+<pre><code class="csharp">_world.DestroyEntity(entity);
+</code></pre>
+
+<p>It should be noted that the actual entity creation and removal is deferred until the next update. This allows for some performance optimizations and batches events so that they can be handled more gracefully by systems.</p>
+<p><em>Note:</em> When you're inside an <code>EntitySystem</code> there are helper methods for creating destroying entities so that you don't need to access the <code>World</code> instance each time.</p>
+<h2 id="types-of-systems">Types of systems</h2>
+<p>Systems can be used to do all kinds of processing during your game. There are several kinds of base systems available to build your game.</p>
+<ul>
+<li>An <code>UpdateSystem</code> is a basic system that has an <code>Update</code> method called every frame.</li>
+<li>A <code>DrawSystem</code> is a basic system that has a <code>Draw</code> method called every frame.</li>
+<li>An <code>EntityUpdateSystem</code> is used to process to process a filtered collection of entities during the <code>Update</code> call.</li>
+<li>An <code>EntityDrawSystem</code> is used to process a filtered collection of entities during the <code>Draw</code> call.</li>
+<li>An <code>EntityProcessingSystem</code> can be used to process a filtered collection of entities one at a time during the <code>Update</code> call. </li>
+<li>You can also create a system that has both an <code>Update</code> method and a <code>Draw</code> method by implementing the <code>IUpdateSystem</code> and <code>IDrawSystem</code> interfaces respectively.</li>
+<li>An <code>EntitySystem</code> is the base class for all entity processing systems. Typically you won't derive from this class unless you're building a new type of entity processing system. If you do derive from this class you probably also want to implement one of the update or draw interfaces.</li>
+</ul>
+<h2 id="creating-systems">Creating systems</h2>
+<p>To create a new system, decide which base system to derive from and implement a new class.</p>
+<pre><code class="csharp">public class RenderSystem : EntityDrawSystem
+</code></pre>
+
+<p>When you're creating entity systems the first thing you'll want to do is provide an <code>Aspect</code> to filter the system to only process the entities you're interested in.</p>
+<p>For example, a typical <code>RenderSystem</code> might want to process entities with a <code>Sprite</code> component and a <code>Transform2</code> component. To provide an aspect you pass it into the base constructor.</p>
+<pre><code class="csharp">public RenderSystem(GraphicsDevice graphicsDevice)
+    : base(Aspect.All(typeof(Sprite), typeof(Transform2)))
+{
+    _graphicsDevice = graphicsDevice;
+    _spriteBatch = new SpriteBatch(graphicsDevice);
+}
+</code></pre>
+
+<p>Next, you'll need to override the <code>Update</code> or <code>Draw</code> method (depending on what type of system you're implementing).</p>
+<p>In our case, the <code>Draw</code> method might look something like this:</p>
+<pre><code class="csharp">public override void Draw(GameTime gameTime)
+{
+    _spriteBatch.Begin();
+
+    foreach (var entity in ActiveEntities)
+    {
+      // draw your entities
+    }
+
+    _spriteBatch.End();
+}
+</code></pre>
+
+<p><em>Note:</em> Don't forget to add your system to the <code>WorldBuilder</code> when you're done.</p>
+<h2 id="accessing-components">Accessing components</h2>
+<p>The preferred way to access components is to use component mappers.</p>
+<p>A <code>ComponentMapper</code> provides a very fast way to access components within a system. When you're using a component mapper you're getting nearly direct access to the underlying arrays that hold the components under the hood.</p>
+<p>To get a component mapper, create a field on your system and use the <code>Initialize</code> method to grab an instance of the mapper. Do this for each component type you want to process.</p>
+<pre><code class="csharp">public override void Initialize(IComponentMapperService mapperService)
+{
+  _transformMapper = mapperService.GetMapper&lt;Transform2&gt;();
+  _spriteMapper = mapperService.GetMapper&lt;Sprite&gt;();
+}
+</code></pre>
+
+<p>Then inside the <code>Update</code> or <code>Draw</code> method you can get access to the components for each entity you want to process.</p>
+<pre><code class="csharp">var transform = _transformMapper.Get(entityId);
+var sprite = _spriteMapper.Get(entityId);
+
+_spriteBatch.Draw(sprite, transform);
+</code></pre>
+
+<p>Component mappers can also be used to modify entities on the fly. For example, you can add a new component to an entity with the <code>Put</code> method.</p>
+<pre><code class="csharp">_buffMapper.Put(entityId, buffComponent);
+</code></pre>
+
+<p><em>Note:</em> The <code>Put</code> method will replace an existing component of the same type if it already exists. There is no need to check if the entity already has the component.</p>
+<p>You can also check if an entity <code>Has</code> a component or <code>Delete</code> a component with the mapper.</p>
+<hr />
+<p>For convienience it's also possible to access components on an entity <em>without</em> using component mappers. This can be useful for prototyping ideas or when performance isn't a primary concern.</p>
+<pre><code class="csharp">var entity = GetEntity(entityId);
+var health = entity.Get&lt;HealthComponent&gt;();
+var transform = entity.Get&lt;Transform2&gt;();
+</code></pre>
+
+<p><em>Note:</em> This method of accessing components requires dictionary lookups of the component types each frame. This is still a fairly fast operation, and for some games it'll do just fine.</p>
+<h2 id="filtering-components">Filtering components</h2>
+<p>An <code>Aspect</code> is used by entity systems to decide what component types the system will process. The entities will be available in the system's <code>ActiveEntities</code> collection.</p>
+<p>An aspect has three methods:</p>
+<ul>
+<li><code>Aspect.All(A, B)</code> requires the entities to have all of the desired components.</li>
+<li><code>Aspect.One(C, D)</code> requires the entities to have any one or more of the components.</li>
+<li><code>Aspect.Exclude(E, F)</code> will exclude entities that have any of these components.</li>
+</ul>
+<p>Aspects can also be chained together. For example, an entity matching:</p>
+<p><code>Aspect.All(A, B).One(C, D).Exclude(E)</code> would need to have A and B and at least one of C or D except if it has E.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../Graphics/" class="btn btn-neutral float-right" title="Graphics">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../Content/" class="btn btn-neutral" title="ContentManager extensions"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/craftworkgames/MonoGame.Extended/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../Content/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../Graphics/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/require.js"></script>
+      <script src="../../search/search.js"></script>
+
+</body>
+</html>

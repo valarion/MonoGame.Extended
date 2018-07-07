@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Bitmap Fonts - MonoGame.Extended</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Bitmap Fonts";
+    var mkdocs_page_input_path = "Features\\Bitmap-Fonts.md";
+    var mkdocs_page_url = "/Features/Bitmap-Fonts/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> MonoGame.Extended</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">Welcome</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../Community-and-Support/">Community and Support</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../Documentation/">Documenation</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../Installation/">Installation</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../NuGet-Pre-Release/">Pre-Release NuGet packages</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../Showcase/">Showcase</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Development</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../Development/Build-MonoGame-PCL/">Building the MonoGame PCL</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../Development/Building-from-Source/">Building From Source</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Features</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Animations/">Animations</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Bitmap Fonts</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#bitmap-fonts">Bitmap Fonts</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#generating-the-font-file-with-bmfont">Generating the font file with BMFont</a></li>
+        
+            <li><a class="toctree-l4" href="#building-the-font-file-with-the-monogame-pipeline">Building the font file with the MonoGame Pipeline</a></li>
+        
+            <li><a class="toctree-l4" href="#rendering-text-in-your-game">Rendering text in your game</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Cameras/">Cameras</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Collections/">Collections</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Collisions/">Collisions</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Content-Pipeline/">Content Pipeline</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Content/">Content</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Entities/">Entities</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Graphics/">Graphics</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Gui/">Gui</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Input/">Input</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Object-Pooling/">Object Pooling</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Particles/">Particles</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Scene-Graphs/">Scene Graphs</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Screens/">Screens</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Serialization/">Serialization</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Tiled/">Tiled</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Tweening/">Tweening</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">MonoGame.Extended</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Features &raquo;</li>
+        
+      
+    
+    <li>Bitmap Fonts</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/craftworkgames/MonoGame.Extended/edit/develop/Docs/Features/Bitmap-Fonts.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="bitmap-fonts">Bitmap Fonts</h1>
+<p>Bitmaps fonts generated with the <a href="http://www.angelcode.com/products/bmfont/">BMFont</a> tool are a great alternative to using the built in <code>SpriteFont</code> in MonoGame. There are a couple of reasons you might want to do this, either <code>SpriteFont</code>'s are not working out for you or you want to have more control over the fonts in your game.</p>
+<p>The <code>BitmapFont</code> class in <a href="https://github.com/craftworkgames/MonoGame.Extended">MonoGame.Extended</a> is designed to be a drop in replacement for the <code>SpriteFont</code> class as much as possible. The goal is to take a <code>.fnt</code> file and texture generated with the BMFont tool and load it into our game just like any other content. </p>
+<pre><code>_bitmapFont = Content.Load&lt;BitmapFont&gt;("my-font");
+</code></pre>
+<p>Then render some text just like any other string.</p>
+<pre><code>_spriteBatch.Begin();
+_spriteBatch.DrawString(_bitmapFont, "Hello World", new Vector2(100, 200), Color.Red);
+_spriteBatch.End();
+</code></pre>
+<p>But before we can do that, we'll need to generate our bitmap font file.</p>
+<h2 id="generating-the-font-file-with-bmfont">Generating the font file with BMFont</h2>
+<p>If you haven’t already done so, download and install the <a href="http://www.angelcode.com/products/bmfont/">BMFont</a> tool. </p>
+<p><img alt="BMFont tool" src="../bmfont-tool.jpg" /></p>
+<p>The main window of BMFont displays all of the characters of the font. You'll need to click and drag over the characters to highlight them in white, these are the characters that will be saved to the exported texture. Typically you will take all of the top half and ignore the bottom half, although, you may only want to take a smaller subset to reduce texture size requirements.</p>
+<p>To choose a font click <strong>Options</strong> =&gt; <strong>Font Settings</strong> or hit the <strong>F</strong> key. You can pretty much choose whatever settings you like here.</p>
+<p><img alt="BMFont tool" src="../bmfont-font-settings.jpg" /></p>
+<p>Close that dialog and make sure all your desired characters are highlighted in white. </p>
+<p>Next click <strong>Options</strong> =&gt; <strong>Export Options</strong> or hit the <strong>T</strong> key. The important thing here is setting the file format to <strong>XML</strong> and getting the texture width and height right. It's preferable to fit the entire font on a single texture (although not required) and it can sometimes take a little tweaking.</p>
+<p>I also recommend using <strong>PNG</strong> textures, <strong>32 bit depth</strong> and the <strong>White text with alpha</strong> preset, but it's up to you. Play around with the settings for different effects.</p>
+<p><img alt="BMFont tool" src="../bmfont-export-options.jpg" /></p>
+<p>Once you're done with the settings you can click <strong>Options</strong> =&gt; <strong>Visualize</strong> or hit the <strong>V</strong> key to see a preview of how the texture will be packed.</p>
+<p>Finally, click <strong>Options</strong> -&gt; <strong>Save bitmap font as</strong> or hit <strong>Ctrl+S</strong> to export the font file. The textures will also be saved at this location, you'll need to add both of these to your game's content.  </p>
+<h2 id="building-the-font-file-with-the-monogame-pipeline">Building the font file with the MonoGame Pipeline</h2>
+<p>We need to load the font file into the game, but first we need to add a reference to the <code>MonoGame.Extended.Content.Pipleine.dll</code> that comes with an importer and processor for BMFont files.  </p>
+<p><img alt="Reference MonoGame.Extended Pipeline DLL" src="../pipeline-add-references.png" /></p>
+<p>Once the reference is added, you can add the font file and texture to the content. If all goes well, the importer and processor should be selected automatically.</p>
+<p><img alt="MonoGame.Extended BMFont importer" src="../monogame-extended-bmfont-importer-processor.png" /></p>
+<p>Don't forget to <strong>Rebuild</strong> your content.</p>
+<h2 id="rendering-text-in-your-game">Rendering text in your game</h2>
+<p>If you've referenced the <code>MonoGame.Extended.dll</code> from your game project the code is pretty straightforward.</p>
+<p>First load the font into an instance of a <code>BitmapFont</code> variable.</p>
+<pre><code>_bitmapFont = Content.Load&lt;BitmapFont&gt;("my-font");
+</code></pre>
+<p>Then in your <code>Draw</code> method use the <code>DrawString</code> extension method to render some text much like you would with a traditional <code>SpriteFont</code>.</p>
+<pre><code>_spriteBatch.Begin();
+_spriteBatch.DrawString(_bitmapFont, "Hello World", new Vector2(50, 50), Color.Red);
+_spriteBatch.DrawString(_bitmapFont, 
+    "Contrary to popular belief, Lorem Ipsum is not simply random text.\n\n" + 
+    "It has roots in a piece of classical Latin literature from 45 BC, " + 
+    "making it over 2000 years old. Richard McClintock, a Latin professor" + 
+    " at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin " + 
+    "words, consectetur, from a Lorem Ipsum passage, and going through the cites of " + 
+    "the word in classical literature, discovered the undoubtable source.", 
+    new Vector2(50, 100), new Color(Color.White, 0.5f), _viewportAdapter.VirtualWidth - 50);
+_spriteBatch.End();
+</code></pre>
+<p>And observe the result! :)</p>
+<p><img alt="MonoGame.Extended Bitmap Fonts" src="../monogame-extended-bitmap-fonts.png" /></p>
+<p>Happy coding! :)</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../Cameras/" class="btn btn-neutral float-right" title="Cameras">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../Animations/" class="btn btn-neutral" title="Animations"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/craftworkgames/MonoGame.Extended/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../Animations/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../Cameras/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/require.js"></script>
+      <script src="../../search/search.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Serialization - MonoGame.Extended</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Serialization";
+    var mkdocs_page_input_path = "Features\\Serialization.md";
+    var mkdocs_page_url = "/Features/Serialization/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> MonoGame.Extended</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">Welcome</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../Community-and-Support/">Community and Support</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../Documentation/">Documenation</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../Installation/">Installation</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../NuGet-Pre-Release/">Pre-Release NuGet packages</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../Showcase/">Showcase</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Development</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../Development/Build-MonoGame-PCL/">Building the MonoGame PCL</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../Development/Building-from-Source/">Building From Source</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Features</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Animations/">Animations</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Bitmap-Fonts/">Bitmap Fonts</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Cameras/">Cameras</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Collections/">Collections</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Collisions/">Collisions</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Content-Pipeline/">Content Pipeline</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Content/">ContentManager extensions</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Entities/">Entities</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Graphics/">Graphics</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Gui/">Gui</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Input/">Input</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Object-Pooling/">Object Pooling</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Particles/">Particles</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Scene-Graphs/">Scene Graphs</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Screens/">Screen Management</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Serialization</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#serialization">Serialization</a></li>
+    
+
+    <li class="toctree-l3"><a href="#json-converters">Json Converters</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#jsonconverter-example">JsonConverter Example</a></li>
+        
+            <li><a class="toctree-l4" href="#color-jsonconverter">Color JsonConverter</a></li>
+        
+            <li><a class="toctree-l4" href="#vector2-jsonconverter">Vector2 JsonConverter</a></li>
+        
+            <li><a class="toctree-l4" href="#ninepatchregion2d-jsonconverter">NinePatchRegion2D JsonConverter</a></li>
+        
+            <li><a class="toctree-l4" href="#size2-jsonconverter">Size2 JsonConverter</a></li>
+        
+            <li><a class="toctree-l4" href="#range-jsonconverter">Range JsonConverter</a></li>
+        
+            <li><a class="toctree-l4" href="#textureregion2d-jsonconverter">TextureRegion2D JsonConverter</a></li>
+        
+            <li><a class="toctree-l4" href="#thickness-jsonconverter">Thickness JsonConverter</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#extensions">Extensions</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#readasmultidimensional">ReadAsMultiDimensional</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Tiled/">Tiled</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Tweening/">Tweening</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">MonoGame.Extended</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Features &raquo;</li>
+        
+      
+    
+    <li>Serialization</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/craftworkgames/MonoGame.Extended/edit/develop/Docs/Features/Serialization.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="serialization">Serialization</h1>
+<p>MonoGame.Extended contains various serialization helpers that work with <a href="http://www.newtonsoft.com/json/help/html/SerializingJSON.htm">Newtonsoft Json.NET</a>.</p>
+<h1 id="json-converters">Json Converters</h1>
+<p>The following XNA/MonoGame types have converters:</p>
+<ul>
+<li><code>Color</code> via <strong><a href="#color-jsonconverter">ColorJsonConverter</a></strong></li>
+<li><code>Vector2</code> via <strong><a href="#vector2-jsonconverter">Vector2JsonConverter</a></strong></li>
+</ul>
+<p>The following MonoGame.Extended types have converters:</p>
+<ul>
+<li><code>NinePatchRegion2D</code> via <strong><a href="#ninepatchregion2d-jsonconverter">NinePatchRegion2DJsonConverter</a></strong></li>
+<li><code>Size2</code> via <strong><a href="#size2-jsonconverter">Size2JsonConverter</a></strong></li>
+<li><code>Range&lt;T&gt;</code> via <strong><a href="#range-jsonconverter">RangeJsonConverter</a></strong></li>
+<li><code>TextureRegion2D</code> via <strong><a href="#textureregion2d-jsonconverter">TextureRegion2DJsonConverter</a></strong></li>
+<li><code>Thickness</code> via <strong><a href="#thickness-jsonconverter">ThicknessJsonConverter</a></strong></li>
+</ul>
+<h3 id="jsonconverter-example">JsonConverter Example</h3>
+<pre><code class="csharp">using Newtonsoft.Json;
+using Microsoft.Xna.Framework;
+using MonoGame.Extended.Serialization;
+
+struct Thing {
+    public Color BootStrapBlue;
+    public Vector2 Position;
+}
+var data = @&quot;{
+    'BootStrapBlue':'#428bca00',
+    'Position':'1.1 4',
+}&quot;;
+
+var thing = JsonConvert.DeserializeObject&lt;Thing&gt;(data,
+    new ColorJsonConverter(),
+    new Vector2JsonConverter()
+);
+
+thing.BootStrapBlue; // &quot;{R:66 G:139 B:202 A:0}&quot;
+thing.Posistion; // &quot;{X:1.1 Y:4}&quot;
+</code></pre>
+
+<h2 id="color-jsonconverter">Color JsonConverter</h2>
+<p>ColorJsonConverter tells Newtonsoft Json.NET now to convert string hex values into XNA <code>Color</code> objects.</p>
+<p>Given the JSON string value</p>
+<pre><code class="json">&quot;#10203040&quot;
+</code></pre>
+
+<p>A Color object is created.</p>
+<pre><code class="csharp">new Color(16, 32, 48, 64);
+</code></pre>
+
+<p>The format is a <code>#</code> followed by byte hex codes for Red, Green, Blue, and Alpha channels.</p>
+<h2 id="vector2-jsonconverter">Vector2 JsonConverter</h2>
+<p>Vector2JsonConverter tells Newtonsoft Json.NET how to serialize XNA <code>Vector2</code> objects.</p>
+<p>Given the JSON string value</p>
+<pre><code class="JSON">&quot;1.2 33&quot;
+</code></pre>
+
+<p>A new Vector2 is created.</p>
+<pre><code class="csharp">new Vector2(1.2f, 33f);
+</code></pre>
+
+<p>The format is <code>X Y</code> for the x and y components of a 2D vector.</p>
+<h2 id="ninepatchregion2d-jsonconverter">NinePatchRegion2D JsonConverter</h2>
+<p>NinePatchRegion2DJsonConverter tells Newtonsoft Json.NET how to serialize MonoGame.Extended <code>NinePatchRegion2D</code> objects.</p>
+<p>Given the JSON object value</p>
+<pre><code class="json">{&quot;TextureRegion&quot;:&quot;Center&quot;,&quot;Padding&quot;:&quot;1 2 3 4&quot;}
+</code></pre>
+
+<p>A new NinePatchRegion2D is created and the TextureRegion is looked up in the TextureRegionService.</p>
+<pre><code class="csharp">new NinePatchRegion2D(TextureRegion2D('Center',...), 1, 2, 3, 4)
+</code></pre>
+
+<p>The format is not a string value, but a nested JSON object where <code>Padding</code> is a <code>Thickness</code> value.</p>
+<h2 id="size2-jsonconverter">Size2 JsonConverter</h2>
+<p>Size2JsonConverter tells Newtonsoft Json.NET how to serialize MonoGame.Extended <code>Size2</code> objects.</p>
+<p>Given the JSON string value</p>
+<pre><code class="json">&quot;10 4&quot;
+</code></pre>
+
+<p>A new Size2 object is created.  Understood, good buddy.</p>
+<pre><code class="csharp">new Size2(10f, 4f)
+</code></pre>
+
+<p>The format is a JSON string containing the Width, and Height values as decimal numbers.</p>
+<h2 id="range-jsonconverter">Range JsonConverter</h2>
+<p><code>RangeJsonConverter&lt;T&gt;</code> tells Newtonsoft Json.NET how to serialize MonoGame.Extended <code>Range&lt;T&gt;</code> objects.</p>
+<p>Given the JSON string value</p>
+<pre><code class="json">&quot;1 9000&quot;
+</code></pre>
+
+<p>A new Range<T> object is created.</p>
+<pre><code class="csharp">new Range&lt;int&gt;(1, 9000);
+</code></pre>
+
+<p>The format is a JSON string containing one or two values.</p>
+<h2 id="textureregion2d-jsonconverter">TextureRegion2D JsonConverter</h2>
+<p>TextureRegion2DJsonConverter tells Newtonsoft Json.NET how to serialize MonoGame.Extended <code>TextureRegion2D</code> objects.</p>
+<p>Given the JSON string value</p>
+<pre><code class="json">&quot;Center&quot;
+</code></pre>
+
+<p>The TextureRegionService is queried with <code>GetTextureRegion("Center")</code></p>
+<p>The format is a JSON string with the name of the TextureRegion in a TextureAtlas.</p>
+<h2 id="thickness-jsonconverter">Thickness JsonConverter</h2>
+<p>ThicknessJsonConverter tells Newtonsoft Json.NET how to serialize a MonoGame.Extended <code>Thickness</code> object.</p>
+<p>Given the JSON string value</p>
+<pre><code class="json">&quot;1 2 3 4&quot;
+</code></pre>
+
+<p>A new Thickness object is created.</p>
+<pre><code>Thickness.Parse(&quot;1 2 3 4&quot;)
+</code></pre>
+
+<p>The format is a JSON string containing a value to be parsed by Thickness.</p>
+<ul>
+<li><code>"1 2 3 4"</code> is left:1, top:2, right:3, bottom:4</li>
+<li><code>"2 4"</code> is left:2, top:4, right:2, bottom:4</li>
+<li><code>"8"</code> is left:8, top:8, right:8, bottom:8</li>
+<li><code>"1,2"</code> is left:1, top:2, right:1, top:2</li>
+</ul>
+<h1 id="extensions">Extensions</h1>
+<h2 id="readasmultidimensional">ReadAsMultiDimensional</h2>
+<p><code>Newtonsoft.Json.JsonReader</code> is extended with <code>T[] ReadAsMultiDimensional&lt;T&gt;()</code></p>
+<p>This allows you to easily create a custom JsonConverter with a list of values.</p>
+<p>For example a list of floats</p>
+<pre><code class="json">&quot;1.1 2.3 4.5 6.1&quot;
+</code></pre>
+
+<p>Could be parsed into an array of floats using the following JsonConverter that uses <code>ReadAsMultiDimensional</code></p>
+<pre><code class="csharp">public class PathJsonConverter : JsonConverter
+{
+    public override object ReadJson(JsonReader reader, Type objectType, object value, JsonSerializer serializer)
+    {
+        float[] path = reader.ReadAsMultiDimensional&lt;float&gt;();
+        return path;
+    }
+
+    public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
+    {
+        var path = (float[]) value;
+        writer.WriteValue(string.Join(&quot; &quot;, path));
+    }
+}
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../Tiled/" class="btn btn-neutral float-right" title="Tiled">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../Screens/" class="btn btn-neutral" title="Screen Management"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/craftworkgames/MonoGame.Extended/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../Screens/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../Tiled/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/require.js"></script>
+      <script src="../../search/search.js"></script>
+
+</body>
+</html>

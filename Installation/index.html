@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Community and Support - MonoGame.Extended</title>
+  <title>Installation - MonoGame.Extended</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -17,9 +17,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Community and Support";
-    var mkdocs_page_input_path = "Community-and-Support.md";
-    var mkdocs_page_url = "/Community-and-Support/";
+    var mkdocs_page_name = "Installation";
+    var mkdocs_page_input_path = "Installation.md";
+    var mkdocs_page_url = "/Installation/";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js"></script>
@@ -52,25 +52,31 @@
     <a class="" href="..">Welcome</a>
 	    </li>
           
+            <li class="toctree-l1">
+		
+    <a class="" href="../Community-and-Support/">Community and Support</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../Documentation/">Documenation</a>
+	    </li>
+          
             <li class="toctree-l1 current">
 		
-    <a class="current" href="./">Community and Support</a>
+    <a class="current" href="./">Installation</a>
     <ul class="subnav">
             
-    <li class="toctree-l2"><a href="#community-and-support">Community and Support</a></li>
+    <li class="toctree-l2"><a href="#installation">Installation</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#referencing-the-content-pipeline-extension">Referencing the Content Pipeline extension</a></li>
+        
+        </ul>
     
 
     </ul>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../Documentation/">Documentation</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../Installation/">Installation</a>
 	    </li>
           
             <li class="toctree-l1">
@@ -199,10 +205,10 @@
     
       
     
-    <li>Community and Support</li>
+    <li>Installation</li>
     <li class="wy-breadcrumbs-aside">
       
-        <a href="https://github.com/craftworkgames/MonoGame.Extended/edit/develop/Docs/Community-and-Support.md"
+        <a href="https://github.com/craftworkgames/MonoGame.Extended/edit/develop/Docs/Installation.md"
           class="icon icon-github"> Edit on GitHub</a>
       
     </li>
@@ -212,16 +218,35 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="community-and-support">Community and Support</h1>
-<p>MonoGame.Extended has a growing community of users from all around the globe. We've got lots of ways you can ask questions and get help about the library.</p>
-<ul>
-<li>Of course, there's <a href="http://craftworkgames.github.io/MonoGame.Extended/">this documentation</a>. By contributing to it you're making it better for everyone.</li>
-<li>We've got our own section on the <a href="http://community.monogame.net/c/extended">MonoGame Community Forums</a></li>
-<li>We've even got a <a href="http://gamedev.stackexchange.com/questions/tagged/monogame-extended">tag on stackoverflow</a> ;)</li>
-<li>Development is usually discussed in <a href="https://github.com/craftworkgames/MonoGame.Extended/issues">github issues</a></li>
-<li>We've got a live chatroom on <a href="https://gitter.im/craftworkgames/MonoGame.Extended">gitter</a></li>
-</ul>
-<p>Note: When you ask a question, please consider how permanent the answer should be. If it's something that might benefit others choose the docs, forum or stack overflow over live chat.</p>
+                <h1 id="installation">Installation</h1>
+<p>MonoGame.Extended is a collection of <a href="https://msdn.microsoft.com/en-us/library/gg597391">portable class libraries</a> (PCL) designed to be referenced from any MonoGame project to add common extensions and classes for making your games more awesome.</p>
+<p>The libraries are distributed as <a href="https://www.nuget.org/packages?q=MonoGame.Extended">NuGet packages</a> and can be installed using the NuGet Package Manager in <a href="https://www.visualstudio.com">Visual Studio</a>, <a href="https://xamarin.com/studio">Xamarin Studio</a>, or <a href="http://www.monodevelop.com">MonoDevelop</a>. They can also be installed by running the following command (or the equivilant command for the package you want to install) in the <a href="http://docs.nuget.org/consume/package-manager-console">Package Manager Console</a>.</p>
+<pre><code>Install-Package MonoGame.Extended
+</code></pre>
+<p>Note that <a href="http://www.monogame.net/downloads/">MonoGame 3.6 will need to be installed</a> to properly use MonoGame.Extended in your game project.</p>
+<h2 id="referencing-the-content-pipeline-extension">Referencing the Content Pipeline extension</h2>
+<p>To get the full experience you'll also want to install the Content Pipeline extension:</p>
+<pre><code>Install-Package MonoGame.Extended.Content.Pipeline
+</code></pre>
+<p>This package won't add any references to your project. Instead it will download a DLL that's intended to be referenced from the <a href="http://www.monogame.net/documentation/?page=Pipeline">MonoGame Content Pipeline tool</a>.</p>
+<p>You'll need to manually add the reference to your content file (usually <code>Content.mgcb</code>) using one of the following methods.</p>
+<h3 id="using-the-monogame-pipeline-gui">Using the MonoGame Pipeline GUI</h3>
+<p>To add the reference using the Pipeline GUI tool follow these steps:</p>
+<ol>
+<li>Click on the <strong>Content</strong> node in the root of the tree.</li>
+<li>In the properties window, modify the <strong>References</strong> property.</li>
+<li>Find and add the <code>MonoGame.Extended.Content.Pipeline.dll</code>. It's usually located in the <strong>packages</strong> folder of your solution.</li>
+</ol>
+<p><img alt="MonoGame Pipeline Add References" src="https://dl.dropboxusercontent.com/u/82020056/MonoGame.Extended/how-to-add-content-pipeline-reference.png" /></p>
+<h3 id="using-a-text-editor">Using a text editor</h3>
+<p>An alternative way to add the reference is by manually editing the <code>Content.mgcb</code> file in a text editor or Visual Studio. Look for the references section and update it like this:</p>
+<pre><code>#-------------------------------- References --------------------------------#
+
+/reference:..\..\packages\MonoGame.Extended.Content.Pipeline.0.6.372\tools\MonoGame.Extended.Content.Pipeline.dll
+</code></pre>
+
+<p><strong>Remember:</strong> The <code>MonoGame.Extended.dll</code> and the <code>MonoGame.Extended.Content.Pipeline.dll</code> come as a pair. Always make sure the version referenced by your game matches the version referenced by the Pipeline tool.</p>
+<p>That's it! Once you've referenced the library you can start using it to make your games even more awesome.</p>
               
             </div>
           </div>
@@ -229,10 +254,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../Documentation/" class="btn btn-neutral float-right" title="Documentation">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../NuGet-Pre-Release/" class="btn btn-neutral float-right" title="NuGet Pre Release">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href=".." class="btn btn-neutral" title="Welcome"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../Documentation/" class="btn btn-neutral" title="Documenation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -260,10 +285,10 @@
           <a href="https://github.com/craftworkgames/MonoGame.Extended/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../Documentation/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../Documentation/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../NuGet-Pre-Release/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
